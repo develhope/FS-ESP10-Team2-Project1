@@ -1,7 +1,5 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    /* Fuente para todo el cuerpo del documento */
     margin: 0;
     /* Elimina el margen predeterminado del cuerpo */
     padding: 0;
@@ -10,13 +8,15 @@ body {
 
 /* Estilos del NavBar */
 .navbar {
+    font-family: Arial, sans-serif;
+    /* Fuente para todo el cuerpo del navbar */
     background-color: #ffd502;
     /* Color de fondo del navbar */
     height: 4.6875rem;
     /* Altura del navbar */
-    margin: 0px auto;
+    margin: 0 auto;
     /* Centra el navbar horizontalmente */
-    padding: 0px 1.875rem;
+    padding: 0 1.875rem;
     /* Añade relleno a los bordes del navbar */
     width: 100vW;
     /* Establece el ancho del navbar al 100% del viewport */
@@ -79,25 +79,29 @@ body {
 
 /* Estilos del banner */
 .banner {
+    font-family: Arial, sans-serif;
+    /* Fuente para todo el cuerpo del banner */
     padding: 20px;
-    /* Añade relleno alrededor del banner */
+    /* Añade relleno al banner */
     background: url("assets/images/banner/img2.webp");
-    /* Fondo del banner */
+    /* Imagen de fondo del banner */
     background-repeat: no-repeat;
-    /* No repetir el fondo */
+    /* No repetir la imagen de fondo */
     background-size: 100%;
-    /* Tamaño del fondo del banner */
+    /* Tamaño de la imagen de fondo */
+    background-position: top;
+    /* Posición de la imagen de fondo */
     position: relative;
-    /* Posiciona los elementos internos de manera relativa */
+    /* Posición relativa para alinear el contenido */
 }
 
 .banner-img-left {
     position: relative;
-    /* Posiciona la imagen relativa al contenedor */
+    /* Posición relativa para alinear la imagen */
     top: 0;
-    /* Posición superior de la imagen */
+    /* Alinear la imagen en la parte superior */
     left: 0;
-    /* Posición izquierda de la imagen */
+    /* Alinear la imagen a la izquierda */
 }
 
 .banner-content {
@@ -106,26 +110,26 @@ body {
     color: white;
     /* Color del texto del banner */
     z-index: 1;
-    /* Establece el índice z para colocar el contenido del banner sobre el fondo */
+    /* Coloca el contenido del banner por encima del fondo */
 }
 
 .banner-content h2 {
     font-size: 24px;
-    /* Tamaño de la fuente del título */
+    /* Tamaño del texto del título */
     margin-bottom: 10px;
-    /* Espacio inferior del título */
+    /* Margen inferior del título */
     padding-top: 10%;
-    /* Espacio superior del contenido */
+    /* Espacio superior del título */
 }
 
 .banner-content p {
     margin-bottom: 20px;
-    /* Espacio inferior del párrafo */
+    /* Margen inferior del párrafo */
 }
 
 .banner-buttons {
     margin-bottom: 10px;
-    /* Espacio inferior de los botones */
+    /* Margen inferior de los botones */
 }
 
 .banner-button {
@@ -134,21 +138,21 @@ body {
     color: #000;
     /* Color del texto del botón */
     border: none;
-    /* Elimina el borde del botón */
+    /* Sin borde */
     padding: 10px 40px 10px 20px;
-    /* Espaciado interno del botón */
+    /* Relleno del botón */
     cursor: pointer;
-    /* Cambia el cursor al pasar sobre el botón */
+    /* Cursor al pasar por encima */
     border-radius: 5px;
-    /* Borde redondeado del botón */
+    /* Borde redondeado */
     font-size: 16px;
-    /* Tamaño de la fuente del botón */
+    /* Tamaño del texto */
     font-weight: bold;
     /* Texto en negrita */
     margin-right: 10px;
-    /* Espacio derecho entre botones */
+    /* Margen derecho del botón */
     background-image: url('data:image/svg+xml;utf8,<svg width="18" height="18" viewBox="0 0 18 28" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"/></svg>');
-    /* Ícono del botón */
+    /* SVG inline como fondo del botón */
     background-repeat: no-repeat;
     /* No repetir el ícono */
     background-position: right 10px center;
