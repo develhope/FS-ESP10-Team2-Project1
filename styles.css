@@ -1,0 +1,187 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del NavBar */
+.navbar {
+    background-color: #ffd502;
+    height: 4.6875rem;
+    margin: 0px auto;
+    padding: 0px 1.875rem;
+    /* width: 100%; */
+    width: 100vW;
+    /* max-width: 100rem; */
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+/* Estilos del logo */
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-div-links {
+    padding-left: 60px;
+}
+
+/* Estilos de los enlaces */
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-right: 20px;
+}
+
+.navbar-links li:last-child {
+    margin-right: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.navbar-links li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-decoration-color: #1f1f1f;
+}
+
+/* Estilos del banner */
+
+.banner {
+    /* padding: 20px;
+    background-image: url("assets/images/banner/img2.webp");
+    background-size: cover;
+    background-position: center; */
+
+
+    /* padding: 20px;
+    background: url("assets/images/banner/img2.webp");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 0%; */
+    /* 
+    padding: 20px;
+    background: url("assets/images/banner/img2.webp");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center; */
+
+    /* display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0px; */
+
+
+    /* padding: 50px;
+    background: url("assets/images/banner/img2.webp");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    position: relative;
+    width: min-content;
+    inset: 0px; */
+
+    padding: 20px;
+    background: url("assets/images/banner/img2.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* max-width: 80%; */
+
+    background-position: center;
+    position: relative;
+
+    /* padding: 20px;
+    background: url("assets/images/banner/img2.webp");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    position: relative; */
+
+    /* 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background: url("assets/images/banner/img2.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+
+
+    /* background: url("assets/images/banner/img2.webp");
+    background-repeat: no-repeat;
+    background-size: 300px 100px;
+    background-position: center; */
+}
+
+.banner-img-left {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.banner-content {
+    width: 45%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%); */
+    color: white;
+    z-index: 1;
+    /* Coloca el contenido del banner por encima del fondo */
+}
+
+.banner-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-top: 10%;
+}
+
+.banner-content p {
+    margin-bottom: 20px;
+}
+
+.banner-buttons {
+    margin-bottom: 10px;
+}
+
+.banner-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 40px 10px 20px;
+    /* Incrementé el padding para hacer espacio para el icono */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="18" height="18" viewBox="0 0 18 28" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"/></svg>');
+    /* SVG inline como fondo del botón */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    /* Espacio de 10px a la derecha del texto */
+    background-size: 20px auto;
+    /* Tamaño del icono */
+}
+
+.banner-button:last-child {
+    margin-right: 0;
+}
