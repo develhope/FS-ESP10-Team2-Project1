@@ -28,7 +28,7 @@ body {
     /* Alinea los elementos verticalmente */
 }
 
-/*? Estilos del logo */
+/** Estilos del logo */
 .navbar-logo img {
     height: 50px;
     /* Altura del logo */
@@ -39,7 +39,7 @@ body {
     /* Añade relleno a la izquierda de los enlaces */
 }
 
-/*? Estilos de los enlaces */
+/** Estilos de los enlaces */
 .navbar-links {
     list-style-type: none;
     /* Elimina los puntos de lista */
@@ -168,7 +168,7 @@ body {
     /* Elimina el margen derecho del último botón */
 }
 
-/*? Estilos de la lista */
+/*? Estilos del SubBanner */
 .subBanner {
     width: 100%;
     /* Ocupa todo el ancho disponible */
@@ -195,7 +195,7 @@ body {
     /* Alinea el texto al centro */
 }
 
-/*? Estilos de las imágenes en la lista */
+/** Estilos de las imágenes en la lista */
 .subBanner img {
     max-width: 110px;
     /* Ancho fijo para las imágenes */
@@ -220,19 +220,19 @@ body {
     /* Subraya el texto */
 }
 
-/* .subBanner img { */
-/* text-decoration-color: initial; */
-/* border-style: none; */
-/* box-sizing: inherit; */
-/* color: rgb(219, 216, 212); */
-/* display: inline-block; */
-/* font-family: "Cera Pro", sans-serif; */
-/* font-size: 16px; */
-/* height: auto; */
-/* max-width: 100%; */
-/* object-fit: fill; */
-/* text-decoration: underline; */
-/* vertical-align: middle; */
-/* } */
+/* .subBanner img {
+    text-decoration-color: initial;
+    border-style: none;
+    box-sizing: inherit;
+    color: rgb(219, 216, 212);
+    display: inline-block;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 16px;
+    height: auto;
+    max-width: 100%;
+    object-fit: fill;
+    text-decoration: underline;
+    vertical-align: middle;
+} */
 
 /*todo#####-----> END SECCION: NavBar-Banner y SubBaneer <-----#####*/
