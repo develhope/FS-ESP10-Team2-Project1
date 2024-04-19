@@ -120,7 +120,7 @@ body {
     /* Tamaño del texto del título */
     margin-bottom: 10px;
     /* Margen inferior del título */
-    padding-top: 10%;
+    padding-top: 0;
     /* Espacio superior del título */
 }
 
@@ -167,5 +167,72 @@ body {
     margin-right: 0;
     /* Elimina el margen derecho del último botón */
 }
+
+/*? Estilos de la lista */
+.subBanner {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    list-style: none;
+    /* Elimina los puntos de lista */
+    padding: 0;
+    /* Elimina el relleno de la lista */
+    margin: 0;
+    /* Elimina el margen de la lista */
+    display: flex;
+    /* Utiliza flexbox para alinear elementos */
+    justify-content: center;
+    /* Distribuye uniformemente los elementos */
+    align-items: center;
+    /* Alinea los elementos verticalmente */
+}
+
+.subBanner li {
+    margin: 0;
+    /* Elimina el margen de los elementos de lista */
+    padding: 0;
+    /* Elimina el relleno de los elementos de lista */
+    text-align: center;
+    /* Alinea el texto al centro */
+}
+
+/*? Estilos de las imágenes en la lista */
+.subBanner img {
+    max-width: 110px;
+    /* Ancho fijo para las imágenes */
+    height: auto;
+    /* Altura ajustada automáticamente para mantener la proporción */
+    margin: 10px 10px 7px 10px;
+    /* Establece el margen izquierdo y derecho de cada imagen */
+}
+
+.subBanner li span {
+    font-family: "Cera Pro", sans-serif;
+    /* Fuente del texto */
+    font-size: 14px;
+    /* Tamaño del texto */
+    display: inline-block;
+    /* Muestra el texto en línea */
+
+}
+
+.subBanner li:hover span {
+    text-decoration: underline;
+    /* Subraya el texto */
+}
+
+/* .subBanner img { */
+/* text-decoration-color: initial; */
+/* border-style: none; */
+/* box-sizing: inherit; */
+/* color: rgb(219, 216, 212); */
+/* display: inline-block; */
+/* font-family: "Cera Pro", sans-serif; */
+/* font-size: 16px; */
+/* height: auto; */
+/* max-width: 100%; */
+/* object-fit: fill; */
+/* text-decoration: underline; */
+/* vertical-align: middle; */
+/* } */
 
 /*todo#####-----> END SECCION: NavBar-Banner y SubBaneer <-----#####*/
