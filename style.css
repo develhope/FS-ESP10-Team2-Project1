@@ -118,6 +118,11 @@ body {
     color: rgb(0, 0, 0);
     font-size: 0.75rem;
     line-height: 1.1875rem;
+    text-decoration: none;
+}
+
+.navbar-div-buttons .cart-num:hover {
+    text-decoration: underline;
 }
 
 /* Estilos del icono del carrito */
