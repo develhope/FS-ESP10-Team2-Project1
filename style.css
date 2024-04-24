@@ -133,6 +133,7 @@ body {
 /*? Estilos del Banner */
 .banner {
     font-family: Arial, sans-serif;
+
     /* padding: 20px; */
     /* background: url("assets/images/banner/img2.webp"); */
     /* background-repeat: no-repeat; */
@@ -144,6 +145,7 @@ body {
 .banner-background-image {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .banner-div {
@@ -152,6 +154,19 @@ body {
     background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 1.25rem 1.875rem;
+
+    /*? Opc 0 (Sin gradientes) */
+    /**/
+    /*? Opc 1 */
+    /* background: rgb(22, 22, 22);
+    background: linear-gradient(180deg, rgba(22, 22, 22, 1) 0%, rgba(46, 44, 42, 1) 100%); */
+    /*? Opc 2 */
+    /* background: rgb(28, 28, 28);
+    background: linear-gradient(180deg, rgba(28, 28, 28, 1) 0%, rgba(46, 44, 42, 1) 100%); */
+    /*? Opc3  */
+    background: rgb(22, 22, 22);
+    background: linear-gradient(25deg, rgba(22, 22, 22, 1) 54%, rgba(46, 44, 42, 1) 95%);
+
 }
 
 .banner-div-img1 {
@@ -175,21 +190,92 @@ body {
     line-height: 1.75rem;
 }
 
+.banner-div-span1 {
+    color: lightgrey;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    display: block;
+    font-weight: 400;
+    line-height: 1.1875rem;
+    margin-top: 0.625rem;
+}
 
-@media screen and (max-width: 790px) {
+.banner-div-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px -0.625rem;
+}
+
+.banner-buttons {
+    width: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-collapse: collapse;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 4px;
+    text-transform: none;
+    padding: 0.625rem 1.125rem;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    height: 1.15rem;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    margin-top: 0.9375rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    pointer-events: all;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.banner-buttons:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.banner-buttons-ico {
+    line-height: 0;
+    height: 16px;
+    width: 16px;
+
+    transition: transform 0.1s linear 0s;
+    display: block;
+    flex: 0 0 auto;
+
+    margin-left: 0.75rem;
+}
+
+@media screen and (max-width: 765px) {
+
+    /*? Pff no se si dejar (display: none;) o quitarlo, me gusta ambas opciones */
     .banner-background-image {
         display: none;
     }
+
+    .banner-div {
+        padding: 1.5rem 1.9rem;
+    }
+
     .banner-div-img1 {
         height: 4rem;
     }
+
+
 }
 
-@media screen and (min-width: 790px) {
+@media screen and (min-width: 765px) {
     .banner-div {
         position: absolute;
         max-width: 40%;
         padding: 0px;
+        background: transparent;
         background-color: transparent;
         text-align: left;
         left: 3.75rem;
@@ -213,7 +299,23 @@ body {
 
 }
 
+@media screen and (max-width: 820px) {
+    .banner-div {
+        top: 30%;
+    }
+
+    .banner-buttons {
+        height: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+}
+
 @media screen and (min-width: 820px) {
+    .banner-div {
+        max-width: 37%;
+    }
+
     .banner-div-img1 {
         height: 3.2rem;
     }
@@ -222,11 +324,12 @@ body {
         font-size: 1.5rem;
         line-height: 1.5rem;
     }
+
 }
 
 @media screen and (min-width: 940px) {
     .banner-div {
-        top: 35%;
+        top: 33%;
         max-width: 37%;
     }
 
@@ -254,7 +357,7 @@ body {
 
 @media screen and (min-width: 1201px) {
     .banner-div {
-        top: 40%;
+        top: 38%;
         max-width: 40%;
     }
 
@@ -272,77 +375,6 @@ body {
         line-height: 1.75rem;
         margin-top: 0.9375rem;
     }
-}
-
-.banner-div-span1 {
-    color: lightgrey;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    display: block;
-    font-weight: 400;
-    line-height: 1.1875rem;
-    margin-top: 0.625rem;
-}
-
-.banner-div-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    justify-content: center;
-    margin: 0px -0.625rem;
-}
-
-.banner-buttons {
-    display: inline-block;
-    width: auto;
-    border-width: 1px;
-    border-style: solid;
-    border-collapse: collapse;
-    text-align: center;
-    border-color: transparent;
-    border-radius: 4px;
-    font-size: 1rem;
-    line-height: 1.5625rem;
-    font-weight: 500;
-    text-transform: none;
-    padding: 0.625rem 1.125rem;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-
-.banner-buttons {
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    margin-top: 0.9375rem;
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
-    pointer-events: all;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.banner-buttons:hover {
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-}
-
-.banner-buttons-ico {
-    line-height: 0;
-    height: 16px;
-    width: 16px;
-}
-
-.banner-buttons-ico {
-    transition: transform 0.1s linear 0s;
-    display: block;
-    flex: 0 0 auto;
-}
-
-.banner-buttons-ico {
-    margin-left: 0.75rem;
 }
 
 /*? Estilos del SubBanner */
