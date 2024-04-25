@@ -130,10 +130,31 @@ body {
     margin-right: 0.3125rem;
 }
 
+/*? <main>*/
+main {
+    /* margin-bottom: 1.875rem; */
+    /* margin: 0; */
+    /* padding: 0; */
+
+    /* max-width: 100rem; */
+    /* max-height: 100rem; */
+    /* position: relative; */
+    /* Establece un padding inicial basado en el ancho de la ventana */
+    /* padding: 5vw; */
+    /* Agrega una transición para suavizar el cambio de padding */
+    transition: padding 0.1s;
+}
+
+
+
 /*? Estilos del Banner */
 .banner {
     font-family: Arial, sans-serif;
 
+    /* padding: 0px !important;
+    margin: 0px !important; */
+
+    /* padding: 0px !important; */
     /* padding: 20px; */
     /* background: url("assets/images/banner/img2.webp"); */
     /* background-repeat: no-repeat; */
@@ -144,16 +165,17 @@ body {
 
 .banner-background-image {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     display: block;
 }
 
 .banner-div {
-    z-index: 1;
+    /* z-index: 1; */
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 1.25rem 1.875rem;
+    /* transition: all 0.5s; */
 
     /*? Opc 0 (Sin gradientes) */
     /**/
@@ -166,7 +188,6 @@ body {
     /*? Opc3  */
     background: rgb(22, 22, 22);
     background: linear-gradient(25deg, rgba(22, 22, 22, 1) 54%, rgba(46, 44, 42, 1) 95%);
-
 }
 
 .banner-div-img1 {
@@ -252,6 +273,7 @@ body {
     margin-left: 0.75rem;
 }
 
+/** max-width < px */
 @media screen and (max-width: 765px) {
 
     /*? Pff no se si dejar (display: none;) o quitarlo, me gusta ambas opciones */
@@ -266,25 +288,28 @@ body {
     .banner-div-img1 {
         height: 4rem;
     }
-
-
 }
 
+/** min-width > px */
 @media screen and (min-width: 765px) {
     .banner-div {
-        position: absolute;
-        max-width: 40%;
-        padding: 0px;
+        /* position: absolute; */
+        max-width: 44%;
+        height: 100%;
+        padding: 0 0 0 25px;
         background: transparent;
         background-color: transparent;
         text-align: left;
-        left: 3.75rem;
-        top: 31%;
-        transform: translateY(-50%);
+        /* left: 3.75rem; */
+        /* top: 36%; */
+        /* transform: translateY(-50%); */
+        transform: translateY(-114%);
+        color: red !important;
     }
 
     .banner-div-img1 {
         height: 3rem;
+        padding-bottom: 5px;
     }
 
     .banner-div-h2 {
@@ -296,27 +321,30 @@ body {
         -webkit-box-pack: start;
         justify-content: flex-start;
     }
-
 }
 
+/** max-width < px */
 @media screen and (max-width: 820px) {
-    .banner-div {
+    /* .banner-div {
         top: 30%;
-    }
+    } */
 
     .banner-buttons {
         height: 0.5rem;
         font-size: 0.8rem;
     }
-
 }
 
+/** min-width > px */
 @media screen and (min-width: 820px) {
     .banner-div {
-        max-width: 37%;
+        /* max-width: 37%; */
+        transform: translateY(-114%);
+        color: yellow !important;
     }
 
     .banner-div-img1 {
+        padding-bottom: 10px;
         height: 3.2rem;
     }
 
@@ -324,13 +352,15 @@ body {
         font-size: 1.5rem;
         line-height: 1.5rem;
     }
-
 }
 
+/** min-width > px */
 @media screen and (min-width: 940px) {
     .banner-div {
-        top: 33%;
-        max-width: 37%;
+        /* top: 33%; */
+        /* max-width: 37%; */
+        transform: translateY(-115%);
+        color: green !important;
     }
 
     .banner-div-img1 {
@@ -355,10 +385,14 @@ body {
     }
 }
 
+/** min-width > px */
 @media screen and (min-width: 1201px) {
+
     .banner-div {
-        top: 38%;
-        max-width: 40%;
+        /* top: 38%; */
+        /* max-width: 40%; */
+        transform: translateY(-121%);
+        color: blue !important;
     }
 
     .banner-div-img1 {
@@ -375,6 +409,67 @@ body {
         line-height: 1.75rem;
         margin-top: 0.9375rem;
     }
+}
+
+/** min-width > px */
+@media screen and (min-width: 1408px) {
+
+    .banner-div {
+        /* top: 38%; */
+        /* max-width: 40%; */
+        transform: translateY(-134%);
+        color: aqua !important;
+    }
+
+    .banner-div-img1 {
+        height: 5rem;
+    }
+
+    .banner-div-h2 {
+        font-size: 2.1rem;
+        line-height: 2.5rem;
+    }
+
+    .banner-div-span1 {
+        font-size: 1.4rem;
+        line-height: 1.75rem;
+        margin-top: 0.9375rem;
+    }
+
+    .banner-buttons {
+        font-size: 1.1rem;
+        /* line-height: 1.5625rem; */
+        /* margin-top: 1.25rem; */
+        height: 1.5rem;
+    }
+}
+
+
+/* @media screen and (min-width: 1410px) { */
+/* @media screen and (min-width: 1201px) { */
+
+@media screen and (min-width: 1616px) {
+    main {
+        background-color: orange !important;
+        /* padding: 0 9rem 0 9rem;
+            max-width: 100rem;
+            margin: 0px auto; */
+
+        padding: 0 7vw 0 7vw;
+        /* Ajusta el padding para pantallas más grandes */
+    }
+
+    .banner-background-image {
+        width: auto;
+    }
+
+    .banner-div {
+        /* top: 38%; */
+        max-width: 51%;
+        transform: translateY(-134%);
+        color: white !important;
+    }
+
 }
 
 /*? Estilos del SubBanner */
