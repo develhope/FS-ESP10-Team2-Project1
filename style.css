@@ -273,6 +273,53 @@ main {
     margin-left: 0.75rem;
 }
 
+/*? Estilos del SubBanner */
+.subBanner {
+    width: 100%;
+    /* height: 100%; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subBanner li {
+    /* height: 100%; */
+    width: 100%;
+    margin: 20px;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+/** Estilos de las imágenes en la lista */
+.subBanner img {
+    max-width: 110px;
+    /* height: auto; */
+    margin: 10px 10px 7px 10px;
+    /* padding: var(--ds-spacing-md) 0; */
+    /* gap: 0 var(--ds-spacing-sm); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subBanner li span {
+    font-family: "Cera Pro", sans-serif;
+    color: rgb(20, 20, 20);
+    font-size: 13px;
+    display: inline-block;
+}
+
+.subBanner li:hover span {
+    text-decoration: underline;
+}
+
+/*todo#####-----> END SECCION: NavBar-Banner y SubBaneer <-----#####*/
+
+/*todo || RESPONSIVE START SECCION: NavBar-Banner y SubBaneer*/
+
 /** max-width < px */
 @media screen and (max-width: 765px) {
 
@@ -303,8 +350,12 @@ main {
         /* left: 3.75rem; */
         /* top: 36%; */
         /* transform: translateY(-50%); */
-        transform: translateY(-114%);
+        /* transform: translateY(-114%); */
+        transform: translateY(-10%);
+        margin-top: -195px;
         color: red !important;
+        /* Ajusta según sea necesario */
+
     }
 
     .banner-div-img1 {
@@ -339,7 +390,9 @@ main {
 @media screen and (min-width: 820px) {
     .banner-div {
         /* max-width: 37%; */
-        transform: translateY(-114%);
+        /* transform: translateY(-114%); */
+        transform: translateY(-15%);
+        margin-top: -210px;
         color: yellow !important;
     }
 
@@ -359,7 +412,9 @@ main {
     .banner-div {
         /* top: 33%; */
         /* max-width: 37%; */
-        transform: translateY(-115%);
+        /* transform: translateY(-115%); */
+        transform: translateY(-20%);
+        margin-top: -235px;
         color: green !important;
     }
 
@@ -391,7 +446,9 @@ main {
     .banner-div {
         /* top: 38%; */
         /* max-width: 40%; */
-        transform: translateY(-121%);
+        /* transform: translateY(-121%); */
+        transform: translateY(-30%);
+        margin-top: -270px;
         color: blue !important;
     }
 
@@ -417,7 +474,9 @@ main {
     .banner-div {
         /* top: 38%; */
         /* max-width: 40%; */
-        transform: translateY(-134%);
+        /* transform: translateY(-134%); */
+        transform: translateY(-42%);
+        margin-top: -290px;
         color: aqua !important;
     }
 
@@ -455,7 +514,7 @@ main {
             max-width: 100rem;
             margin: 0px auto; */
 
-        padding: 0 7vw 0 7vw;
+        padding: 0 7vw 5vw 7vw;
         /* Ajusta el padding para pantallas más grandes */
     }
 
@@ -464,53 +523,18 @@ main {
     }
 
     .banner-div {
+        /* padding-bottom: 40px; */
         /* top: 38%; */
         max-width: 51%;
-        transform: translateY(-134%);
+        /* transform: translateY(-134%); */
+        transform: translateY(-40%);
+        margin-top: -295px;
         color: white !important;
     }
 
+    .subBanner {
+        transform: translateY(20%);
+    }
 }
 
-/*? Estilos del SubBanner */
-.subBanner {
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.subBanner li {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/** Estilos de las imágenes en la lista */
-.subBanner img {
-    max-width: 110px;
-    /* height: auto; */
-    margin: 10px 10px 7px 10px;
-    /* padding: var(--ds-spacing-md) 0; */
-    /* gap: 0 var(--ds-spacing-sm); */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.subBanner li span {
-    font-family: "Cera Pro", sans-serif;
-    color: rgb(20, 20, 20);
-    font-size: 13px;
-    display: inline-block;
-}
-
-.subBanner li:hover span {
-    text-decoration: underline;
-}
-
-
-/*todo#####-----> END SECCION: NavBar-Banner y SubBaneer <-----#####*/
+/*todo || RESPONSIVE END SECCION: NavBar-Banner y SubBaneer*/
