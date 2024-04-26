@@ -199,13 +199,8 @@ main {
 
 .banner-div-h2 {
     color: inherit;
-    font-size: 1rem;
-    line-height: 1.5625rem;
     font-weight: 400;
     text-transform: inherit;
-}
-
-.banner-div-h2 {
     margin: 0px;
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -276,36 +271,40 @@ main {
 /*? Estilos del SubBanner */
 .subBanner {
     width: 100%;
-    /* height: 100%; */
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en varias líneas */
     justify-content: space-around;
+    /* Centra los elementos horizontalmente */
     align-items: center;
 }
 
 .subBanner li {
     /* height: 100%; */
-    width: 100%;
-    margin: 20px;
-    /* padding: 10px; */
+    width: 15%;
+    margin: 0px;
+    padding: 0px;
     text-align: center;
+    flex-grow: 1;
+    background-color: yellowgreen !important;
 }
 
-/** Estilos de las imágenes en la lista */
-.subBanner img {
-    max-width: 110px;
+/* Estilos de las imágenes en la lista */
+.subBanner a img {
+    /* width: 100% !important; */
+    max-width: 90px;
     /* height: auto; */
     margin: 10px 10px 7px 10px;
     /* padding: var(--ds-spacing-md) 0; */
     /* gap: 0 var(--ds-spacing-sm); */
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .subBanner li span {
+    width: 100%;
     font-family: "Cera Pro", sans-serif;
     color: rgb(20, 20, 20);
     font-size: 13px;
@@ -335,6 +334,14 @@ main {
     .banner-div-img1 {
         height: 4rem;
     }
+
+    .subBanner a img {
+        /* width: 100% !important; */
+        max-width: 70px;
+        /* height: auto; */
+        margin: 10px 10px 7px 10px;
+    }
+
 }
 
 /** min-width > px */
@@ -371,6 +378,12 @@ main {
     .banner-div-buttons {
         -webkit-box-pack: start;
         justify-content: flex-start;
+
+    }
+
+    .subBanner a img {
+        max-width: 90px;
+        margin: 5px 5px 3px 5px;
     }
 }
 
