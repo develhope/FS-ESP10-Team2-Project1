@@ -283,7 +283,7 @@
     justify-content: center;
 }
 
-.section1 {
+.section1-last-three-sections {
     width: 100%;
     height: 100%;
     display: flex;
@@ -297,7 +297,7 @@
 
 }
 
-#card-inner-content1 {
+#card-inner-content1-last-three-sections {
     max-width: 100rem;
     height: 100%;
     display: flex;
@@ -310,7 +310,7 @@
     position: relative;
 }
 
-#h1 {
+#h1-last-three-sections {
     width: 100%;
     display: flex;
     height: 3%;
@@ -323,32 +323,32 @@
     margin-left: 6.5%;
 }
 
-.a1 {
+.a1-last-three-sections {
     text-decoration: none;
     color: black;
 
 }
 
-.service1 {
+.service1-last-three-sections {
     max-width: 28.125rem;
 }
 
-.img1 {
+.img1-last-three-sections {
     max-width: 28.125rem;
 }
 
-.imglogo {
+.imglogo-last-three-sections {
     max-width: 8.75rem;
     margin-top: -5%;
     margin-left: 63%;
 }
 
-img.logo {
+.logo-last-three-sections {
     max-width: 8.75rem;
     margin-top: -30%;
 }
 
-span {
+.span-last-three-sections {
     display: flex;
     text-align: justify;
     text-align: center;
@@ -357,25 +357,25 @@ span {
 
 }
 
-#shoping1:hover {
+#shoping1-last-three-sections:hover {
     text-decoration: underline;
 
 }
 
-.text1 {
+.text1-last-three-sections {
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.9375rem;
 
 }
 
-.text2 {
+.text2-last-three-sections {
     font-size: 1rem;
     line-height: 1.1875rem;
 
 }
 
-#shoping1 {
+#shoping1-last-three-sections {
     font-size: 1rem;
     font-weight: 600;
     text-transform: inherit;
@@ -383,7 +383,7 @@ span {
 
 }
 
-.section2 {
+.section2-last-three-sections {
     width: 100%;
     height: 100%;
     display: flex;
@@ -397,7 +397,7 @@ span {
 
 }
 
-#card-inner-content2 {
+#card-inner-content2-last-three-sections {
     max-width: 100rem;
     height: 100%;
     display: flex;
@@ -412,7 +412,7 @@ span {
     justify-content: center;
 }
 
-#h2 {
+#h2-last-three-sections {
     width: 100%;
     display: flex;
     margin-left: 6.5%;
@@ -425,40 +425,40 @@ span {
     margin-bottom: 0;
 }
 
-.a2 {
+.a2-last-three-sections {
     text-decoration: none;
     color: black;
 
 }
 
-.service2 {
+.service2-last-three-sections {
     max-width: 20.938rem;
 }
 
-.img2 {
+.img2-last-three-sections {
     max-width: 20.938rem;
 }
 
 
-#shoping2:hover {
+#shoping2-last-three-sections:hover {
     text-decoration: underline;
 
 }
 
-.text3 {
+.text3-last-three-sections {
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.9375rem;
 
 }
 
-.text4 {
+.text4-last-three-sections {
     font-size: 1rem;
     line-height: 1.1875rem;
 
 }
 
-#shoping2 {
+#shoping2-last-three-sections {
     font-size: 1rem;
     font-weight: 600;
     text-transform: inherit;
