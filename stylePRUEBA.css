@@ -22,6 +22,7 @@
   *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   #MundosSets{
@@ -274,8 +275,235 @@
     padding-top: 10.8px;
   }
 
+.the-last-three-sections {
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    font-family: 'Cera Pro', sans-serif;
+    justify-content: center;
+}
+
+.section1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid transparent;
+    text-align: justify;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+#card-inner-content1 {
+    max-width: 100rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid transparent;
+    text-align: justify;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#h1 {
+    width: 100%;
+    display: flex;
+    height: 3%;
+    border: 2px solid transparent;
+    position: relative;
+    font-size: 2.150rem;
+    line-height: 2.6875rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 6.5%;
+}
+
+.a1 {
+    text-decoration: none;
+    color: black;
+
+}
+
+.service1 {
+    max-width: 28.125rem;
+}
+
+.img1 {
+    max-width: 28.125rem;
+}
+
+.imglogo {
+    max-width: 8.75rem;
+    margin-top: -5%;
+    margin-left: 63%;
+}
+
+img.logo {
+    max-width: 8.75rem;
+    margin-top: -30%;
+}
+
+span {
+    display: flex;
+    text-align: justify;
+    text-align: center;
+    justify-content: center;
 
 
+}
+
+#shoping1:hover {
+    text-decoration: underline;
+
+}
+
+.text1 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.9375rem;
+
+}
+
+.text2 {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+
+}
+
+#shoping1 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: inherit;
+    line-height: 2rem;
+
+}
+
+.section2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid transparent;
+    text-align: justify;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+#card-inner-content2 {
+    max-width: 100rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid transparent;
+    text-align: justify;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+#h2 {
+    width: 100%;
+    display: flex;
+    margin-left: 6.5%;
+    height: 3%;
+    border: 2px solid transparent;
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.6875rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.a2 {
+    text-decoration: none;
+    color: black;
+
+}
+
+.service2 {
+    max-width: 20.938rem;
+}
+
+.img2 {
+    max-width: 20.938rem;
+}
+
+
+#shoping2:hover {
+    text-decoration: underline;
+
+}
+
+.text3 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.9375rem;
+
+}
+
+.text4 {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+
+}
+
+#shoping2 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: inherit;
+    line-height: 2rem;
+
+}
+
+.the-last-body-section {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 1.25rem;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    justify-content: center;
+    color: #2c2c2c;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: justify;
+}
+
+.the-last-body-div {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    --header-height: 8.125rem;
+    max-width: 100rem;
+    line-height: 1.5;
+    border: 2px solid transparent;
+    background-color: #fff
+}
+
+.the-last-span {
+    text-align: left;
+    --header-height: 8.125rem;
+    font-size: 0.875rem;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: 0;
+}
   .legoFooter {
     display: flex;
     flex-direction: column;
