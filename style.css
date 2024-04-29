@@ -276,19 +276,19 @@ main {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    /* Permite que los elementos se envuelvan en varias líneas */
-    justify-content: space-around;
-    /* Centra los elementos horizontalmente */
-    align-items: center;
 }
 
 .subBanner li {
     /* height: 100%; */
-    width: 15%;
+    /* width: 15%; */
+    width: auto;
     margin: 0px;
     padding: 0px;
     text-align: center;
     flex-grow: 1;
+    /* display: flex; */
+    /* justify-items: space-between; */
+    /* flex-wrap: wrap; */
     background-color: yellowgreen !important;
 }
 
