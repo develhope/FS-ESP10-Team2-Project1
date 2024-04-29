@@ -204,7 +204,7 @@
     margin-top: -10px;
   }
 
-  svg{
+  #corazon > svg{
     background-color: rgba(228, 239, 247, 0.742);
     border: 1px rgba(228, 239, 247, 0.742) solid;
     border-radius: 30px;
