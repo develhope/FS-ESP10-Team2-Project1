@@ -327,7 +327,7 @@ main {
 }
 
 .DESTproduct-card .DESTlike {
-  position: absolute;
+  /* position: absolute; */
   top: 30px;
   left: 30px;
 }
