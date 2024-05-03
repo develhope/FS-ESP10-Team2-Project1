@@ -818,10 +818,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 300px;
-  padding-right: 300px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  width: 100vw;
 }
 
 #mundos {
@@ -1077,9 +1074,8 @@ svg:hover {
   background-color: rgb(32, 29, 72);
   color: white;
   padding-top: 50px;
-  padding-left: 60px;
-  padding-right: 80px;
   font-family: "Cera Pro Medium";
+  width: 100vw;
 }
 
 #location {
