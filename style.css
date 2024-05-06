@@ -4,6 +4,21 @@ html {}
 
 body {}
 
+/*? <main>*/
+main {
+  /* margin-bottom: 1.875rem; */
+  /* margin: 0; */
+  /* padding: 0; */
+
+  /* max-width: 100rem; */
+  /* max-height: 100rem; */
+  /* position: relative; */
+  /* Establece un padding inicial basado en el ancho de la ventana */
+  /* padding: 5vw; */
+  /* Agrega una transición para suavizar el cambio de padding */
+  padding: 0 0.3vw 0vw 0.3vw;
+  transition: padding 0.1s;
+}
 
 
 /*todo#####-----> START SECCION: NavBar-Banner y SubBaneer <-----#####*/
@@ -122,22 +137,6 @@ body {}
 .navbar-div-buttons-icon_cart {
   margin-right: 0.3125rem;
 }
-
-/*? <main>*/
-main {
-  /* margin-bottom: 1.875rem; */
-  /* margin: 0; */
-  /* padding: 0; */
-
-  /* max-width: 100rem; */
-  /* max-height: 100rem; */
-  /* position: relative; */
-  /* Establece un padding inicial basado en el ancho de la ventana */
-  /* padding: 5vw; */
-  /* Agrega una transición para suavizar el cambio de padding */
-  transition: padding 0.1s;
-}
-
 
 
 /*? Estilos del Banner */
