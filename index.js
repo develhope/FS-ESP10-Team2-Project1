@@ -1,4 +1,4 @@
-function comprar() {
+function plantilla() {
   var ventanaEmergente = document.getElementById("ventanaEmergente");
   var fondoNegro = document.getElementById("fondoNegro");
 
@@ -67,3 +67,5 @@ function cerrarVentana() {
 }
 
 document.getElementById("comprar").addEventListener("click", comprar);
+document.getElementById("descubrir").addEventListener("click", descubrir);
+document.getElementById("ayuda").addEventListener("click", ayuda);
