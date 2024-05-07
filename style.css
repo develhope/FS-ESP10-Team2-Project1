@@ -977,7 +977,6 @@ main {
   overflow-y: hidden;
 }
 
-
 #cards {
   display: flex;
   gap: 30px;
@@ -1063,9 +1062,12 @@ main {
   padding-top: 7.61px;
 }
 
-#cabañaHagrid #precioMiniFoto,
-#barcaCapitan #precioMiniFoto {
+#cabañaHagrid #precioMiniFoto {
   padding-top: 10.8px;
+}
+
+#barcaCapitan #precioMiniFoto{
+  padding-top: 26px;
 }
 
 .legoFooter {
@@ -1119,6 +1121,12 @@ main {
 .legoLogo {
   width: 97px;
   height: 97px;
+}
+
+.legoFooter a {
+  text-decoration: none;
+  color: white;
+  padding-top: 5vh;
 }
 
 .footer2 {
@@ -1175,11 +1183,7 @@ main {
   text-decoration: none;
 }
 
-.legoFooter a {
-  text-decoration: none;
-  color: white;
-  padding-top: 5vh;
-}
+
 
 .legoFooter a:hover {
   text-decoration: underline;
@@ -1241,3 +1245,9 @@ main {
 /* *** */
 
 /*todo || RESPONSIVE END SECCION: NavBar-Banner y SubBaneer*/
+
+/*todo || RESPONSIVE START SECCION: Mundos Cards y Footer*/
+
+
+
+/*todo || RESPONSIVE END SECCION: Mundos Cards y Footer*/

@@ -69,3 +69,6 @@ function cerrarVentana() {
 document.getElementById("comprar").addEventListener("click", comprar);
 document.getElementById("descubrir").addEventListener("click", descubrir);
 document.getElementById("ayuda").addEventListener("click", ayuda);
+
+
+
