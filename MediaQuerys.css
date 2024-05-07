@@ -469,8 +469,8 @@
 
   #cards img {
     display: flex;
-    width: 30vw;
-    height: 10vh;
+    width: 200px;
+    height: 150px;
   }
 
   #corazon > svg {
@@ -494,6 +494,13 @@
     color: white;
     padding: 3vw;
     gap: 10px;
+    height: 195.2px;
+    justify-content: space-evenly;
+  }
+
+  #patines,#macetaIsabela , #castilloAriel ,#mansionModerna, #martinPescador , #narcisos, #hedwig, #cabañaHagrid, #barcaCapitan, #gatoBuho, #safari {
+    width: 200px;
+    height: 410.8px;
   }
 
   #añadirALaBolsa {
@@ -510,31 +517,6 @@
     color: rgb(252, 227, 0);
     font-family: "Cera Pro Thin";
     font-size: 7px;
-  }
-
-  #patines #precioMiniFoto,
-  #macetaIsabela #precioMiniFoto {
-    padding-top: 31.6px;
-  }
-
-  #martinPescador #precioMiniFoto,
-  #narcisos #precioMiniFoto {
-    padding-top: 31.6px;
-  }
-
-  #casaRana #precioMiniFoto {
-    padding-top: 10.4px;
-  }
-
-  #hedwig #precioMiniFoto {
-    padding-top: 8.94px;
-  }
-
-  #mansionModerna #precioMiniFoto,
-  #cabañaHagrid #precioMiniFoto,
-  #barcaCapitan #precioMiniFoto,
-  #castilloAriel #precioMiniFoto {
-    padding-top: 21.2px;
   }
 
   .legoFooter {
@@ -923,8 +905,9 @@
 
   #cards img {
     display: flex;
-    width: 30vw;
-    height: 10vh;
+    width: 200px;
+    height: 150px;
+    image-rendering: optimizeSpeed;
   }
 
   #corazon > svg {
@@ -950,6 +933,11 @@
     gap: 10px;
   }
 
+  #patines,#macetaIsabela , #castilloAriel ,#mansionModerna, #martinPescador , #narcisos, #hedwig, #cabañaHagrid, #barcaCapitan, #gatoBuho, #safari {
+    width: 200px;
+    height: 410.8px;
+  }
+
   #añadirALaBolsa {
     padding: 0.8vw;
     background-color: rgb(252, 227, 0);
@@ -964,31 +952,6 @@
     color: rgb(252, 227, 0);
     font-family: "Cera Pro Thin";
     font-size: 7px;
-  }
-
-  #patines #precioMiniFoto,
-  #macetaIsabela #precioMiniFoto {
-    padding-top: 31.6px;
-  }
-
-  #martinPescador #precioMiniFoto,
-  #narcisos #precioMiniFoto {
-    padding-top: 31.6px;
-  }
-
-  #casaRana #precioMiniFoto {
-    padding-top: 10.4px;
-  }
-
-  #hedwig #precioMiniFoto {
-    padding-top: 8.94px;
-  }
-
-  #mansionModerna #precioMiniFoto,
-  #cabañaHagrid #precioMiniFoto,
-  #barcaCapitan #precioMiniFoto,
-  #castilloAriel #precioMiniFoto {
-    padding-top: 21.2px;
   }
 
   .legoFooter {
@@ -1389,12 +1352,12 @@
     margin-top: 2vh;
     margin-bottom: 3vh;
     padding-bottom: 4vh;
+    
   }
 
   #cards img {
     display: flex;
-    width: 27vw;
-    height: 14vh;
+    width: 200px;
   }
 
   #corazon > svg {
@@ -1420,6 +1383,12 @@
     gap: 10px;
   }
 
+  #pieMiniFoto > button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
   #añadirALaBolsa {
     padding: 0.8vw;
     background-color: rgb(252, 227, 0);
@@ -1436,29 +1405,6 @@
     font-size: 20px;
   }
 
-  #patines #precioMiniFoto,
-  #macetaIsabela #precioMiniFoto {
-    padding-top: 50px;
-  }
-
-  #martinPescador #precioMiniFoto,
-  #narcisos #precioMiniFoto {
-    padding-top: 50px;
-  }
-
-  #casaRana #precioMiniFoto {
-    padding-top: 19px;
-  }
-
-  #hedwig #precioMiniFoto {
-    padding-top: 8.94px;
-  }
-
-  #mansionModerna #precioMiniFoto,
-  #cabañaHagrid #precioMiniFoto,
-  #barcaCapitan #precioMiniFoto, #castilloAriel #precioMiniFoto {
-    padding-top: 31.6px;
-  }
 
   .legoFooter {
     display: flex;

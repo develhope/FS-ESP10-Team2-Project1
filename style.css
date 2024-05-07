@@ -1018,8 +1018,10 @@ main {
   font-size: 12px;
   color: white;
   padding: 15px;
-  gap: 10px;
+  height: 195.2px;
+  justify-content: space-evenly;
 }
+
 
 #pieMiniFoto a {
   text-decoration: none;
@@ -1031,12 +1033,11 @@ main {
 }
 
 #añadirALaBolsa {
-  padding: 14px;
+  padding: 15px;
   background-color: rgb(252, 227, 0);
   border: 2px solid rgb(252, 227, 0);
   border-radius: 3px;
   font-family: "Cera Pro Medium";
-  font-weight: bold;
   font-size: 11px;
 }
 
@@ -1046,28 +1047,9 @@ main {
 
 }
 
-#patines #precioMiniFoto,
-#macetaIsabela #precioMiniFoto,
-#castilloAriel #precioMiniFoto,
-#mansionModerna #precioMiniFoto {
-  padding-top: 26px;
-}
-
-#martinPescador #precioMiniFoto,
-#narcisos #precioMiniFoto {
-  padding-top: 26px;
-}
-
-#hedwig #precioMiniFoto {
-  padding-top: 7.61px;
-}
-
-#cabañaHagrid #precioMiniFoto {
-  padding-top: 10.8px;
-}
-
-#barcaCapitan #precioMiniFoto{
-  padding-top: 26px;
+#patines,#macetaIsabela , #castilloAriel ,#mansionModerna, #martinPescador , #narcisos, #hedwig, #cabañaHagrid, #barcaCapitan, #gatoBuho, #safari {
+  width: 200px;
+  height: 410.8px;
 }
 
 .legoFooter {
