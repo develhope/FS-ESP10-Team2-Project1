@@ -783,13 +783,12 @@
     align-content: center;
     align-items: center;
     width: 80vw;
-    margin-left: 10vw;
   }
 
   #mundos {
     background-color: #f0f3f9;
     width: 80vw;
-    min-width: 80vw;
+    min-width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -823,6 +822,9 @@
   #navMundos360>p {
     font-size: 20px;
     margin-bottom: 1vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-align: center;
   }
 
   .buttonsContainer {
@@ -884,8 +886,11 @@
 
   .sinfin-botones360>h4 {
     font-family: "Cera Pro Regular";
+    text-align: center;
     font-size: 20px;
     margin-top: 2vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
 
   .sinfin-botones360>p {
@@ -893,7 +898,7 @@
     text-align: center;
     font-family: "Cera Pro Regular";
     font-size: 15px;
-    margin-top: 1vh;
+    margin: 2vh;
   }
 
   .ninia-btm>a>button {
@@ -1249,7 +1254,6 @@
     align-content: center;
     align-items: center;
     width: 80vw;
-    margin-left: 10vw;
   }
 
   #mundos {
@@ -1671,9 +1675,6 @@
     align-content: center;
     align-items: center;
     width: 80vw;
-    padding: 0vw;
-    margin: 10vw;
-
   }
 
   .legoFooter {

@@ -9,7 +9,7 @@
 
 /* body {} */
 
-/*? <main>*/
+/* <main>*/
 main {
   /* margin-bottom: 1.875rem; */
   /* margin: 0; */
@@ -881,11 +881,6 @@ main {
   src: url(assets/font/Cera-Pro/Cera\ Pro\ Thin.otf);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .MundosSets {
   display: flex;
   justify-content: center;
@@ -894,14 +889,12 @@ main {
   align-items: center;
   width: 80vw;
   padding: 10vw;
-  margin: 0vw;
-
 }
 
 #mundos {
   background-color: #f0f3f9;
-  width: 100vw;
-  min-width: 70vw;
+  width: 80vw;
+  min-width: 50vw;
 }
 
 #navMundos {
