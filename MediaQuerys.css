@@ -740,7 +740,7 @@
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767.5px) {
   @font-face {
     font-family: "Cera Pro Bold";
     src: url(assets/font/Cera-Pro/Cera\ Pro\ Bold.otf);
@@ -1110,7 +1110,7 @@
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     font-size: 12px;
-    padding: 1vw;
+    padding: 7.5px;
     border-style: none;
     font-family: 'Cera Pro Regular';
   }
@@ -1195,7 +1195,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199.5px) {
   .image-container {
     display: none;
   }
@@ -1565,7 +1565,7 @@
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     font-size: 12px;
-    padding: 1vw;
+    padding: 8.5px;
     border-style: none;
     display: flex;
     justify-content: left;
