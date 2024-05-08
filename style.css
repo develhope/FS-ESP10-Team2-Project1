@@ -1,8 +1,13 @@
 /*todo || GENERAL STYLES */
 
-html {}
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
-body {}
+/* html {} */
+
+/* body {} */
 
 /*? <main>*/
 main {
@@ -17,8 +22,9 @@ main {
   /* padding: 5vw; */
   /* Agrega una transición para suavizar el cambio de padding */
   /* padding: 0 0.3vw 0vw 0.3vw; */
-  padding-right: 5vw;
-  padding-left: 5vw;
+  padding-right: 0vw;
+  padding-left: 0vw;
+  width: auto;
   transition: padding 0.1s;
 }
 
@@ -37,6 +43,67 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+
+
+
+
+
+/* Estilos del botón de hamburguesa */
+.hamburger-icon {
+  background-color: white;
+  display: none;
+  margin: 0 10px 0 0;
+  border: 1px solid transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  padding-bottom: 0.5rem;
+  align-items: center;
+}
+
+/* Estilos del primer div dentro del botón */
+.hamburger-icon>div {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0px auto;
+  position: relative;
+}
+
+/* Estilos del segundo div dentro del primer div */
+.hamburger-icon>div>div::before {
+  transform: translateY(-200%);
+}
+
+/* Estilos de los pseudo elementos antes y después del segundo div */
+.hamburger-icon>div>div::before,
+.hamburger-icon>div>div::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  top: 50%;
+  transition: transform 0.3s ease 0s;
+}
+
+/* Estilos para el texto "Menú" dentro del botón */
+.hamburger-icon>span {
+  display: inline-block;
+  vertical-align: middle;
+  /* Espaciado opcional entre el icono y el texto */
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  width: 100%;
+  /* Asegura que el texto ocupe todo el ancho del botón */
+  font-family: Arial, sans-serif;
+  /* Establece la fuente como Arial */
+}
+
+
+
+
+
 
 /* Estilos del logo */
 .navbar-logo img {
@@ -828,7 +895,7 @@ main {
   width: 90vw;
   padding: 0vw;
   margin: 0vw;
-  
+
 }
 
 #mundos {
@@ -1000,7 +1067,7 @@ main {
 
 }
 
-#corazon >svg:hover {
+#corazon>svg:hover {
   background-color: #0000002d;
 }
 
@@ -1047,7 +1114,17 @@ main {
 
 }
 
-#patines,#macetaIsabela , #castilloAriel ,#mansionModerna, #martinPescador , #narcisos, #hedwig, #cabañaHagrid, #barcaCapitan, #gatoBuho, #safari {
+#patines,
+#macetaIsabela,
+#castilloAriel,
+#mansionModerna,
+#martinPescador,
+#narcisos,
+#hedwig,
+#cabañaHagrid,
+#barcaCapitan,
+#gatoBuho,
+#safari {
   width: 200px;
   height: 410.8px;
 }
@@ -1120,7 +1197,7 @@ main {
 #suscribeteSiguenos {
   display: flex;
   flex-direction: row;
- 
+
 }
 
 .suscribete {
@@ -1217,19 +1294,3 @@ main {
 
 
 /*todo#####-----> END SECCION: Mundos Cards y Footer <-----#####*/
-
-
-
-
-
-/*todo || RESPONSIVE START SECCION: NavBar-Banner y SubBaneer*/
-
-/* *** */
-
-/*todo || RESPONSIVE END SECCION: NavBar-Banner y SubBaneer*/
-
-/*todo || RESPONSIVE START SECCION: Mundos Cards y Footer*/
-
-
-
-/*todo || RESPONSIVE END SECCION: Mundos Cards y Footer*/
