@@ -892,8 +892,8 @@ main {
   justify-items: center;
   align-content: center;
   align-items: center;
-  width: 90vw;
-  padding: 0vw;
+  width: 80vw;
+  padding: 10vw;
   margin: 0vw;
 
 }
@@ -907,7 +907,7 @@ main {
 #navMundos {
   font-family: 'Cera Pro Bold';
   background-color: #300C54;
-  width: 100%;
+  width: 80vw;
   height: 90px;
   font-weight: bolder;
   justify-content: center;
@@ -934,16 +934,15 @@ main {
 
 #navMundos>a>button {
   font-family: 'Cera Pro Regular';
-  font-weight: 600;
   text-decoration: none;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  border: 2px rgba(255, 255, 255, 0.844) solid;
+  border: 3px rgba(255, 255, 255, 0.844) solid;
   border-radius: 35px;
   display: flex;
   margin: 1vw;
   font-size: 15px;
-  padding: 1.5vh 1.5vw;
+  padding: 0.7vh 1.7vw;
 }
 
 #navMundos>a>button:hover {
@@ -1028,8 +1027,8 @@ main {
 
 
 #setsConCreatividad {
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 6vw;
+  margin-right: 6vw;
   margin-top: 30px;
   font-family: 'Cera Pro Regular';
 }
@@ -1056,7 +1055,7 @@ main {
   display: flex;
   width: 200px;
   height: 150px;
-  margin-top: -10px;
+ 
 }
 
 #corazon>svg {
@@ -1081,8 +1080,8 @@ main {
   display: flex;
   flex-direction: column;
   background-color: #300C54;
-  font-family: "Cera Pro Medium";
-  font-size: 12px;
+  font-family: "Cera Pro Regular";
+  font-size: 17px;
   color: white;
   padding: 15px;
   height: 195.2px;
@@ -1100,12 +1099,12 @@ main {
 }
 
 .añadirALaBolsa {
-  padding: 15px;
+  padding: 12px;
   background-color: rgb(252, 227, 0);
   border: 2px solid rgb(252, 227, 0);
-  border-radius: 3px;
-  font-family: "Cera Pro Medium";
-  font-size: 11px;
+  border-radius: 6px;
+  font-family: "Cera Pro Regular";
+  font-size: 15px;
 }
 
 .añadirALaBolsa:hover {
@@ -1134,9 +1133,10 @@ main {
   flex-direction: column;
   background-color: rgb(32, 29, 72);
   color: white;
-  padding-top: 10vh;
+  padding-top: 5vh;
   font-family: "Cera Pro Regular";
-  width: 100vw;
+  width: 96vw;
+  padding-right: 4vw;
 }
 
 #location {
@@ -1229,7 +1229,7 @@ main {
 }
 
 #siguenos {
-  margin-left: 47vw;
+  margin-left: 40vw;
 
 }
 

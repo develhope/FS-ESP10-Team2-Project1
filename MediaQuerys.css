@@ -546,6 +546,9 @@
     border-radius: 3px;
     font-family: "Cera Pro Regular";
     font-size: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .añadirALaBolsa:hover {
@@ -779,13 +782,14 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    width: 50vw;
+    width: 80vw;
+    margin-left: 10vw;
   }
 
   #mundos {
     background-color: #f0f3f9;
-    width: 50vw;
-    min-width: 50vw;
+    width: 80vw;
+    min-width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -801,12 +805,12 @@
 
   .ninia-container {
     background-color: #feeaba33;
-    width: 50vw;
+    width: 80vw;
   }
 
   #navMundos360 {
-    width: 50vw;
-    height: 5vh;
+    width: 80vw;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     font-family: "Cera Pro Medium";
@@ -817,7 +821,8 @@
   }
 
   #navMundos360>p {
-    font-size: 9px;
+    font-size: 20px;
+    margin-bottom: 1vh;
   }
 
   .buttonsContainer {
@@ -832,14 +837,14 @@
 
   #productos,
   #acercaDe {
-    font-family: "Cera Pro Thin";
+    font-family: "Cera Pro Regular";
     background-color: transparent;
     color: rgb(255, 255, 255);
-    border: 0.2px rgba(255, 255, 255, 0.844) solid;
+    border: 2px rgba(255, 255, 255, 0.844) solid;
     border-radius: 35px;
     display: flex;
     margin: 0.5vw;
-    font-size: 5.8px;
+    font-size: 15px;
     padding: 0.1vh 1vw;
     margin-top: 0.8vh;
   }
@@ -861,7 +866,7 @@
   }
 
   .image-container360>a>img {
-    width: 50vw;
+    width: 80vw;
   }
 
   .sinfin-botones {
@@ -879,19 +884,23 @@
 
   .sinfin-botones360>h4 {
     font-family: "Cera Pro Regular";
-    font-size: 10px;
+    font-size: 20px;
+    margin-top: 2vh;
   }
 
   .sinfin-botones360>p {
     display: flex;
     text-align: center;
     font-family: "Cera Pro Regular";
-    font-size: 7px;
+    font-size: 15px;
+    margin-top: 1vh;
   }
 
   .ninia-btm>a>button {
     font-family: "Cera Pro Regular";
-    font-size: 7px;
+    font-size: 15px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     padding: 0.3vh 1.3vw;
   }
 
@@ -904,12 +913,12 @@
   }
 
   #setsConCreatividad {
-    width: 50vw;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 1.2vw;
+    margin-left: 1vw;
     margin-right: 2vh;
     margin-top: 3vh;
     font-family: "Cera Pro Regular";
@@ -917,14 +926,15 @@
 
   #setsConCreatividad>h2 {
     font-family: "Cera Pro Regular";
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2vh;
   }
 
   #setsConCreatividad>#cards {
-    width: 45vw;
+    width: 60vw;
     display: flex;
     flex-direction: row;
     overflow: scroll;
@@ -962,10 +972,10 @@
   #pieMiniFoto {
     display: flex;
     flex-direction: column;
-    height: 120px;
+    height: 170px;
     background-color: #300c54;
     font-family: "Cera Pro Regular";
-    font-size: 8px;
+    font-size: 15px;
     color: white;
     padding: 3vw;
     gap: 10px;
@@ -990,17 +1000,17 @@
   .añadirALaBolsa {
     padding: 0.8vw;
     background-color: rgb(252, 227, 0);
-    border: 1px solid rgb(252, 227, 0);
+    border: 2px solid rgb(252, 227, 0);
     border-radius: 3px;
     font-family: "Cera Pro Regular";
-    font-size: 7px;
+    font-size: 15px;
   }
 
   .añadirALaBolsa:hover {
     background-color: transparent;
     color: rgb(252, 227, 0);
-    font-family: "Cera Pro Thin";
-    font-size: 7px;
+    font-family: "Cera Pro Regular";
+    font-size: 15px;
   }
 
   .legoFooter {
@@ -1010,12 +1020,12 @@
     color: white;
     padding-top: 3vh;
     font-family: "Cera Pro Regular";
-    width: 55vw;
+    width: 100vw;
   }
 
   .legoLogo {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
 
   #location {
@@ -1044,13 +1054,13 @@
     display: flex;
     flex-direction: column;
     padding-left: 4vw;
-    font-size: 7px;
+    font-size: 12px;
   }
 
   .footer1 {
     display: flex;
     flex-direction: row;
-    padding-bottom: 1vh;
+    padding-bottom: 4vh;
     justify-content: left;
   }
 
@@ -1076,7 +1086,7 @@
   .footer2-360>#suscribeteSiguenos {
     display: flex;
     flex-direction: column;
-    font-size: 8px;
+    font-size: 12px;
     padding-top: 1vh;
     justify-content: left;
   }
@@ -1085,39 +1095,33 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding-left: 14px;
-    padding-bottom: 20px;
-    border-bottom: 1px white solid;
-  }
-
-  .footer2-360>#suscribeteSiguenos>.suscribete>.inputButton {
-    display: flex;
-    align-items: start;
-    margin-top: 2vh;
-    width: min-content;
-    justify-content: left;
+    padding-left: 4vw;
+    padding-bottom: 30px;
   }
 
   .footer2-360>#suscribeteSiguenos>.suscribete>.inputButton>.inputEmail {
-    width: 60px;
+    width: 200px;
     height: 10px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    font-size: 8px;
+    font-size: 12px;
     padding: 1vw;
     border-style: none;
-    display: flex;
-    justify-content: left;
+    font-family: 'Cera Pro Regular';
   }
 
   .footer2-360>#suscribeteSiguenos>.suscribete>.inputButton>#correo {
-    width: 15px;
-    height: 17.46px;
+    width: 30px;
+    height: 25px;
     background-color: rgb(255, 102, 0);
-    font-size: 7px;
+    font-size: 9px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border-style: none;
+  }
+
+  .quienes_atencion_atraccioones_masInfo>#quienesSomos{
+    border-top: 1px white solid;
   }
 
   .quienes_atencion_atraccioones_masInfo>#quienesSomos,
@@ -1127,9 +1131,9 @@
     display: flex;
     justify-content: left;
     align-items: flex-start;
-    padding-left: 14px;
-    padding-bottom: 7px;
-    margin: 0px;
+    padding-left: 4vw;
+    padding-bottom: 15px;
+    padding-top: 10px;
     border-bottom: 1px white solid;
     width: 100vw;
   }
@@ -1142,7 +1146,8 @@
   }
 
   .footer2-360>#suscribeteSiguenos>#siguenos {
-    margin: 14px;
+    margin-left: 4vw;
+    margin-top: 4vw;
   }
 
   .footer2-360>#suscribeteSiguenos>#siguenos>h4 {
@@ -1161,12 +1166,12 @@
   .footer3 {
     display: flex;
     flex-direction: row;
-    font-size: 5px;
+    font-size: 10px;
     flex-wrap: wrap;
     text-wrap: wrap;
-    padding-left: 14px;
-    padding-bottom: 2vh;
-    padding-right: 3vw;
+    padding-left: 4vw;
+    padding-bottom: 4vh;
+    padding-right: 4vw;
     text-align: justify;
   }
 
@@ -1243,13 +1248,14 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    width: 60vw;
+    width: 80vw;
+    margin-left: 10vw;
   }
 
   #mundos {
     background-color: #f0f3f9;
-    width: 60vw;
-    min-width: 60vw;
+    width: 80vw;
+    min-width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1265,12 +1271,12 @@
 
   .ninia-container {
     background-color: #feeaba33;
-    width: 60vw;
+    width: 80vw;
   }
 
   #navMundos360 {
-    width: 60vw;
-    height: 10vh;
+    width: 80vw;
+    height: 13vh;
     display: flex;
     flex-direction: column;
     font-family: "Cera Pro Medium";
@@ -1282,6 +1288,7 @@
 
   #navMundos360>p {
     font-size: 20px;
+    margin-top: 2vh;
   }
 
   .buttonsContainer {
@@ -1297,16 +1304,17 @@
 
   #productos,
   #acercaDe {
-    font-family: "Cera Pro Thin";
+    font-family: "Cera Pro Regular";
     background-color: transparent;
     color: rgb(255, 255, 255);
-    border: 3px rgba(255, 255, 255, 0.844) solid;
+    border: 2px rgba(255, 255, 255, 0.844) solid;
     border-radius: 35px;
     display: flex;
     margin: 0.5vw;
     font-size: 14px;
     padding: 0.5vh 5vw;
-    margin-top: 0.8vh;
+    margin-top: 0.3vh;
+    margin-bottom: 3vh;
   }
 
   #productos:hover,
@@ -1326,7 +1334,7 @@
   }
 
   .image-container360>a>img {
-    width: 60vw;
+    width: 80vw;
   }
 
   .sinfin-botones {
@@ -1434,12 +1442,6 @@
     justify-content: space-between;
   }
 
-  #pieMiniFoto > button{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-
   .añadirALaBolsa {
     padding: 0.8vw;
     background-color: rgb(252, 227, 0);
@@ -1465,7 +1467,7 @@
     color: white;
     padding-top: 3vh;
     font-family: "Cera Pro Regular";
-    width: 65vw;
+    width: 100vw;
   }
 
   .legoLogo {
@@ -1563,11 +1565,12 @@
     border-style: none;
     display: flex;
     justify-content: left;
+    font-family: 'Cera Pro Thin';
   }
 
   .footer2-360>#suscribeteSiguenos>.suscribete>.inputButton>#correo {
     width: 4vw;
-    height: 2.5vh;
+    height: 3.5vh;
     background-color: rgb(255, 102, 0);
     font-size: 12px;
     border-top-right-radius: 3px;
@@ -1587,7 +1590,7 @@
     margin: 0px;
     border-bottom: 1px white solid;
     width: 100vw;
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'Cera Pro Regular';
   }
 
@@ -1659,6 +1662,28 @@
 
   .footer2-360 {
     display: none;
+  }
+
+  .MundosSets {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    width: 80vw;
+    padding: 0vw;
+    margin: 10vw;
+
+  }
+
+  .legoFooter {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 29, 72);
+    color: white;
+    padding-top: 5vh;
+    font-family: "Cera Pro Regular";
+    width: 100vw;
   }
 }
 
