@@ -1086,7 +1086,7 @@ main {
   color: white;
   padding: 15px;
   height: 195.2px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 
@@ -1099,7 +1099,7 @@ main {
   text-decoration: underline;
 }
 
-#añadirALaBolsa {
+.añadirALaBolsa {
   padding: 15px;
   background-color: rgb(252, 227, 0);
   border: 2px solid rgb(252, 227, 0);
@@ -1108,7 +1108,7 @@ main {
   font-size: 11px;
 }
 
-#añadirALaBolsa:hover {
+.añadirALaBolsa:hover {
   background-color: transparent;
   color: rgb(252, 227, 0);
 

@@ -355,6 +355,7 @@
   .ninia-container {
     background-color: #feeaba33;
     width: 50vw;
+    
   }
 
   #navMundos360 {
@@ -518,9 +519,9 @@
     font-size: 8px;
     color: white;
     padding: 3vw;
-    gap: 10px;
-    height: 195.2px;
-    justify-content: space-evenly;
+    height: 120px;
+    justify-content: space-between;
+    padding-bottom: 2vh;
   }
 
   #patines,
@@ -538,7 +539,7 @@
     height: 410.8px;
   }
 
-  #añadirALaBolsa {
+  .añadirALaBolsa {
     padding: 0.8vw;
     background-color: rgb(252, 227, 0);
     border: 1px solid rgb(252, 227, 0);
@@ -547,7 +548,7 @@
     font-size: 7px;
   }
 
-  #añadirALaBolsa:hover {
+  .añadirALaBolsa:hover {
     background-color: transparent;
     color: rgb(252, 227, 0);
     font-family: "Cera Pro Thin";
@@ -898,7 +899,8 @@
     background-color: white;
     color: black;
     border: 0px;
-    padding: 1.2vw;
+    padding: 0.3vh 1.3vw;
+
   }
 
   #setsConCreatividad {
@@ -960,12 +962,14 @@
   #pieMiniFoto {
     display: flex;
     flex-direction: column;
+    height: 120px;
     background-color: #300c54;
     font-family: "Cera Pro Regular";
     font-size: 8px;
     color: white;
     padding: 3vw;
     gap: 10px;
+    justify-content: space-between;
   }
 
   #patines,
@@ -983,7 +987,7 @@
     height: 410.8px;
   }
 
-  #añadirALaBolsa {
+  .añadirALaBolsa {
     padding: 0.8vw;
     background-color: rgb(252, 227, 0);
     border: 1px solid rgb(252, 227, 0);
@@ -992,7 +996,7 @@
     font-size: 7px;
   }
 
-  #añadirALaBolsa:hover {
+  .añadirALaBolsa:hover {
     background-color: transparent;
     color: rgb(252, 227, 0);
     font-family: "Cera Pro Thin";
@@ -1363,7 +1367,8 @@
     background-color: white;
     color: black;
     border: 0px;
-    padding: 1.2vw;
+    font-size: 17px;
+    padding: 1vh 2.3vw;
   }
 
   #setsConCreatividad {
@@ -1426,29 +1431,30 @@
     font-size: 15px;
     color: white;
     padding: 3vw;
-    gap: 10px;
+    justify-content: space-between;
   }
 
-  #pieMiniFoto>button {
+  #pieMiniFoto > button{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
   }
 
-  #añadirALaBolsa {
+  .añadirALaBolsa {
     padding: 0.8vw;
     background-color: rgb(252, 227, 0);
-    border: 1px solid rgb(252, 227, 0);
-    border-radius: 3px;
+    border: 2px solid rgb(252, 227, 0);
+    border-radius: 4px;
     font-family: "Cera Pro Regular";
     font-size: 15px;
   }
 
-  #añadirALaBolsa:hover {
+  .añadirALaBolsa:hover {
     background-color: transparent;
     color: rgb(252, 227, 0);
-    font-family: "Cera Pro Thin";
-    font-size: 20px;
+    font-family: "Cera Pro Regular";
+    font-size: 15px;
+    
   }
 
 
