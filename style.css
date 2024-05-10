@@ -207,20 +207,21 @@ main {
   height: 100vh;
   background-color: #fff;
   z-index: 999;
-  padding: 20px;
+  padding-top: 60px;
   box-sizing: border-box;
   overflow-y: auto;
   transition: left 0.3s ease;
   display: flex;
   flex-direction: column;
-  font-family: 'Cera Pro Regular';
-  
-  left: 0;
+  font-family: 'Cera Pro Thin';
 }
 
 .navbar-ventanaEmergente-navbar > img{
   width: 60px;
   height: 60px;
+  display: flex;
+  justify-content: left;
+  padding-right: 2vw;
 }
 
 .navbar-ventanaEmergente-botonCerrar {
@@ -233,13 +234,15 @@ main {
   text-decoration: none;
   border: none;
   background-color: transparent;
-  font-family: 'Cera Pro Regular';
+  font-family: 'Cera Pro Thin';
 }
 
 .navbar-ventanaEmergente-navbar{
+  position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left:5vw;
 }
 
 .navbar-ventanaEmergente-opciones{
@@ -247,7 +250,7 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 2vw;
 }
 
 .navbar-ventanaEmergente-opciones button{
@@ -261,9 +264,10 @@ main {
 .navbar-ventanaEmergente-contenido_opciones{
   display: flex;
   flex-direction: column;
-  padding-left: 10.5vh;
+  padding-left: 11vw;
+  padding-top: 10vh;
+  justify-content: space-between;
 }
-
 
 .navbar-ventanaEmergente-opciones li{
   list-style: none;
@@ -273,7 +277,7 @@ main {
   text-decoration: none;
   background-color: transparent;
   border: none;
-  font-family: 'Cera Pro Regular';
+  font-family: 'Cera Pro Thin';
   font-size: 15px;
 }
 
