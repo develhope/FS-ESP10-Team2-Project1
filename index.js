@@ -1,34 +1,8 @@
 function plantilla() {
-  var ventanaEmergente = document.getElementById("ventanaEmergente");
+  var ventanaEmergente = document.getElementById("navbar-ventanaEmergente");
   var fondoNegro = document.getElementById("fondoNegro");
 
-  if (!ventanaEmergente) {
-    ventanaEmergente = document.createElement("div");
-    ventanaEmergente.id = "ventanaEmergente";
-    ventanaEmergente.innerHTML = "Contenido de la ventana emergente";
-    ventanaEmergente.style.position = "fixed";
-    ventanaEmergente.style.left = "-50%"; // Inicialmente fuera de la pantalla
-    ventanaEmergente.style.top = "0";
-    ventanaEmergente.style.width = "50%";
-    ventanaEmergente.style.height = "100vh";
-    ventanaEmergente.style.backgroundColor = "#fff";
-    ventanaEmergente.style.zIndex = "999";
-    ventanaEmergente.style.padding = "20px";
-    ventanaEmergente.style.boxSizing = "border-box";
-    ventanaEmergente.style.overflowY = "auto";
-    ventanaEmergente.style.transition = "left 0.3s ease"; // Transición de izquierda a derecha
-
-    // Agregar el botón de cerrar (x)
-    var botonCerrar = document.createElement("span");
-    botonCerrar.textContent = "x";
-    botonCerrar.style.position = "absolute";
-    botonCerrar.style.top = "10px";
-    botonCerrar.style.right = "10px";
-    botonCerrar.style.color = "#000";
-    botonCerrar.style.cursor = "pointer";
-    botonCerrar.addEventListener("click", cerrarVentana);
-    ventanaEmergente.appendChild(botonCerrar);
-
+  if (!fondoNegro) {
     fondoNegro = document.createElement("div");
     fondoNegro.id = "fondoNegro";
     fondoNegro.style.position = "fixed";
@@ -52,7 +26,7 @@ function plantilla() {
 }
 
 function cerrarVentana() {
-  var ventanaEmergente = document.getElementById("ventanaEmergente");
+  var ventanaEmergente = document.getElementById("navbar-ventanaEmergente");
   var fondoNegro = document.getElementById("fondoNegro");
 
   if (ventanaEmergente && fondoNegro) {
@@ -60,7 +34,6 @@ function cerrarVentana() {
     fondoNegro.style.opacity = "0"; // Ocultar el fondo negro
 
     setTimeout(function () {
-      ventanaEmergente.remove();
       fondoNegro.remove();
     }, 300);
   }

@@ -44,10 +44,6 @@ main {
   align-items: center;
 }
 
-
-
-
-
 /* Estilos del botón de hamburguesa */
 .hamburger-icon {
   background-color: white;
@@ -99,11 +95,6 @@ main {
   font-family: Arial, sans-serif;
   /* Establece la fuente como Arial */
 }
-
-
-
-
-
 
 /* Estilos del logo */
 .navbar-logo img {
