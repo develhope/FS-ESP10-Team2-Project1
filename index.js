@@ -6,10 +6,10 @@ function plantilla() {
     fondoNegro = document.createElement("div");
     fondoNegro.id = "fondoNegro";
     fondoNegro.style.position = "fixed";
-    fondoNegro.style.left = "50%";
     fondoNegro.style.top = "0";
-    fondoNegro.style.width = "50%";
-    fondoNegro.style.height = "100vh";
+    fondoNegro.style.right = "0";
+    fondoNegro.style.bottom = "0";
+    fondoNegro.style.left = "0";
     fondoNegro.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     fondoNegro.style.zIndex = "998";
     fondoNegro.style.transition = "opacity 0.3s ease"; // Transición de opacidad
