@@ -127,9 +127,15 @@
   }
 }
 
+/* NavBar change */
 @media screen and (max-width: 901px) {
   .navbar {
     background-color: white;
+    justify-content: left;
+  }
+
+  .navbar-logo img {
+    height: 40px;
   }
 
   .hamburger-icon {
@@ -355,7 +361,7 @@
   .ninia-container {
     background-color: #feeaba33;
     width: 50vw;
-    
+
   }
 
   #navMundos360 {
@@ -1125,7 +1131,7 @@
     border-style: none;
   }
 
-  .quienes_atencion_atraccioones_masInfo>#quienesSomos{
+  .quienes_atencion_atraccioones_masInfo>#quienesSomos {
     border-top: 1px white solid;
   }
 
@@ -1460,7 +1466,7 @@
     color: rgb(252, 227, 0);
     font-family: "Cera Pro Regular";
     font-size: 15px;
-    
+
   }
 
 
