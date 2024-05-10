@@ -215,7 +215,7 @@ main {
   flex-direction: column;
   font-family: 'Cera Pro Regular';
   
-  left: 0;
+  /* left: 0; */
 }
 
 .navbar-ventanaEmergente-navbar > img{
