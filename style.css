@@ -220,6 +220,8 @@ main {
   box-sizing: border-box;
   overflow-y: auto;
   transition: left 0.3s ease;
+
+  left: 0;
 }
 
 .navbar-botonCerrar {
@@ -239,6 +241,8 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 998;
   transition: opacity 0.3s ease;
+
+  opacity: 1;
 }
 
 
