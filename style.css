@@ -213,11 +213,12 @@ main {
   transition: left 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  font-family: 'Cera Pro Regular';
+  
   left: 0;
 }
 
-.navbar-ventanaEmergente > img{
+.navbar-ventanaEmergente-navbar > img{
   width: 60px;
   height: 60px;
 }
@@ -232,23 +233,37 @@ main {
   text-decoration: none;
   border: none;
   background-color: transparent;
+  font-family: 'Cera Pro Regular';
 }
 
 .navbar-ventanaEmergente-navbar{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar-ventanaEmergente-opciones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-ventanaEmergente-opciones button{
+  background-color: transparent;
+  border: none;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2.5px;
+  font-weight: bold;
 }
 
 .navbar-ventanaEmergente-contenido_opciones{
   display: flex;
   flex-direction: column;
+  padding-left: 10.5vh;
+}
 
-}
-.navbar-ventanaEmergente-opciones button{
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
-}
 
 .navbar-ventanaEmergente-opciones li{
   list-style: none;
@@ -258,6 +273,8 @@ main {
   text-decoration: none;
   background-color: transparent;
   border: none;
+  font-family: 'Cera Pro Regular';
+  font-size: 15px;
 }
 
 .navbar-ventanaEmergente-contenido_opciones li{
