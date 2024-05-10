@@ -55,6 +55,7 @@ main {
   flex: 0 0 auto;
   padding-bottom: 0.5rem;
   align-items: center;
+  cursor: pointer;
 }
 
 /* Estilos del primer div dentro del botón */
@@ -216,7 +217,7 @@ main {
   font-family: 'Cera Pro Thin';
 }
 
-.navbar-ventanaEmergente-navbar > img{
+.navbar-ventanaEmergente-navbar>img {
   width: 60px;
   height: 60px;
   display: flex;
@@ -237,15 +238,15 @@ main {
   font-family: 'Cera Pro Thin';
 }
 
-.navbar-ventanaEmergente-navbar{
+.navbar-ventanaEmergente-navbar {
   position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left:5vw;
+  margin-left: 5vw;
 }
 
-.navbar-ventanaEmergente-opciones{
+.navbar-ventanaEmergente-opciones {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -253,7 +254,7 @@ main {
   gap: 2vw;
 }
 
-.navbar-ventanaEmergente-opciones button{
+.navbar-ventanaEmergente-opciones button {
   background-color: transparent;
   border: none;
   text-decoration-line: underline;
@@ -261,7 +262,7 @@ main {
   font-weight: bold;
 }
 
-.navbar-ventanaEmergente-contenido_opciones{
+.navbar-ventanaEmergente-contenido_opciones {
   display: flex;
   flex-direction: column;
   padding-left: 11vw;
@@ -269,11 +270,11 @@ main {
   justify-content: space-between;
 }
 
-.navbar-ventanaEmergente-opciones li{
+.navbar-ventanaEmergente-opciones li {
   list-style: none;
 }
 
-.navbar-ventanaEmergente-contenido_opciones button{
+.navbar-ventanaEmergente-contenido_opciones button {
   text-decoration: none;
   background-color: transparent;
   border: none;
@@ -281,7 +282,7 @@ main {
   font-size: 15px;
 }
 
-.navbar-ventanaEmergente-contenido_opciones li{
+.navbar-ventanaEmergente-contenido_opciones li {
   list-style: none;
 }
 
