@@ -65,11 +65,14 @@
 
   /* Pff no se si dejar (display: none;) o quitarlo, me gusta ambas opciones */
   .banner-background-image {
-    display: none;
+    /* display: none; */
   }
 
   .banner-div {
+    /* width: 100%; */
     padding: 1.5rem 1.9rem;
+    /* padding: 0; */
+    /* margin: 0; */
     color: red !important;
   }
 
@@ -96,10 +99,6 @@
     background: transparent;
     background-color: transparent;
     text-align: left;
-    /* left: 3.75rem; */
-    /* top: 36%; */
-    /* transform: translateY(-50%); */
-    /* transform: translateY(-114%); */
     transform: translateY(-10%);
     margin-top: -195px;
     color: yellow !important;
@@ -122,7 +121,7 @@
   }
 
   .subBanner a img {
-    max-width: 90px;
+    max-width: 80px;
     margin: 5px 5px 3px 5px;
   }
 }
@@ -155,8 +154,6 @@
 /** min-width -> (screen > px) */
 @media screen and (min-width: 1200px) {
   .banner-div {
-    /* max-width: 37%; */
-    /* transform: translateY(-114%); */
     transform: translateY(-15%);
     margin-top: -210px;
     color: green !important;
@@ -178,7 +175,7 @@
     /* transform: translateY(-121%); */
     transform: translateY(-30%);
     margin-top: -270px;
-    color: blue !important;
+    /* color: blue !important; */
   }
 
   .banner-div-img1 {
