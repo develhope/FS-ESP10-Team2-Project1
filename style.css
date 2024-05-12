@@ -721,31 +721,8 @@ main {
     box-sizing: border-box;
     font-family:'Times New Roman', Times, serif;
     font-size: 12px;
-    letter-spacing: 0.2px;
-    
+    letter-spacing: 0.2px;   
   }
-  
-
-.section1-last-three-sections {
-
-    display: flex;
-    overflow: scroll;
-    scrollbar-color: #1d233da5 #262f492b;
-    position: relative;
-    scroll-snap-type: mandatory;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width:thin;
-  }
-
-    .section2-last-three-sections {
-      display: flex;
-      overflow: scroll;
-      scrollbar-width: thin;
-      scrollbar-color: #1d233da5 #262f492b;
-      position: relative;
-      overflow-x: auto;
-      overflow-y: hidden;}
 
   .three-cards-last-three-sections {
     box-sizing: border-box;
@@ -753,7 +730,6 @@ main {
     flex-direction: row;
     position: relative;
     scrollbar-width: thin;
-
   }
   
   .containers3-last-three-sections {
@@ -768,8 +744,6 @@ main {
   
   }
 
-  
-
   .section1-last-three-sections {
     margin: 10vh;
     box-sizing: border-box;
@@ -778,20 +752,29 @@ main {
     justify-content: center;
     margin-top: 3vw;
     margin-bottom: 3vw;
+    overflow: scroll;
+    scrollbar-color: #1d233da5 #262f492b;
+    scroll-snap-type: mandatory;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width:thin;
   
   }
   
   .section2-last-three-sections {
     margin: 10vh;
     box-sizing: border-box;
-    display: inline-block;
     position: relative;
     justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
+    display:inline-block;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #1d233da5 #262f492b;
+    overflow-x: auto;
+    overflow-y: hidden;}
   
-  
-  }
   
   .div-containers-last-three-sections {
     width: 65rem;
@@ -833,11 +816,7 @@ main {
     flex: 1 1 0;
     position: relative;
     justify-content: center;
-
     justify-content: flex-start;
-  
-  
-  
   }
   
   .container2-last-three-sections {
@@ -849,12 +828,7 @@ main {
     text-align: justify;
     position: relative;
     justify-content: flex-start;
-  
-  
-  
-  
   }
-  
   
   .img-logo-last-three-sections {
     position: relative;
