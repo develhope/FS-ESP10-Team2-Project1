@@ -63,9 +63,12 @@
 /** min-width and max-width -> (screen > px) && (screen < px) */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
 
-  /* No se si dejar (display: none;) o quitarlo, me gustan ambas opciones */
-  .banner-div-backgroundImage>img {
+  .banner-div-backgroundImage img[id="1"] {
     display: none;
+  }
+
+  .banner-div-backgroundImage img[id="2"] {
+    display: flex;
   }
 
   .banner-div-content {
@@ -85,6 +88,10 @@
 
 /** min-width -> (screen > px) */
 @media screen and (min-width: 769px) {
+
+  .banner-div-backgroundImage img[id="2"] {
+    display: none;
+  }
 
   /** Estilos del contenido del banner */
   .banner-div-content {

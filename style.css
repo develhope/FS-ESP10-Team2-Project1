@@ -330,9 +330,18 @@ main {
   /*? Opc 2 */
   /* background: rgb(28, 28, 28);
   background: linear-gradient(180deg, rgba(28, 28, 28, 1) 0%, rgba(46, 44, 42, 1) 100%); */
-  /*? Opc3  */
-  background: rgb(22, 22, 22);
-  background: linear-gradient(25deg, rgba(22, 22, 22, 1) 54%, rgba(46, 44, 42, 1) 95%);
+  /*? Opc 2.1 */
+  /* background: rgb(22, 22, 22);
+  background: linear-gradient(25deg, rgba(22, 22, 22, 1) 54%, rgba(46, 44, 42, 1) 95%); */
+  /*? Opc 3 */
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 84%, rgba(16, 16, 16, 0.9812561755335085) 100%); */
+  /*? Opc 3.1 */
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 84%, rgba(23, 15, 8, 1) 100%); */
+  /*? Opc 3.2 */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(2deg, rgba(0, 0, 0, 1) 81%, rgba(23, 15, 8, 1) 100%);
 }
 
 .banner-div-img1 {
