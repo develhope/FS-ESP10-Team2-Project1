@@ -433,7 +433,7 @@ main {
   padding: 0px;
   text-align: center;
   flex-grow: 1;
-  background-color: yellowgreen !important;
+  /* background-color: yellowgreen !important; */
 }
 
 /* Estilos de las imágenes en la lista */
