@@ -715,260 +715,290 @@ main {
 /*todo#####-----> END SECCION: Sets Selecciones y Compras <-----#####*/
 
 /*todo#####-----> START SECCION: Three Sections <-----#####*/
-
-/*! PULSA (Alt + Z) para leer mejor */
-/*? El (margin: 0) y el (padding: 0) no es necesario incluirlos aquí, ya que están implementados en la sección de estilos generales para el html y body. Implementa las demás propiedades en el contenedor principal de tus secciones para evitar conflictos con el código de otras partes de tus compañeros. */
-/* body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  font-size: 10px;
-} */
-
-.three-cards-last-three-sections {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.containers3 {
-  justify-content: center;
-  display: flex;
-
-}
-
-.containers4 {
-  justify-content: center;
-  display: flex;
-
-}
-
+ .inner-container-last-three-sections{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    
+  }
+  
 
 .section1-last-three-sections {
-  margin: 10vh;
-  box-sizing: border-box;
-  display: inline-block;
-  position: relative;
-  justify-content: center;
 
+    display: flex;
+    overflow: scroll;
+    scrollbar-color: #1d233da5 #262f492b;
+    position: relative;
+    scroll-snap-type: mandatory;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width:thin;
+  }
 
-}
+    .section2-last-three-sections {
+      display: flex;
+      overflow: scroll;
+      scrollbar-width: thin;
+      scrollbar-color: #1d233da5 #262f492b;
+      position: relative;
+      overflow-x: auto;
+      overflow-y: hidden;}
 
-.section2-last-three-sections {
-  margin: 10vh;
-  box-sizing: border-box;
-  display: inline-block;
-  position: relative;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  .three-cards-last-three-sections {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    scrollbar-width: thin;
 
+  }
+  
+  .containers3-last-three-sections {
+    justify-content: center;
+    display: flex;
+  
+  }
+  
+  .containers4-last-three-sections {
+    justify-content: center;
+    display: flex;
+  
+  }
 
-}
+  
 
-.div-containers {
-  width: 80rem;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: center;
-  align-content: center;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  gap: 15px;
+  .section1-last-three-sections {
+    margin: 10vh;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  
+  }
+  
+  .section2-last-three-sections {
+    margin: 10vh;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+  
+  }
+  
+  .div-containers-last-three-sections {
+    width: 65rem;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+    margin: 1vw 0 0 0;
+  
+  }
+  
+  .div-containers2-last-three-sections {
+    width: 65rem;   
+    max-width: 80rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    margin: 1vw 0 0 0;
+    padding: 0;
+    gap: 15px;
+    text-align: justify;
+  
+  }
+  
+  .container1-last-three-sections {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 1 1 0;
+    position: relative;
+    justify-content: center;
 
-}
+    justify-content: flex-start;
+  
+  
+  
+  }
+  
+  .container2-last-three-sections {
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 1 1 0;
+    text-align: justify;
+    position: relative;
+    justify-content: flex-start;
+  
+  
+  
+  
+  }
+  
+  
+  .img-logo-last-three-sections {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    flex: 1 1 0;
+  }
+  
+  .logo-last-three-sections {
+    position: absolute;
+    flex: 1 1;
+    width: 30%;
+    right: 2%;
+    bottom: 4%;
+  
+  
+  }
+  
+  .text-last-three-sections {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    gap:1vw;
+    margin-top: 1vw;
+  }
+  
+  .h1-last-three-sections {
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: 1.2px;
+  
+  }
+  
+  .h2-last-three-sections {
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: 1.2px;
+  }
+  
+  #shoping1-last-three-sections:hover {
+    text-decoration: underline;
+  
+  }
+  
+  .text1-last-three-sections {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.9375rem;
 
-.div-containers2 {
-  width: 80rem;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: center;
-  align-content: center;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  gap: 15px;
-  text-align: justify;
+  
+  }
+  
+  .text2-last-three-sections {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  
+  }
+  
+  #shoping1-last-three-sections {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: inherit;
+    line-height: 2rem;
+  
+  }
+  
+  .span-last-three-sections {
+    display: block;
+    text-align: justify;
+    text-align: center;
+    justify-content: center;
+  
+  }
+  
 
-}
+  .img2-last-three-sections {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    flex: 1 1 0
+  }
+  
+  .a1-last-three-sections {
+    text-decoration: none;
+    color: black;
+  
+  }
+  
+  .a2-last-three-sections {
+    text-decoration: none;
+    color: black;
+  
+  }
+  
+  .the-last-body-section {
+    border: 2px solid palevioletred
+  }
+  
+  .aside-last-three-sections {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 1.25rem;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    justify-content: center;
+    color: #2c2c2c;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: justify;
+  }
+  
+  .aside-text-last-three-sections {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    --header-height: 8.125rem;
+    max-width: 100rem;
+    line-height: 1.5;
+    border: 2px solid transparent;
+    background-color: #fff
+  }
+  
+  .aside-text-last-three-sections p {
+    text-align: left;
+    --header-height: 8.125rem;
+    font-size: 0.875rem;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: 0;
+  }
+  
 
-.container1 {
-  width: 20rem;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  flex: 1 1 0;
-  position: relative;
-  justify-content: center;
-
-
-
-}
-
-.container2 {
-  width: 17rem;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  flex: 1 1 0;
-  text-align: justify;
-  position: relative;
-  justify-content: flex-start;
-
-
-
-
-}
-
-
-.img-logo {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  justify-content: center;
-  flex: 1 1 0
-}
-
-.logo-last-three-sections {
-  position: absolute;
-  flex: 1 1;
-  width: 30%;
-  right: 2%;
-  bottom: 15%;
-
-
-}
-
-.text-last-three-sections {
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-}
-
-.h1-last-three-sections {
-  font-size: 1.8rem;
-  font-weight: 200;
-  letter-spacing: 1.2px;
-
-}
-
-.h2-last-three-sections {
-  font-size: 1.8rem;
-  font-weight: 200;
-  letter-spacing: 1.2px;
-}
-
-#shoping1-last-three-sections:hover {
-  text-decoration: underline;
-
-}
-
-.text1-last-three-sections {
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.9375rem;
-
-}
-
-.text2-last-three-sections {
-  font-size: 1rem;
-  line-height: 1.1875rem;
-
-}
-
-#shoping1-last-three-sections {
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: inherit;
-  line-height: 2rem;
-
-}
-
-.span-last-three-sections {
-  display: flex;
-  text-align: justify;
-  text-align: center;
-  justify-content: center;
-
-
-}
-
-.scroll-div-last-three-sections {
-  overflow: auto;
-}
-
-
-.img2-last-three-sections {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  justify-content: center;
-  flex: 1 1 0
-}
-
-.a1-last-three-sections {
-  text-decoration: none;
-  color: black;
-
-}
-
-.a2-last-three-sections {
-  text-decoration: none;
-  color: black;
-
-}
-
-.the-last-body-section {
-  border: 2px solid palevioletred
-}
-
-.aside-last-three-sections {
-  width: 100%;
-  height: 100%;
-  padding: 2.5rem 1.25rem;
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  justify-content: center;
-  color: #2c2c2c;
-  overflow-wrap: break-word;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  flex-wrap: wrap;
-  gap: 1rem;
-  text-align: justify;
-}
-
-.aside-text {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  text-align: justify;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  --header-height: 8.125rem;
-  max-width: 100rem;
-  line-height: 1.5;
-  border: 2px solid transparent;
-  background-color: #fff
-}
-
-aside p {
-  text-align: left;
-  --header-height: 8.125rem;
-  font-size: 0.875rem;
-  -webkit-text-size-adjust: 100%;
-  letter-spacing: 0;
-}
 
 /*todo#####-----> END SECCION: Three Sections <-----#####*/
 
