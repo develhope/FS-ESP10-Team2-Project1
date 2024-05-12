@@ -136,7 +136,7 @@
   }
 }
 
-/* NavBar change */
+/* NavBar change short */
 @media screen and (max-width: 901px) {
   .navbar {
     background-color: white;
@@ -147,15 +147,21 @@
     height: 40px;
   }
 
-  .hamburger-icon {
+  .navbar-short-hamburger-icon {
     display: block;
   }
 
-  .navbar-div-links {
-    display: none;
+  .navbar-div-buttons {
+    /*!#error: No entiendo porque el (margin: 0) no funciona como esperaba */
+    /* margin: 0; */
+    padding: 0;
   }
 
-  .navbar-div-buttons {
+  .navbar-btn-login {
+    display: flex !important;
+  }
+
+  .navbar-div-links {
     display: none;
   }
 
