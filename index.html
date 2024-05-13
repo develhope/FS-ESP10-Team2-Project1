@@ -14,48 +14,118 @@
 
 
 <body>
-    <!--todo#####-----> * START SECCION: NavBar-Banner y SubBaneer --->
+    <!--todo#####----- * START SECCION: NavBar-Banner y SubBaneer --->
+
+    <!--*** PreNavbar -->
+    <div class="preNavbar">
+
+        <div class="preNavbar-div-playArea">
+            <a href="#" class="dnUvCH eYcOQt">
+                <svg width="37" height="16" viewBox="0 0 37 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    class="SkYtC fZmJyP">
+                    <path fill="currentColor"
+                        d="M29.493.597l.095.084 6.535 6.54a1 1 0 01.083 1.319l-.083.094-6.535 6.54a1 1 0 01-1.498-1.32l.083-.094 4.83-4.834-31.908.001A1 1 0 01.98 6.934l.116-.007h31.907l-4.83-4.833a1 1 0 01-.082-1.32l.083-.094a1 1 0 011.32-.083z">
+                    </path>
+                </svg>
+                Zona de juegos
+            </a>
+        </div>
+
+        <div class="preNavbar-div-phrase">
+            <div class="hnQEGM">
+                <div class="dAZEkP">
+                    <p class="cnbbhr fVnnND">
+                        <span>
+                            ¡ENVÍO GRATUITO para los pedidos superiores a 55€!*
+                        </span>
+                        <a class="jtbspI" href="#">
+                            <span>
+                                Saber más
+                            </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="preNavbar-div-login">
+            <a class="kcJaTg navbar-btn-trans" href="#">
+                <svg width="20" height="22" viewBox="0 0 20 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    class="cnHyRF KHcEY">
+                    <g transform="translate(1 1)" fill-rule="nonzero" fill="none">
+                        <rect stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00" x="4.875" width="8.25" height="6.038"
+                            rx=".729">
+                        </rect>
+                        <rect stroke="#2C2C2C" stroke-width="1.2" fill="#FFCF00" x="3.75" y="14.34" width="10.5"
+                            height="5.66" rx=".729"></rect>
+                        <path
+                            d="M14.25 17.736H3.75C0 17.736 0 14.717 0 14.717v-8.68S0 3.02 3.75 3.02h10.5C18 3.019 18 6.038 18 6.038v8.679s0 3.019-3.75 3.019z"
+                            stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00">
+                        </path>
+                        <path
+                            d="M7.125 8.868a.94.94 0 00-.938-.943.94.94 0 00-.937.943c0 .52.42.943.938.943a.94.94 0 00.937-.943zm4.688-.943a.94.94 0 00-.938.943c0 .52.42.943.938.943a.94.94 0 00.937-.943.94.94 0 00-.938-.943zm.293 3.86a.452.452 0 00-.649.21c-.005.008-.461.84-2.463.84-1.953 0-2.437-.793-2.462-.84a.446.446 0 00-.638-.234.618.618 0 00-.215.761c.063.147.69 1.446 3.315 1.446s3.25-1.299 3.313-1.446a.609.609 0 00-.201-.738z"
+                            fill="#2C2C2C">
+                        </path>
+                    </g>
+                </svg>
+                <span>
+                    Iniciar sesión
+                </span>
+            </a>
+            <span class="bhhMqN">
+            </span>
+            <a class="friqQc ekjxSz" href="#">
+                <img src="assets/navBar-banner-subBanner/images/preNavBar/face0.svg" class="eRowKb">
+                <span>
+                    Únete a LEGO® Insiders
+                </span>
+            </a>
+        </div>
+
+        <button aria-label="Close" class="preNavbar-buttom-close navbar-btn-trans" onclick="closePreNavbar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true"
+                class="dHKzVM">
+                <path
+                    d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
+                    fill="currentColor" fill-rule="evenodd">
+                </path>
+            </svg>
+        </button>
+
+    </div>
 
     <!--*** Navbar -->
     <nav class="navbar">
 
-
-        <!-- Icono de hamburguesa para dispositivos móviles -->
-        <!-- <div class="hamburger-icon">&#9776;</div> -->
-
-
-
-
-        <button class="hamburger-icon" aria-label="Menú" onclick="plantilla()" style="cursor: pointer;">
+        <!--** Menu hamburgesa de la barra de navegación -->
+        <button class="navbar-short-hamburger-icon" aria-label="Menú" onclick="mainMenu(1)">
             <div>
                 <div></div>
             </div>
             <span>Menú</span>
         </button>
 
-
-
-
         <!--** Logo de la barra de navegación -->
         <div class="navbar-logo">
             <!-- Enlace al inicio con el logo -->
             <a href="#"><img src="assets/navBar-banner-subBanner/images/navBar/logoLego.svg" alt="Logo"></a>
         </div>
+
         <!--** Lista de enlaces de la barra de navegación -->
         <div class="navbar-div-links">
             <ul class="navbar-links">
                 <!--* Enlaces de la barra de navegación -->
-                <li><a href="#" id="comprar" class="active" onclick="plantilla()">COMPRAR</a></li>
-                <li><a href="#" id="descubrir" class="active" onclick="plantilla()">DESCUBRIR</a></li>
-                <li><a href="#" id="ayuda" class="active" onclick="plantilla()">AYUDA</a></li>
+                <li><a href="#" onclick="mainMenu('buy')">COMPRAR</a></li>
+                <li><a href="#" onclick="mainMenu('discover')">DESCUBRIR</a></li>
+                <li><a href="#" onclick="mainMenu('help')">AYUDA</a></li>
             </ul>
         </div>
 
         <!--** Botones de la barra de navegación -->
         <div class="navbar-div-buttons">
-            <button class="btn-circle btn-search" aria-label="Buscar" href="#">
+            <button class="navbar-btn-circle navbar-btn-search" aria-label="Buscar" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"
-                    class="Icon__StyledSVG-lm07h6-0 dHKzVM">
+                    class="Icon__StyledSVG-lm07h6-0 navbar-btn">
                     <path
                         d="M18 16.615c0 .375-.137.7-.412.973a1.331 1.331 0 01-.973.412 1.28 1.28 0 01-.973-.412l-3.71-3.7a7.41 7.41 0 01-4.317 1.342c-1.03 0-2.017-.2-2.958-.6a7.616 7.616 0 01-2.434-1.623 7.605 7.605 0 01-1.622-2.433A7.472 7.472 0 010 7.616c0-1.032.2-2.018.6-2.96a7.65 7.65 0 011.623-2.433A7.616 7.616 0 014.657.601 7.49 7.49 0 017.615 0c1.032 0 2.018.2 2.959.601.94.4 1.752.941 2.434 1.622a7.624 7.624 0 011.622 2.434c.4.941.601 1.927.601 2.959a7.403 7.403 0 01-1.342 4.316l3.71 3.71c.267.266.401.592.401.973m-5.539-9c0-1.334-.474-2.475-1.423-3.423C10.09 3.244 8.95 2.77 7.615 2.77c-1.333 0-2.475.474-3.423 1.422C3.243 5.14 2.77 6.28 2.77 7.616c0 1.334.474 2.475 1.423 3.423.948.949 2.09 1.422 3.423 1.422 1.335 0 2.475-.473 3.423-1.422.95-.948 1.423-2.09 1.423-3.423"
                         fill="currentColor" fill-rule="evenodd">
@@ -63,9 +133,28 @@
                 </svg>
             </button>
 
-            <button class="btn-trans btn-like" aria-label="Me gusta" href="#">
+            <button class="navbar-btn-login navbar-btn-trans" aria-label="Iniciar sesión">
+                <svg width="20" height="22" viewBox="0 0 20 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    class="navbar-btn">
+                    <g transform="translate(1 1)" fill-rule="nonzero" fill="none">
+                        <rect stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00" x="4.875" width="8.25" height="6.038"
+                            rx=".729"></rect>
+                        <rect stroke="#2C2C2C" stroke-width="1.2" fill="#FFCF00" x="3.75" y="14.34" width="10.5"
+                            height="5.66" rx=".729"></rect>
+                        <path
+                            d="M14.25 17.736H3.75C0 17.736 0 14.717 0 14.717v-8.68S0 3.02 3.75 3.02h10.5C18 3.019 18 6.038 18 6.038v8.679s0 3.019-3.75 3.019z"
+                            stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00"></path>
+                        <path
+                            d="M7.125 8.868a.94.94 0 00-.938-.943.94.94 0 00-.937.943c0 .52.42.943.938.943a.94.94 0 00.937-.943zm4.688-.943a.94.94 0 00-.938.943c0 .52.42.943.938.943a.94.94 0 00.937-.943.94.94 0 00-.938-.943zm.293 3.86a.452.452 0 00-.649.21c-.005.008-.461.84-2.463.84-1.953 0-2.437-.793-2.462-.84a.446.446 0 00-.638-.234.618.618 0 00-.215.761c.063.147.69 1.446 3.315 1.446s3.25-1.299 3.313-1.446a.609.609 0 00-.201-.738z"
+                            fill="#2C2C2C">
+                        </path>
+                    </g>
+                </svg>
+            </button>
+
+            <button class="navbar-btn-trans navbar-btn-like" aria-label="Me gusta" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" aria-hidden="true"
-                    class="Icon__StyledSVG-lm07h6-0 cOQBZK">
+                    class="Icon__StyledSVG-lm07h6-0">
                     <path
                         d="M16.84 8.417L10 15.204 3.16 8.417A3.67 3.67 0 012 5.739C2 3.677 3.71 2 5.815 2a3.82 3.82 0 012.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0114.186 2C16.289 2 18 3.677 18 5.739a3.673 3.673 0 01-1.16 2.678M9.986 18l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 001.78-4.126C20 2.569 17.398 0 14.187 0A5.829 5.829 0 0010 1.762 5.827 5.827 0 005.815 0C2.604 0 0 2.569 0 5.739a5.68 5.68 0 001.782 4.126"
                         fill="currentColor" fill-rule="evenodd">
@@ -73,7 +162,7 @@
                 </svg>
             </button>
 
-            <a class="cart-num" aria-label="Mi Bolsa" href="#">
+            <a class="navbar-btn-navbar-btn-cart" aria-label="Mi Bolsa" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" aria-hidden="true"
                     class="navbar-div-buttons-icon_cart">
                     <g fill="currentColor" fill-rule="evenodd">
@@ -85,12 +174,12 @@
                         </path>
                     </g>
                 </svg>
-                (0)
+                <span class="navbar-btn cart-count">(0)</span>
             </a>
         </div>
 
         <!--** Menu desplegable Ventana Emergente -->
-        <div class="navbar-ventanaEmergente" id="navbar-ventanaEmergente">
+        <div class="navbar-ventanaEmergente">
             <div class="navbar-ventanaEmergente-navbar">
                 <img src="assets/navBar-banner-subBanner/images/navBar/logoLego.svg" alt="Logo LEGO">
 
@@ -107,7 +196,8 @@
                 </div>
             </div>
             <div class="navbar-ventanaEmergente-contenido_opciones">
-                <button class="navbar-ventanaEmergente-botonCerrar" onclick="cerrarVentana()">X</button>
+                <button class="navbar-ventanaEmergente-botonCerrar" onclick="mainMenu(0)">X</button>
+
                 <div class="navbar-ventanaEmergente-contenido_opc_comprar">
                     <ul class="navbar-ventanaEmergente-contenido_lista_opcion_comprar">
                         <li>
@@ -135,8 +225,32 @@
                         <li><a>Encuentra la inspiración</a></li>
                         <li><a>Última oportunidad para comprar</a></li>
                     </ul>
-                </div>
 
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema">
+                        <!--!#2537: code...-->
+                    </div>
+
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Edades">
+                        <!--!#2537: code...-->
+                    </div>
+
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios">
+                        <!--!#2537: code...-->
+                    </div>
+
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Articulos-LEGO">
+                        <!--!#2537: code...-->
+                    </div>
+
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Intereses">
+                        <!--!#2537: code...-->
+                    </div>
+
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Pick_and_build">
+                        <!--!#2537: code...-->
+                    </div>
+
+                </div>
                 <div class="navbar-ventanaEmergente-contenido_descubrir">
                     <ul class="navbar-ventanaEmergente-contenido_lista_opcion_descubrir">
                         <li>
@@ -173,8 +287,20 @@
                             <a>Ideas de regalos LEGO®</a>
                         </li>
                     </ul>
-                </div>
 
+                    <div class="navbar-ventanaEmergente-contenido_lista_opcion_descubrir-Nuestros_valores">
+                        <!--!#2537: code...-->
+                    </div>
+
+                    <div class="navbar-ventanaEmergente-contenido_lista_opcion_descubrir-Nuestras_apps">
+                        <!--!#2537: code...-->
+                    </div>
+
+                    <div class="navbar-ventanaEmergente-contenido_lista_opcion_descubrir-Nuestras revistas">
+                        <!--!#2537: code...-->
+                    </div>
+
+                </div>
                 <div class="navbar-ventanaEmergente-contenido_ayuda">
                     <ul class="navbar-ventanaEmergente-contenido_lista_opcion_ayuda">
                         <li>
@@ -201,109 +327,117 @@
                     </ul>
                 </div>
             </div>
-
         </div>
-
-
-
 
 
 
 
     </nav>
+
     <!--! <main> -->
     <main>
-        <!--*** Banner -->
-        <div class="banner">
-            <img src="assets/navBar-banner-subBanner/images/banner/background.webp" alt="Imagen de fondo"
-                class="banner-background-image">
-            <div class="banner-div">
-                <img src="assets/navBar-banner-subBanner/images/banner/img1.png" alt="Imagen 1" class="banner-div-img1">
-                <h2 class="banner-div-h2">
-                    <span>
-                        Crea una aventura como nunca antes lo has hecho
+        <div class="banner-SubBanner-div">
+            <!--*** Banner -->
+            <div class="banner">
+
+                <div class="banner-div-backgroundImage">
+                    <img id="1" src="assets/navBar-banner-subBanner/images/banner/background.webp"
+                        alt="Imagen de fondo">
+                    <img id="2" src="assets/navBar-banner-subBanner/images/banner/background2.webp"
+                        alt="Imagen de fondo">
+                </div>
+
+                <div class="banner-div-content">
+                    <img src="assets/navBar-banner-subBanner/images/banner/img1.png" alt="Imagen 1"
+                        class="banner-div-img1">
+                    <h2 class="banner-div-h2">
+                        <span>
+                            Crea una aventura como nunca antes lo has hecho
+                        </span>
+                    </h2>
+                    <span class="banner-div-span1">
+                        <span>
+                            Emprende una épica misión con el nuevo set Dungeons & Dragons: Aventura del dragón rojo.
+                        </span>
                     </span>
-                </h2>
-                <span class="banner-div-span1">
-                    <span>
-                        Emprende una épica misión con el nuevo set Dungeons & Dragons: Aventura del dragón rojo.
-                    </span>
-                </span>
-                <div class="banner-div-buttons">
-                    <a class="banner-buttons" href="#">
-                        A la tienda
-                        <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" class="banner-buttons-ico">
-                            <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                        </svg>
-                    </a><a class="banner-buttons" href="#">
-                        Saber más
-                        <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" class="banner-buttons-ico">
-                            <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                        </svg>
-                    </a>
+                    <div class="banner-div-buttons">
+                        <a class="banner-buttons" href="#">
+                            A la tienda
+                            <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" class="banner-buttons-ico">
+                                <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor">
+                                </path>
+                            </svg>
+                        </a><a class="banner-buttons" href="#">
+                            Saber más
+                            <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" class="banner-buttons-ico">
+                                <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <!--*** SubBanner -->
+            <div class="subBanner">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="assets/navBar-banner-subBanner/images/subBanner/img1.webp" alt="Imagen 1">
+                            <span>Novedades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/navBar-banner-subBanner/images/subBanner/img2.webp" alt="Imagen 2">
+                            <span>Exclusivos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/navBar-banner-subBanner/images/subBanner/img3.webp" alt="Imagen 3">
+                            <span>Ofertas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/navBar-banner-subBanner/images/subBanner/img4.webp" alt="Imagen 4">
+                            <span>Colección Botanical</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/navBar-banner-subBanner/images/subBanner/img5.webp" alt="Imagen 5">
+                            <span>Star Wars™</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/navBar-banner-subBanner/images/subBanner/img6.webp" alt="Imagen 6">
+                            <span>Aíd</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/navBar-banner-subBanner/images/subBanner/img7.webp" alt="Imagen 7">
+                            <span>NINJAGO™</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/navBar-banner-subBanner/images/subBanner/img8.webp" alt="Imagen 8">
+                            <span>LEGO® Insiders</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!--*** SubBanner -->
-        <div class="subBanner">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="assets/navBar-banner-subBanner/images/subBanner/img1.webp" alt="Imagen 1">
-                        <span>Novedades</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/navBar-banner-subBanner/images/subBanner/img2.webp" alt="Imagen 2">
-                        <span>Exclusivos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/navBar-banner-subBanner/images/subBanner/img3.webp" alt="Imagen 3">
-                        <span>Ofertas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/navBar-banner-subBanner/images/subBanner/img4.webp" alt="Imagen 4">
-                        <span>Colección Botanical</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/navBar-banner-subBanner/images/subBanner/img5.webp" alt="Imagen 5">
-                        <span>Star Wars™</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/navBar-banner-subBanner/images/subBanner/img6.webp" alt="Imagen 6">
-                        <span>Aíd</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/navBar-banner-subBanner/images/subBanner/img7.webp" alt="Imagen 7">
-                        <span>NINJAGO™</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/navBar-banner-subBanner/images/subBanner/img8.webp" alt="Imagen 8">
-                        <span>LEGO® Insiders</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!--todo#####-----> * END SECCION: NavBar-Banner y SubBaneer --->
+        <!--todo#####----- * END SECCION: NavBar-Banner y SubBaneer --->
 
 
 
-        <!--todo#####-----> * START SECCION: Sets Selecciones y Compras --->
+        <!--todo#####----- * START SECCION: Sets Selecciones y Compras --->
 
 
         <!-- INICIO DE SECCIÓN DE SECCIÓN DE SETS-SELECCIONES-COMPRAS  -->
@@ -440,12 +574,12 @@
 
         </div>
         <!-- FINAL SECCIÓN DE SETS-SELECCIONES-COMPRAS  -->
-        <!--todo#####-----> * END SECCION: Sets Selecciones y Compras --->
+        <!--todo#####----- * END SECCION: Sets Selecciones y Compras --->
 
 
 
 
-        <!--todo#####-----> * START SECCION: Mundos Cards y Footer --->
+        <!--todo#####----- * START SECCION: Mundos Cards y Footer --->
         <!-- INICIO parte Marisa MUNDOS-->
 
         <div class="MundosSets">
@@ -1012,226 +1146,243 @@
 
         <!-- FIN parte Marisa MUNDOS -->
 
-        <!--todo#####-----> * START SECCION: Three Sections --->
-        <div class="the-last-three-sections">
-            <section class="section1-last-three-sections">
-                <div id="card-inner-content1-last-three-sections">
-                    <h1 data-test="card-inner-content-title1" id="h1-last-three-sections"><span
-                            class="span-last-three-sections"> Ideas de
-                            regalos de NINJAGO®</span></h1>
+        <!--todo#####----- * START SECCION: Three Sections --->
 
-                    <a class="a1-last-three-sections"
-                        href="https://www.lego.com/es-es/themes/ninjago?icmp=HP-SHCC-Standard-NJ_CC_Block_Ninjago_2024_Campaign_HP-P-NJ-U4SQ9Y9EXQ">
+        <div class="inner-container-last-three-sections">
+            <div class="containers3-last-three-sections">
 
-                        <div class="service1-last-three-sections">
-                            <div class="img1-last-three-sections">
-                                <img src="https://www.lego.com/cdn/cs/set/assets/blt43a8e7ce375bd1a9/Ninjago-Page-202404-Block-Standard-KV.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
-                                    alt=" " class="img1-last-three-sections" />
-                            </div>
-                            <div data-text="card-content-logo" class="imglogo-last-three-sections">
-                                <img srcset="https://www.lego.com/cdn/cs/set/assets/blt856c1b834b3cef45/ninjago-dr-logo-neg-600w.png?format=png&amp;height=60&amp;dpr=1"
-                                    alt class="logo-last-three-sections" data-test="card-content-primary-logo">
-                            </div>
-                            <div class="text-service1-last-three-sections">
-                                <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
-                                        class="text1-last-three-sections">Haz regalos como un
-                                        ninja</span></h3>
-                                <span class="span-last-three-sections" class="text2-last-three-sections">Descubre nuevos
-                                    sets
-                                    emblemáticos del mundo de LEGO® NINJAGO®</span>
-                                <span id="shoping1-last-three-sections" class="span-last-three-sections">A la tienda
-                                    <abbr>
-                                        > </abbr> </span>
-                            </div>
+                <section class="section1-last-three-sections">
+                    <div class="div-card-inner-content-title1-last-three-sections">
+                        <h2 data-test="card-inner-content-title1-last-three-sections" class="h1-last-three-sections">
+                            Ideas de
+                            regalos de NINJAGO</h2>
+                    </div>
+                    <div class="div-containers-last-three-sections">
+                        <div class="container1-last-three-sections">
+                            <a class="a1-last-three-sections"
+                                href="https://www.lego.com/es-es/themes/ninjago?icmp=HP-SHCC-Standard-NJ_CC_Block_Ninjago_2024_Campaign_HP-P-NJ-U4SQ9Y9EXQ">
+                                <div class="img-logo-last-three-sections">
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/blt43a8e7ce375bd1a9/Ninjago-Page-202404-Block-Standard-KV.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt=" " class="img-last-three-sections" />
+
+                                    <img srcset="https://www.lego.com/cdn/cs/set/assets/blt856c1b834b3cef45/ninjago-dr-logo-neg-600w.png?format=png&amp;height=60&amp;dpr=1"
+                                        alt class="logo-last-three-sections" data-test="card-content-primary-logo">
+
+                                </div>
+                                <div class="text-last-three-sections">
+                                    <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
+                                            class="text1-last-three-sections">Haz
+                                            regalos como un
+                                            ninja</span></h3>
+                                    <span class="span-last-three-sections" class="text2-last-three-sections">Descubre
+                                        nuevos
+                                        sets
+                                        emblemáticos del mundo de LEGO® NINJAGO®</span>
+                                    <span id="shoping1-last-three-sections" class="span-last-three-sections">A la
+                                        tienda
+                                        <abbr>
+                                            > </abbr> </span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a class="a1-last-three-sections"
-                        href="https://www.lego.com/es-es/product/wolf-mask-shadow-dojo-71813?icmp=HP-SHCC-Standard-NJ_CC_Block_Ninjago_2024_71813_HP-P-NJ-MRTRR5T27A">
+                        <div class="container1-last-three-sections">
+                            <a class="a1-last-three-sections"
+                                href="https://www.lego.com/es-es/product/wolf-mask-shadow-dojo-71813?icmp=HP-SHCC-Standard-NJ_CC_Block_Ninjago_2024_71813_HP-P-NJ-MRTRR5T27A">
+                                <div class="img-logo-last-three-sections">
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/blt09c8bbc940905371/Ninjago-Page-202404-Block-Standard-71813.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt=" " class="img-last-three-sections" />
 
-                        <div class="service1-last-three-sections">
-                            <div class="img1-last-three-sections">
-                                <img class="img1-last-three-sections"
-                                    src="https://www.lego.com/cdn/cs/set/assets/blt09c8bbc940905371/Ninjago-Page-202404-Block-Standard-71813.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
-                                    alt=" " />
-                            </div>
-                            <div data-text="card-content-logo" class="imglogo-last-three-sections">
-                                <img srcset="https://www.lego.com/cdn/cs/set/assets/blt856c1b834b3cef45/ninjago-dr-logo-neg-600w.png?format=png&amp;height=60&amp;dpr=1"
-                                    alt class="logo-last-three-sections" data-test="card-content-primary-logo">
-                            </div>
-                            <div class="text-service1-last-three-sections">
-                                <h3 class="h3-last-three-sections"> <span class="span-last-three-sections"
-                                        class="text1-last-three-sections">¡Novedad!Dojo sombrío de la máscara de
-                                        lobo</span>
-                                </h3>
-                                <span class="span-last-three-sections" class="text2-last-three-sections">Une fuerzas con
-                                    los
-                                    ninjas para combatir juntos el bosque de las
-                                    sombras</span>
-                                <span id="shoping1-last-three-sections" class="span-last-three-sections">A la
-                                    tienda<abbr> >
-                                    </abbr> </span>
-                            </div>
+                                    <img srcset="https://www.lego.com/cdn/cs/set/assets/blt856c1b834b3cef45/ninjago-dr-logo-neg-600w.png?format=png&amp;height=60&amp;dpr=1"
+                                        alt class="logo-last-three-sections" data-test="card-content-primary-logo">
+
+                                </div>
+                                <div class="text-last-three-sections">
+                                    <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
+                                            class="text1-last-three-sections">¡Novedad! Dojo sombrío de la máscara de
+                                            lobo</span></h3>
+                                    <span class="span-last-three-sections" class="text2-last-three-sections">Une
+                                        fuerzas con
+                                        los
+                                        ninjas para combatir juntos el bosque de las
+                                        sombras</span>
+                                    <span id="shoping1-last-three-sections" class="span-last-three-sections">A la
+                                        tienda
+                                        <abbr>
+                                            > </abbr> </span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                        <div class="container1-last-three-sections">
+                            <a class="a1-last-three-sections"
+                                href="https://www.lego.com/es-es/product/kai-s-ninja-climber-mech-71812?icmp=HP-SHCC-Standard-NJ_CC_Block_Ninjago_2024_71812_HP-P-NJ-ZN2QL1W1GN">
 
+                                <div class="img-logo-last-three-sections">
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/bltefe4fffcee14046a/Ninjago-Page-202404-Block-Standard-71812.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt=" " class="img-last-three-sections" />
 
-                    <a class="a1-last-three-sections"
-                        href="https://www.lego.com/es-es/product/kai-s-ninja-climber-mech-71812?icmp=HP-SHCC-Standard-NJ_CC_Block_Ninjago_2024_71812_HP-P-NJ-ZN2QL1W1GN">
+                                    <img srcset="https://www.lego.com/cdn/cs/set/assets/blt856c1b834b3cef45/ninjago-dr-logo-neg-600w.png?format=png&amp;height=60&amp;dpr=1"
+                                        alt class="logo-last-three-sections" data-test="card-content-primary-logo">
 
-                        <div class="service1-last-three-sections">
-                            <div class="img1-last-three-sections">
-                                <img src="https://www.lego.com/cdn/cs/set/assets/bltefe4fffcee14046a/Ninjago-Page-202404-Block-Standard-71812.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
-                                    class="img1-last-three-sections" alt=" " />
-                            </div>
-                            <div data-text="card-content-logo" class="imglogo-last-three-sections">
-                                <img srcset="https://www.lego.com/cdn/cs/set/assets/blt856c1b834b3cef45/ninjago-dr-logo-neg-600w.png?format=png&amp;height=60&amp;dpr=1"
-                                    alt class="logo-last-three-sections" data-test="card-content-primary-logo">
-                            </div>
-                            <div class="text-service1-last-three-sections">
-                                <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
-                                        class="text1-last-three-sections">¡Novedad! Meca escalador ninja de Kai</span>
-                                </h3>
-                                <span class="span-last-three-sections" class="text2-last-three-sections">Entra en acción
-                                    con el ninja Kai desde la cabina de
-                                    este
-                                    sorprendente meca</span>
-                                <span id="shoping1-last-three-sections" class="span-last-three-sections">A la tienda
-                                    <abbr>
-                                        > </abbr></span>
-                            </div>
+                                </div>
+                                <div class="text-last-three-sections">
+                                    <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
+                                            class="text1-last-three-sections">¡Novedad! Meca escalador ninja de
+                                            Kai</span></h3>
+                                    <span class="span-last-three-sections" class="text2-last-three-sections">Entra
+                                        en acción
+                                        con el ninja Kai desde la cabina de
+                                        este
+                                        sorprendente meca</span>
+                                    <span id="shoping1-last-three-sections" class="span-last-three-sections">A la
+                                        tienda
+                                        <abbr>
+                                            > </abbr> </span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
+                </section>
 
-                </div>
-            </section>
+            </div>
 
-            <section class="section2-last-three-sections">
-                <div id="card-inner-content2-last-three-sections">
-
-                    <h2 id="h2-last-three-sections"><span class="span-last-three-sections"> Descubre todos los
-                            detalles</span></h2>
-                    <a class="a2-last-three-sections"
-                        href="https://www.lego.com/es-es/themes/fortnite/lego-fortnite-parents-guide">
-
-                        <div class="service2-last-three-sections">
-
-                            <div class="img2-last-three-sections">
-                                <img class="img2-last-three-sections"
-                                    src="https://www.lego.com/cdn/cs/set/assets/blt12b38574d8d05a5e/LF_article_GU_ParentGuide_1200x675_article_imageCard.png?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
-                                    alt=" " />
-                            </div>
-                            <div class="text-service2-last-three-sections">
-                                <h3 class="h3-last-three-sections"> <span class="span-last-three-sections"
-                                        class="text3-last-three-sections">LEGO® Fortnite®: guía para padres</span></h3>
-                                <span class="span-last-three-sections" class="text4-last-three-sections">¿Qué es LEGO®
-                                    Fortnite®?¿En qué se diferencia de Fortnite?Sigue leyendo para
-                                    resolver tus dudas</span>
-                                <span id="shoping2-last-three-sections" class="span-last-three-sections">A la tienda
-                                    <abbr>
-                                        > </abbr> </span>
-                            </div>
+            <div class="containers4-last-three-sections">
+                <section class="section2-last-three-sections">
+                    <div class="div-card-inner-content-title1-last-three-sections">
+                        <h2 data-test="card-inner-content-title2-last-three-sections" class="h2-last-three-sections">
+                            Descubre todos los
+                            detalles</h1>
+                    </div>
+                    <div class="div-containers2-last-three-sections">
+                        <div class="container2-last-three-sections">
+                            <a class="a2-last-three-sections"
+                                href="https://www.lego.com/es-es/themes/fortnite/lego-fortnite-parents-guide">
+                                <div class="img-logo-last-three-sections">
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/blt12b38574d8d05a5e/LF_article_GU_ParentGuide_1200x675_article_imageCard.png?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt=" " class="img2-last-three-sections" />
+                                </div>
+                                <div class="text-last-three-sections">
+                                    <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
+                                            class="text1-last-three-sections">LEGO® Fortnite®: guía para padres</h3>
+                                    <span class="span-last-three-sections" class="text2-last-three-sections">¿Qué es
+                                        LEGO® Fortnite®?¿En qué se diferencia de Fortnite?Sigue leyendo
+                                        para resolver tus dudas</span>
+                                    <span id="shoping1-last-three-sections" class="span-last-three-sections">A la
+                                        tienda
+                                        <abbr> > </abbr> </span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
 
-                    <a class="a2-last-three-sections"
-                        href="https://www.lego.com/es-es/categories/gaming/gifts-for-gamers">
+                        <div class="container2-last-three-sections">
+                            <a class="a2-last-three-sections"
+                                href="https://www.lego.com/es-es/categories/gaming/gifts-for-gamers">
 
-                        <div class="service2-last-three-sections">
-
-                            <div class="img2-last-three-sections">
-                                <img class="img2-last-three-sections"
-                                    src="https://www.lego.com/cdn/cs/set/assets/blt185a706ed598062e/NEW_HERO_IMAGE_-_Mobile_71395_LSM_2HY21_Lifestyle_17.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
-                                    alt=" " />
-                            </div>
-                            <div class="text-service2-last-three-sections">
-                                <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
-                                        class="text3-last-three-sections">Los mejores regalos LEGO® para los aficionados
-                                        a
-                                        los videojuegos</span>
-                                </h3>
-                                <span class="span-last-three-sections" class="text4-last-three-sections">Desde icónicos
-                                    personajes de videojuegos hasta escenas de batalla repletas
-                                    de acción,entra en un mundo de diversión y nostalgia con nuestra selección de los
-                                    mejores
-                                    regalos LEGO® para aficionados a los videojuegos.</span>
-                                <span id="shoping2-last-three-sections">A la tienda <abbr> > </abbr> </span>
-                            </div>
+                                <div class="img-logo-last-three-sections">
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/blt185a706ed598062e/NEW_HERO_IMAGE_-_Mobile_71395_LSM_2HY21_Lifestyle_17.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt=" " class="img2-last-three-sections" />
+                                </div>
+                                <div class="text-last-three-sections">
+                                    <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
+                                            class="text1-last-three-sections">Los mejores regalos LEGO® para los
+                                            aficionados
+                                            a
+                                            los videojuegos</span></h3>
+                                    <span class="span-last-three-sections" class="text2-last-three-sections">Desde
+                                        icónicos
+                                        personajes de videojuegos hasta escenas de batalla repletas
+                                        de acción,entra en un mundo de diversión y nostalgia con nuestra selección
+                                        de los
+                                        mejores
+                                        regalos LEGO® para aficionados a los videojuegos.</span>
+                                    <span id="shoping1-last-three-sections" class="span-last-three-sections">A la
+                                        tienda
+                                        <abbr>
+                                            > </abbr> </span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
 
-                    <a class="a2-last-three-sections"
-                        href="https://www.lego.com/es-es/categories/adults-welcome/article/meaning-of-plants">
+                        <div class="container2-last-three-sections" class="flex-start-last-three-sections">
+                            <a class="a2-last-three-sections"
+                                href="https://www.lego.com/es-es/categories/adults-welcome/article/meaning-of-plants">
 
-                        <div class="service2-last-three-sections">
+                                <div class="img-logo-last-three-sections">
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/blta03edb8b0bef0c0c/01-Hero-Standard-THEME-NEW_HERO_IMAGE-Moblie.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt=" " class="img2-last-three-sections" />
 
-                            <div class="img2-last-three-sections">
-                                <img class="img2-last-three-sections"
-                                    src="https://www.lego.com/cdn/cs/set/assets/blta03edb8b0bef0c0c/01-Hero-Standard-THEME-NEW_HERO_IMAGE-Moblie.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
-                                    alt=" " />
-                            </div>
-                            <div class="text-service2-last-three-sections">
-                                <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
-                                        class="text3-last-three-sections">Significado de las plantas(simbolismo de las
-                                        plantas)</span> </h3>
-                                <span class="text4-last-three-sections">¿Sabías que tus plantas esconden un significado
-                                    más
-                                    profundo?Desde
-                                    emociones,
-                                    ideas y energía hasta buenos augurios,descubre aquí lo que significan tus
-                                    plantas...</span>
-                                <span id="shoping2-last-three-sections" class="span-last-three-sections">A la tienda
-                                    <abbr>
-                                        > </abbr> </span>
-                            </div>
+                                </div>
+                                <div class="text-last-three-sections">
+                                    <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
+                                            class="text1-last-three-sections">Significado de las plantas(simbolismo
+                                            de las
+                                            plantas)</span></h3>
+                                    <span class="span-last-three-sections" class="text2-last-three-sections">¿Sabías
+                                        que tus plantas esconden un significado
+                                        más
+                                        profundo?Desde
+                                        emociones,
+                                        ideas y energía hasta buenos augurios,descubre aquí lo que significan tus
+                                        plantas...</span>
+                                    <span id="shoping1-last-three-sections" class="span-last-three-sections">A la
+                                        tienda
+                                        <abbr>
+                                            > </abbr> </span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
 
-                    <a class="a2-last-three-sections"
-                        href="https://www.lego.com/es-es/categories/adults-welcome/article/best-lego-sets-for-adults">
+                        <div class="container2-last-three-sections">
+                            <a class="a2-last-three-sections"
+                                href="https://www.lego.com/es-es/categories/adults-welcome/article/best-lego-sets-for-adults">
+                                <div class="img-logo-last-three-sections">
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/blt1d9bd5922b4d4067/OG_image.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt=" " class="img2-last-three-sections" />
 
-                        <div class="service2-last-three-sections">
-
-                            <div class="img2-last-three-sections">
-                                <img class="img2-last-three-sections"
-                                    src="https://www.lego.com/cdn/cs/set/assets/blt1d9bd5922b4d4067/OG_image.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
-                                    alt=" " />
-                            </div>
-                            <div class="text-service2-last-three-sections">
-                                <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
-                                        class="text3-last-three-sections">11 mejores sets LEGO® para adultos en
-                                        2024</span>
-                                </h3>
-                                <span class="span-last-three-sections" class="text4-last-three-sections">Tenemos algo
-                                    para
-                                    cada gusto en nuestros sets LEGO® indispensables para
-                                    adultos en 2024</span>
-                                <span id="shoping2-last-three-sections" class="span-last-three-sections">A la tienda
-                                    <abbr>
-                                        > </abbr></span>
-                            </div>
+                                </div>
+                                <div class="text-last-three-sections">
+                                    <h3 class="h3-last-three-sections"><span class="span-last-three-sections"
+                                            class="text1-last-three-sections">11 mejores sets LEGO® para adultos en
+                                            2024</span></h3>
+                                    <span class="span-last-three-sections" class="text2-last-three-sections">Tenemos
+                                        algo
+                                        para
+                                        cada gusto en nuestros sets LEGO® indispensables para
+                                        adultos en 2024</span>
+                                    <span id="shoping1-last-three-sections" class="span-last-three-sections">A la
+                                        tienda
+                                        <abbr>
+                                            > </abbr> </span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-            </section>
+                    </div>
+                </section>
 
-            <section class="the-last-body-section">
-                <div class="the-last-body-div">
-                    <span class="span-last-three-sections" class="the-last-body-span">
-                        Te damos la bienvenida a la LEGO® Shop oficial, donde encontrarás fantásticos juguetes de
-                        construcción LEGO, regalos, increíbles piezas de exposición y mucho más para peques y adultos
+            </div>
+
+            <aside class="aside-last-three-sections">
+                <div class="aside-text-last-three-sections">
+
+                    <p> Te damos la bienvenida a la LEGO® Shop oficial, donde encontrarás fantásticos juguetes de
+                        construcción LEGO, regalos, increíbles piezas de exposición y mucho más para peques y
+                        adultos
                         por
                         igual. Elige el regalo perfecto para bebés, adolescentes y adultos con el que celebrar
                         cumpleaños y
-                        otras ocasiones especiales, como el Día de San Valentín, el Día de la Madre y el Día del Padre.
-                        Podrás comprar fácilmente juguetes con los que regalar horas de diversión y juego imaginativo.
+                        otras ocasiones especiales, como el Día de San Valentín, el Día de la Madre y el Día del
+                        Padre.
+                        Podrás comprar fácilmente juguetes con los que regalar horas de diversión y juego
+                        imaginativo.
                         También podrás encontrar una selección de sets LEGO para adultos ideales para todos los
                         intereses,
-                        tanto si le apasionan los coches como las flores, los videojuegos y muchas cosas más.
-                    </span>
+                        tanto si le apasionan los coches como las flores, los videojuegos y muchas cosas más.</p>
+
                 </div>
+            </aside>
             </section>
         </div>
-        <!--todo#####-----> * END SECCION: Three Sections --->
+        </div>
+        <!--todo#####----- * END SECCION: Three Sections --->
         <!--! </main> -->
     </main>
 
@@ -1506,7 +1657,7 @@
     </footer>
 
     <!-- FIN parte Marisa FOOTER -->
-    <!--todo#####-----> * END SECCION: Mundos Cards y Footer --->
+    <!--todo#####----- * END SECCION: Mundos Cards y Footer --->
 
 </body>
 

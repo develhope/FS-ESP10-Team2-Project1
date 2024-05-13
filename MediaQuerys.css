@@ -63,14 +63,17 @@
 /** min-width and max-width -> (screen > px) && (screen < px) */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
 
-  /* Pff no se si dejar (display: none;) o quitarlo, me gusta ambas opciones */
-  .banner-background-image {
+  .banner-div-backgroundImage img[id="1"] {
     display: none;
   }
 
-  .banner-div {
-    padding: 1.5rem 1.9rem;
-    color: red !important;
+  .banner-div-backgroundImage img[id="2"] {
+    display: flex;
+  }
+
+  .banner-div-content {
+    padding: 1.5rem;
+    /* color: red !important; */
   }
 
   .banner-div-img1 {
@@ -78,32 +81,46 @@
   }
 
   .subBanner a img {
-    /* width: 100% !important; */
     max-width: 70px;
-    /* height: auto; */
-    margin: 10px 10px 7px 10px;
   }
 }
 
 
 /** min-width -> (screen > px) */
-@media screen and (min-width: 768px) {
-  .banner-div {
-    /* position: absolute; */
-    max-width: 44%;
-    height: 100%;
-    padding: 0 0 0 25px;
-    background: transparent;
-    background-color: transparent;
+@media screen and (min-width: 769px) {
+
+  .preNavbar-buttom-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+
+  .banner-div-backgroundImage img[id="2"] {
+    display: none;
+  }
+
+  /** Estilos del contenido del banner */
+  .banner-div-content {
+    /* Configuración del diseño */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Texto */
+    overflow-wrap: break-word;
     text-align: left;
-    /* left: 3.75rem; */
-    /* top: 36%; */
-    /* transform: translateY(-50%); */
-    /* transform: translateY(-114%); */
-    transform: translateY(-10%);
-    margin-top: -195px;
-    color: yellow !important;
-    /* Ajusta según sea necesario */
+    /* Fondo */
+    background: transparent;
+    /* Posicionamiento */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* Tamaño máximo */
+    max-width: 50%;
+    max-height: 100vh;
+    /* Color del texto */
+    /* color: yellow !important; */
   }
 
   .banner-div-img1 {
@@ -122,13 +139,30 @@
   }
 
   .subBanner a img {
-    max-width: 90px;
-    margin: 5px 5px 3px 5px;
+    max-width: 80px;
   }
 }
 
-/* NavBar change */
+/* NavBar change short */
 @media screen and (max-width: 901px) {
+
+  .preNavbar {
+    justify-content: center;
+  }
+
+  .preNavbar-buttom-close {
+    display: flex;
+  }
+
+  .preNavbar-div-playArea {
+    display: none;
+  }
+
+  .preNavbar-div-login {
+    display: none;
+  }
+
+
   .navbar {
     background-color: white;
     justify-content: left;
@@ -138,15 +172,21 @@
     height: 40px;
   }
 
-  .hamburger-icon {
+  .navbar-short-hamburger-icon {
     display: block;
   }
 
-  .navbar-div-links {
-    display: none;
+  .navbar-div-buttons {
+    /*!#error: No entiendo porque el (margin: 0) no funciona como esperaba */
+    /* margin: 0; */
+    padding: 0;
   }
 
-  .navbar-div-buttons {
+  .navbar-btn-login {
+    display: flex !important;
+  }
+
+  .navbar-div-links {
     display: none;
   }
 
@@ -154,13 +194,9 @@
 
 /** min-width -> (screen > px) */
 @media screen and (min-width: 1200px) {
-  .banner-div {
-    /* max-width: 37%; */
-    /* transform: translateY(-114%); */
-    transform: translateY(-15%);
-    margin-top: -210px;
+  /* .banner-div-content {
     color: green !important;
-  }
+  } */
 
   .banner-div-img1 {
     padding-bottom: 10px;
@@ -172,17 +208,8 @@
     line-height: 1.5rem;
   }
 
-  .banner-div {
-    /* top: 38%; */
-    /* max-width: 40%; */
-    /* transform: translateY(-121%); */
-    transform: translateY(-30%);
-    margin-top: -270px;
-    color: blue !important;
-  }
-
   .banner-div-img1 {
-    height: 4rem;
+    height: 5rem;
   }
 
   .banner-div-h2 {
@@ -196,84 +223,37 @@
     margin-top: 0.9375rem;
   }
 
-  .banner-div {
-    /* top: 38%; */
-    /* max-width: 40%; */
-    /* transform: translateY(-134%); */
-    transform: translateY(-42%);
-    margin-top: -290px;
-  }
-
-  .banner-div-img1 {
-    height: 5rem;
-  }
-
-  .banner-div-h2 {
-    font-size: 2.1rem;
-    line-height: 2.5rem;
-  }
-
-  .banner-div-span1 {
-    font-size: 1.4rem;
-    line-height: 1.75rem;
-    margin-top: 0.9375rem;
-  }
-
   .banner-buttons {
     font-size: 1.1rem;
-    /* line-height: 1.5625rem; */
-    /* margin-top: 1.25rem; */
     height: 1.5rem;
-  }
-
-  .banner-background-image {
-    width: auto;
-  }
-
-  .banner-div {
-    /* padding-bottom: 40px; */
-    /* top: 38%; */
-    max-width: 51%;
-    /* transform: translateY(-134%); */
-    transform: translateY(-40%);
-    margin-top: -295px;
-  }
-
-  .subBanner {
-    transform: translateY(20%);
   }
 
 }
 
 /** min-width -> (screen > px) */
 @media screen and (min-width: 1600px) {
-  .banner-div {
-    /* top: 33%; */
-    /* max-width: 37%; */
-    /* transform: translateY(-115%); */
-    transform: translateY(-20%);
-    margin-top: -235px;
+  /* .banner-div-content {
     color: white !important;
-  }
+  } */
 
   .banner-div-img1 {
-    height: 3.5rem;
+    height: 5.5rem;
   }
 
   .banner-div-h2 {
-    font-size: 1.9rem;
-    line-height: 2rem;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
   }
 
   .banner-div-span1 {
-    font-size: 1rem;
-    line-height: 1.1rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     margin-top: 1rem;
   }
 
   .banner-buttons {
-    font-size: 1rem;
-    line-height: 1.5625rem;
+    font-size: 1.3rem;
+    height: 1.9rem;
     margin-top: 1.25rem;
   }
 }
@@ -282,13 +262,10 @@
   main {
     /* background-color: orange !important; */
     /* padding: 0 9rem 0 9rem;
-            max-width: 100rem;
-            margin: 0px auto; */
+    max-width: 100rem;
+    margin: 0px auto; */
 
     padding: 0 7vw 5vw 7vw;
-    /* padding: 7vw;
-    padding-top: 0; */
-    /* Ajusta el padding para pantallas más grandes */
   }
 }
 

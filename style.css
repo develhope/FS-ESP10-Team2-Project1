@@ -31,6 +31,225 @@ main {
 
 /*todo#####-----> START SECCION: NavBar-Banner y SubBaneer <-----#####*/
 
+/*? Estilos del PreNavBar */
+
+.preNavbar {
+  position: relative;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: auto;
+  margin: 0px auto;
+  padding: 0px 1.875rem;
+  background-color: rgb(248, 248, 248);
+  font-family: "Cera Pro", sans-serif;
+  font-weight: bold;
+}
+
+.jlTnwN {
+  position: relative;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0px auto;
+  padding: 0px 1.875rem;
+}
+
+.preNavbar-div-playArea {
+  flex: 0 1 33.3333%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+.preNavbar-div-playArea>a {
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.dnUvCH {
+  display: inline-block;
+  width: auto;
+  padding: 0.9375rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  background-color: rgb(0, 90, 210);
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 90, 210);
+}
+
+.eYcOQt {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  border: none;
+  background: rgb(171, 217, 255);
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  text-transform: uppercase;
+  padding: 0px 0.625rem;
+  box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+}
+
+.dnUvCH:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.eYcOQt:hover {
+  text-decoration: none;
+  background: rgb(255, 255, 255);
+}
+
+.SkYtC {
+  line-height: 0;
+  height: 16px;
+  width: 15px;
+}
+
+.fZmJyP {
+  margin-right: 0.625rem;
+  transform: rotate(180deg);
+}
+
+.preNavbar-div-phrase {
+  height: 3.1875rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.hnQEGM {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.dAZEkP {
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-shrink: 0;
+  transform: translateX(0%);
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+
+.cnbbhr {
+  color: inherit;
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+  text-transform: inherit;
+}
+
+.fVnnND {
+  pointer-events: none;
+  margin: 0px;
+  text-align: center;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+}
+
+.jtbspI {
+  pointer-events: all;
+  margin-left: 1.25rem;
+  white-space: nowrap;
+  text-decoration: none;
+
+}
+
+.jtbspI span {
+  color: rgb(0, 90, 210);
+}
+
+.preNavbar-div-login {
+  flex: 0 1 33.3333%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.preNavbar-div-login>a {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+
+
+.cnHyRF {
+  line-height: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.KHcEY {
+  margin-right: 0.625rem;
+}
+
+.bhhMqN {
+  margin: 0px 1.25rem;
+  width: 0.0625rem;
+  height: 1.25rem;
+  background: rgb(117, 117, 117);
+}
+
+
+.eRowKb {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+}
+
+
+.preNavbar-buttom-close {
+  display: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 1.0625rem;
+  cursor: pointer;
+}
+
+
+.dHKzVM {
+  line-height: 0;
+}
+
 /*? Estilos del NavBar */
 .navbar {
   /* Estilos generales del navbar */
@@ -42,58 +261,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* Estilos del botón de hamburguesa */
-.hamburger-icon {
-  background-color: white;
-  display: none;
-  margin: 0 10px 0 0;
-  border: 1px solid transparent;
-  width: 2.5rem;
-  height: 2.5rem;
-  flex: 0 0 auto;
-  padding-bottom: 0.5rem;
-  align-items: center;
-}
-
-/* Estilos del primer div dentro del botón */
-.hamburger-icon>div {
-  width: 1.25rem;
-  height: 1.25rem;
-  margin: 0px auto;
-  position: relative;
-}
-
-/* Estilos del segundo div dentro del primer div */
-.hamburger-icon>div>div::before {
-  transform: translateY(-200%);
-}
-
-/* Estilos de los pseudo elementos antes y después del segundo div */
-.hamburger-icon>div>div::before,
-.hamburger-icon>div>div::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: rgb(0, 0, 0);
-  top: 50%;
-  transition: transform 0.3s ease 0s;
-}
-
-/* Estilos para el texto "Menú" dentro del botón */
-.hamburger-icon>span {
-  display: inline-block;
-  vertical-align: middle;
-  /* Espaciado opcional entre el icono y el texto */
-  text-align: center;
-  /* Centra el texto horizontalmente */
-  width: 100%;
-  /* Asegura que el texto ocupe todo el ancho del botón */
-  font-family: Arial, sans-serif;
-  /* Establece la fuente como Arial */
 }
 
 /* Estilos del logo */
@@ -142,13 +309,12 @@ main {
 }
 
 /* Estilos de los botones */
-.btn-trans {
+.navbar-btn-trans {
   background-color: transparent;
   border: none;
-  cursor: pointer;
 }
 
-.btn-circle {
+.navbar-btn-circle {
   border-radius: 50%;
   border: 0px solid;
   background: rgb(255, 255, 255);
@@ -173,14 +339,34 @@ main {
   height: 2.5rem;
   justify-content: center;
   color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 .navbar-div-buttons:last-child {
   margin-right: 0px;
 }
 
+.navbar-btn-login {
+  display: none !important;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 1.25rem;
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+}
+
+.navbar-btn {
+  line-height: 0;
+}
+
+
 /* Estilos del contador del carrito */
-.navbar-div-buttons .cart-num {
+.navbar-div-buttons .navbar-btn-cart-num {
   display: inline-flex;
   align-items: center;
   color: rgb(0, 0, 0);
@@ -189,7 +375,7 @@ main {
   text-decoration: none;
 }
 
-.navbar-div-buttons .cart-num:hover {
+.navbar-div-buttons .navbar-btn-cart-num:hover {
   text-decoration: underline;
 }
 
@@ -197,6 +383,69 @@ main {
 .navbar-div-buttons-icon_cart {
   margin-right: 0.3125rem;
 }
+
+.navbar-btn-navbar-btn-cart {
+  font-size: 12px;
+  /*!#error: No se porque no funciona */
+  text-decoration: none;
+}
+
+/*? Estilos del NavBar Short */
+
+/* Estilos del botón de hamburguesa */
+.navbar-short-hamburger-icon {
+  background-color: white;
+  display: none;
+  margin: 0 10px 0 0;
+  border: 1px solid transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  padding-bottom: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Estilos del primer div dentro del botón */
+.navbar-short-hamburger-icon>div {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0px auto;
+  position: relative;
+}
+
+/* Estilos del segundo div dentro del primer div */
+.navbar-short-hamburger-icon>div>div::before {
+  transform: translateY(-200%);
+}
+
+/* Estilos de los pseudo elementos antes y después del segundo div */
+.navbar-short-hamburger-icon>div>div::before,
+.navbar-short-hamburger-icon>div>div::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  top: 50%;
+  transition: transform 0.3s ease 0s;
+}
+
+/* Estilos para el texto "Menú" dentro del botón */
+.navbar-short-hamburger-icon>span {
+  display: inline-block;
+  vertical-align: middle;
+  /* Espaciado opcional entre el icono y el texto */
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  width: 100%;
+  /* Asegura que el texto ocupe todo el ancho del botón */
+  font-family: Arial, sans-serif;
+  /* Establece la fuente como Arial */
+}
+
+
 
 /*? Estilos del NavBar Menu Ventana emerjente */
 .navbar-ventanaEmergente {
@@ -216,7 +465,7 @@ main {
   font-family: 'Cera Pro Thin';
 }
 
-.navbar-ventanaEmergente-navbar > img{
+.navbar-ventanaEmergente-navbar>img {
   width: 60px;
   height: 60px;
   display: flex;
@@ -237,15 +486,15 @@ main {
   font-family: 'Cera Pro Thin';
 }
 
-.navbar-ventanaEmergente-navbar{
+.navbar-ventanaEmergente-navbar {
   position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left:5vw;
+  margin-left: 5vw;
 }
 
-.navbar-ventanaEmergente-opciones{
+.navbar-ventanaEmergente-opciones {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -253,7 +502,7 @@ main {
   gap: 2vw;
 }
 
-.navbar-ventanaEmergente-opciones button{
+.navbar-ventanaEmergente-opciones button {
   background-color: transparent;
   border: none;
   text-decoration-line: underline;
@@ -261,7 +510,7 @@ main {
   font-weight: bold;
 }
 
-.navbar-ventanaEmergente-contenido_opciones{
+.navbar-ventanaEmergente-contenido_opciones {
   display: flex;
   flex-direction: column;
   padding-left: 11vw;
@@ -277,11 +526,11 @@ main {
   
 }
 
-.navbar-ventanaEmergente-opciones li{
+.navbar-ventanaEmergente-opciones li {
   list-style: none;
 }
 
-.navbar-ventanaEmergente-contenido_opciones button{
+.navbar-ventanaEmergente-contenido_opciones button {
   text-decoration: none;
   background-color: transparent;
   border: none;
@@ -289,40 +538,59 @@ main {
   font-size: 15px;
 }
 
-.navbar-ventanaEmergente-contenido_opciones li{
+.navbar-ventanaEmergente-contenido_opciones li {
   list-style: none;
 }
 
 
+/*!#2537 Tu codigo aqui abajo, recuerda usar los nombres de las clases ya existentes */
+/** code... */
+
+
+
+
+
+
+
+
+
+/*? Estilos del Div Banner y SubBanner */
+.banner-SubBanner-div {
+  width: 100%;
+  /* display: flex; */
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 /*? Estilos del Banner */
 .banner {
   font-family: Arial, sans-serif;
-
-  /* padding: 0px !important;
-  margin: 0px !important; */
-
-  /* padding: 0px !important; */
-  /* padding: 20px; */
-  /* background: url("assets/images/banner/img2.webp"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 100%; */
-  /* background-position: top; */
-  /* position: relative; */
+  position: relative;
 }
 
-.banner-background-image {
+.banner-div-backgroundImage {
+  position: relative;
+}
+
+.banner-div-backgroundImage img {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   width: 100%;
-  /* height: auto; */
-  display: block;
+  display: flex;
 }
 
-.banner-div {
-  /* z-index: 1; */
+.banner-div-content {
+  margin: 0;
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   text-align: center;
   padding: 1.25rem 1.875rem;
-  /* transition: all 0.5s; */
 
   /*? Opc 0 (Sin gradientes) */
   /**/
@@ -332,9 +600,18 @@ main {
   /*? Opc 2 */
   /* background: rgb(28, 28, 28);
   background: linear-gradient(180deg, rgba(28, 28, 28, 1) 0%, rgba(46, 44, 42, 1) 100%); */
-  /*? Opc3  */
-  background: rgb(22, 22, 22);
-  background: linear-gradient(25deg, rgba(22, 22, 22, 1) 54%, rgba(46, 44, 42, 1) 95%);
+  /*? Opc 2.1 */
+  /* background: rgb(22, 22, 22);
+  background: linear-gradient(25deg, rgba(22, 22, 22, 1) 54%, rgba(46, 44, 42, 1) 95%); */
+  /*? Opc 3 */
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 84%, rgba(16, 16, 16, 0.9812561755335085) 100%); */
+  /*? Opc 3.1 */
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 84%, rgba(23, 15, 8, 1) 100%); */
+  /*? Opc 3.2 */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(2deg, rgba(0, 0, 0, 1) 81%, rgba(23, 15, 8, 1) 100%);
 }
 
 .banner-div-img1 {
@@ -417,9 +694,8 @@ main {
 
 /*? Estilos del SubBanner */
 .subBanner {
-  /* width: 100%; */
   padding: 0;
-  margin: 0;
+  margin: 10px 0 80px 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -432,28 +708,20 @@ main {
 }
 
 .subBanner li {
-  /* height: 100%; */
-  /* width: 15%; */
-  /* width: auto; */
   margin: 0px;
   padding: 0px;
   text-align: center;
   flex-grow: 1;
-  /* display: flex; */
-  /* justify-items: space-between; */
-  /* flex-wrap: wrap; */
-  background-color: yellowgreen !important;
+  /* background-color: yellowgreen !important; */
 }
 
 /* Estilos de las imágenes en la lista */
 .subBanner a img {
-  /* width: 100% !important; */
-  max-width: 90px;
-  /* height: auto; */
-  margin: 10px 10px 7px 10px;
-  /* padding: var(--ds-spacing-md) 0; */
-  /* gap: 0 var(--ds-spacing-sm); */
-  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .subBanner li span {
@@ -709,86 +977,162 @@ main {
 /*todo#####-----> END SECCION: Sets Selecciones y Compras <-----#####*/
 
 /*todo#####-----> START SECCION: Three Sections <-----#####*/
-.the-last-three-sections {
-  margin: 0px auto;
-  width: 100%;
-  height: 100%;
-  font-family: 'Cera Pro', sans-serif;
+.inner-container-last-three-sections {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.three-cards-last-three-sections {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  scrollbar-width: thin;
+}
+
+.containers3-last-three-sections {
   justify-content: center;
+  display: flex;
+
+}
+
+.containers4-last-three-sections {
+  justify-content: center;
+  display: flex;
+
 }
 
 .section1-last-three-sections {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-  border: 2px solid transparent;
-  text-align: justify;
-  flex-wrap: wrap;
+  margin: 10vh;
+  box-sizing: border-box;
+  display: inline-block;
   position: relative;
+  justify-content: center;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  overflow: scroll;
+  scrollbar-color: #1d233da5 #262f492b;
+  scroll-snap-type: mandatory;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
 
 }
 
-#card-inner-content1-last-three-sections {
-  max-width: 100rem;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
+.section2-last-three-sections {
+  margin: 10vh;
+  box-sizing: border-box;
+  position: relative;
   justify-content: center;
-  gap: 1rem;
-  border: 2px solid transparent;
-  text-align: justify;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-#h1-last-three-sections {
-  width: 100%;
-  display: flex;
-  height: 3%;
-  border: 2px solid transparent;
-  position: relative;
-  font-size: 2.150rem;
-  line-height: 2.6875rem;
-  font-weight: 400;
+  margin-top: 0;
   margin-bottom: 0;
-  margin-left: 6.5%;
+  display: inline-block;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #1d233da5 #262f492b;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
-.a1-last-three-sections {
-  text-decoration: none;
-  color: black;
+
+.div-containers-last-three-sections {
+  width: 65rem;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+  margin: 1vw 0 0 0;
 
 }
 
-.service1-last-three-sections {
-  max-width: 28.125rem;
+.div-containers2-last-three-sections {
+  width: 65rem;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  margin: 1vw 0 0 0;
+  padding: 0;
+  gap: 15px;
+  text-align: justify;
+
 }
 
-.img1-last-three-sections {
-  max-width: 28.125rem;
+.container1-last-three-sections {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex: 1 1 0;
+  position: relative;
+  justify-content: center;
+  justify-content: flex-start;
 }
 
-.imglogo-last-three-sections {
-  max-width: 8.75rem;
-  margin-top: -5%;
-  margin-left: 63%;
+.container2-last-three-sections {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex: 1 1 0;
+  text-align: justify;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.img-logo-last-three-sections {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  flex: 1 1 0;
 }
 
 .logo-last-three-sections {
-  max-width: 8.75rem;
-  margin-top: -30%;
+  position: absolute;
+  flex: 1 1;
+  width: 30%;
+  right: 2%;
+  bottom: 4%;
+
+
 }
 
-.span-last-three-sections {
+.text-last-three-sections {
+  overflow: auto;
   display: flex;
-  text-align: justify;
-  text-align: center;
+  flex-direction: column;
+  position: relative;
   justify-content: center;
+  gap: 1vw;
+  margin-top: 1vw;
+}
 
+.h1-last-three-sections {
+  font-size: 1.8rem;
+  font-weight: 200;
+  letter-spacing: 1.2px;
 
+}
+
+.h2-last-three-sections {
+  font-size: 1.8rem;
+  font-weight: 200;
+  letter-spacing: 1.2px;
 }
 
 #shoping1-last-three-sections:hover {
@@ -801,6 +1145,7 @@ main {
   font-size: 1.25rem;
   line-height: 1.9375rem;
 
+
 }
 
 .text2-last-three-sections {
@@ -810,53 +1155,35 @@ main {
 }
 
 #shoping1-last-three-sections {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: inherit;
   line-height: 2rem;
 
 }
 
-.section2-last-three-sections {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-  border: 2px solid transparent;
+.span-last-three-sections {
+  display: block;
   text-align: justify;
-  flex-wrap: wrap;
-  position: relative;
-
-}
-
-#card-inner-content2-last-three-sections {
-  max-width: 100rem;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-  border: 2px solid transparent;
-  text-align: justify;
-  flex-wrap: wrap;
-  position: relative;
   text-align: center;
   justify-content: center;
+
 }
 
-#h2-last-three-sections {
-  width: 100%;
-  display: flex;
-  margin-left: 6.5%;
-  height: 3%;
-  border: 2px solid transparent;
+
+.img2-last-three-sections {
   position: relative;
-  font-size: 2rem;
-  line-height: 2.6875rem;
-  font-weight: 400;
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  flex: 1 1 0
+}
+
+.a1-last-three-sections {
+  text-decoration: none;
+  color: black;
+
 }
 
 .a2-last-three-sections {
@@ -865,42 +1192,11 @@ main {
 
 }
 
-.service2-last-three-sections {
-  max-width: 20.938rem;
-}
-
-.img2-last-three-sections {
-  max-width: 20.938rem;
-}
-
-
-#shoping2-last-three-sections:hover {
-  text-decoration: underline;
-
-}
-
-.text3-last-three-sections {
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.9375rem;
-
-}
-
-.text4-last-three-sections {
-  font-size: 1rem;
-  line-height: 1.1875rem;
-
-}
-
-#shoping2-last-three-sections {
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: inherit;
-  line-height: 2rem;
-
-}
-
 .the-last-body-section {
+  border: 2px solid palevioletred
+}
+
+.aside-last-three-sections {
   width: 100%;
   height: 100%;
   padding: 2.5rem 1.25rem;
@@ -917,7 +1213,7 @@ main {
   text-align: justify;
 }
 
-.the-last-body-div {
+.aside-text-last-three-sections {
   margin-top: 2%;
   display: flex;
   flex-direction: row;
@@ -931,13 +1227,15 @@ main {
   background-color: #fff
 }
 
-.the-last-body-span {
+.aside-text-last-three-sections p {
   text-align: left;
   --header-height: 8.125rem;
   font-size: 0.875rem;
   -webkit-text-size-adjust: 100%;
   letter-spacing: 0;
 }
+
+
 
 /*todo#####-----> END SECCION: Three Sections <-----#####*/
 
