@@ -265,8 +265,16 @@ main {
   display: flex;
   flex-direction: column;
   padding-left: 11vw;
-  padding-top: 10vh;
   justify-content: space-between;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 6em;
+  margin-block-end: 4em;
+  margin-inline-start: 8vw;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+  
 }
 
 .navbar-ventanaEmergente-opciones li{
@@ -971,7 +979,7 @@ main {
 
 #mundos {
   background-color: #f0f3f9;
-  width: 80vw;
+  width: auto;
   min-width: 50vw;
 }
 
