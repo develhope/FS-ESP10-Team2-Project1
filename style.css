@@ -1,5 +1,30 @@
 /*todo || GENERAL STYLES */
 
+@font-face {
+  font-family: 'Cera Pro Bold';
+  src: url(assets/font/Cera-Pro/Cera\ Pro\ Bold.otf);
+}
+
+@font-face {
+  font-family: 'Cera Pro Light';
+  src: url(assets/font/Cera-Pro/Cera\ Pro\ Light.otf);
+}
+
+@font-face {
+  font-family: 'Cera Pro Regular';
+  src: url(assets/font/Cera-Pro/Cera\ Pro\ Regular.otf);
+}
+
+@font-face {
+  font-family: 'Cera Pro Medium';
+  src: url(assets/font/Cera-Pro/Cera\ Pro\ Medium.otf);
+}
+
+@font-face {
+  font-family: 'Cera Pro Thin';
+  src: url(assets/font/Cera-Pro/Cera\ Pro\ Thin.otf);
+} 
+
 * {
   margin: 0px;
   padding: 0px;
@@ -44,8 +69,7 @@ main {
   margin: 0px auto;
   padding: 0px 1.875rem;
   background-color: rgb(248, 248, 248);
-  font-family: "Cera Pro", sans-serif;
-  font-weight: bold;
+  font-family: "Cera Pro Bold";
 }
 
 .jlTnwN {
@@ -253,7 +277,7 @@ main {
 /*? Estilos del NavBar */
 .navbar {
   /* Estilos generales del navbar */
-  font-family: Arial, sans-serif;
+  font-family: 'Cera Pro Medium';
   background-color: #ffd502;
   height: 4.6875rem;
   margin: 0 auto;
@@ -462,7 +486,7 @@ main {
   transition: left 0.3s ease;
   display: flex;
   flex-direction: column;
-  font-family: 'Cera Pro Thin';
+  font-family: 'Cera Pro Regular';
 }
 
 .navbar-ventanaEmergente-navbar>img {
@@ -478,12 +502,11 @@ main {
   top: 10px;
   right: 10px;
   color: #000;
-  font-weight: bold;
   cursor: pointer;
   text-decoration: none;
   border: none;
   background-color: transparent;
-  font-family: 'Cera Pro Thin';
+  font-family: 'Cera Pro Bold';
 }
 
 .navbar-ventanaEmergente-navbar {
@@ -515,8 +538,23 @@ main {
   display: flex;
   flex-direction: column;
   padding-left: 11vw;
-  padding-top: 10vh;
   justify-content: space-between;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 6em;
+  margin-block-end: 4em;
+  margin-inline-start: 8vw;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+  font-family: 'Cera Pro Regular';
+}
+
+.navbar-li{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-bottom: 20px;
 }
 
 .navbar-ventanaEmergente-contenido_opciones>div {
@@ -531,12 +569,13 @@ main {
   text-decoration: none;
   background-color: transparent;
   border: none;
-  font-family: 'Cera Pro Thin';
+  font-family: 'Cera Pro Regular';
   font-size: 15px;
 }
 
 .navbar-ventanaEmergente-contenido_opciones li {
   list-style: none;
+  margin-bottom: 20px;
 }
 
 
@@ -1237,30 +1276,6 @@ main {
 /*todo#####-----> END SECCION: Three Sections <-----#####*/
 
 /*todo#####-----> START SECCION: Mundos Cards y Footer <-----#####*/
-@font-face {
-  font-family: 'Cera Pro Bold';
-  src: url(assets/font/Cera-Pro/Cera\ Pro\ Bold.otf);
-}
-
-@font-face {
-  font-family: 'Cera Pro Light';
-  src: url(assets/font/Cera-Pro/Cera\ Pro\ Light.otf);
-}
-
-@font-face {
-  font-family: 'Cera Pro Regular';
-  src: url(assets/font/Cera-Pro/Cera\ Pro\ Regular.otf);
-}
-
-@font-face {
-  font-family: 'Cera Pro Medium';
-  src: url(assets/font/Cera-Pro/Cera\ Pro\ Medium.otf);
-}
-
-@font-face {
-  font-family: 'Cera Pro Thin';
-  src: url(assets/font/Cera-Pro/Cera\ Pro\ Thin.otf);
-}
 
 .MundosSets {
   display: flex;
@@ -1274,7 +1289,7 @@ main {
 
 #mundos {
   background-color: #f0f3f9;
-  width: 80vw;
+  width: auto;
   min-width: 50vw;
 }
 
