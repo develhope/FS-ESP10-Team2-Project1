@@ -44,6 +44,8 @@ main {
   margin: 0px auto;
   padding: 0px 1.875rem;
   background-color: rgb(248, 248, 248);
+  font-family: "Cera Pro", sans-serif;
+  font-weight: bold;
 }
 
 .jlTnwN {
@@ -59,13 +61,18 @@ main {
   padding: 0px 1.875rem;
 }
 
-.preNavbar-playArea {
+.preNavbar-div-playArea {
   flex: 0 1 33.3333%;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   margin-top: 0.9375rem;
   margin-bottom: 0.9375rem;
+}
+
+.preNavbar-div-playArea>a {
+  text-decoration: none;
+  font-weight: inherit;
 }
 
 .dnUvCH {
@@ -121,7 +128,7 @@ main {
   transform: rotate(180deg);
 }
 
-.goQmkd {
+.preNavbar-div-phrase {
   height: 3.1875rem;
   display: flex;
   -webkit-box-pack: justify;
@@ -149,6 +156,7 @@ main {
   will-change: transform;
 }
 
+
 .cnbbhr {
   color: inherit;
   font-size: 0.75rem;
@@ -165,21 +173,19 @@ main {
   color: rgb(0, 0, 0);
 }
 
-.friqQc {
-  cursor: pointer;
-}
-
 .jtbspI {
   pointer-events: all;
   margin-left: 1.25rem;
   white-space: nowrap;
+  text-decoration: none;
+
 }
 
 .jtbspI span {
   color: rgb(0, 90, 210);
 }
 
-.preNavbar-login {
+.preNavbar-div-login {
   flex: 0 1 33.3333%;
   display: flex;
   -webkit-box-align: center;
@@ -188,7 +194,7 @@ main {
   justify-content: flex-end;
 }
 
-.kcJaTg {
+.preNavbar-div-login>a {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -197,11 +203,11 @@ main {
   line-height: 1.1875rem;
   color: rgb(0, 0, 0);
   font-weight: 500;
+  text-decoration: none;
+  font-weight: inherit;
 }
 
-.kcJaTg:hover {
-  text-decoration: none;
-}
+
 
 .cnHyRF {
   line-height: 0;
@@ -220,30 +226,11 @@ main {
   background: rgb(117, 117, 117);
 }
 
-.ekjxSz {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  height: 100%;
-  font-size: 0.75rem;
-  line-height: 1.1875rem;
-  color: rgb(0, 0, 0);
-  font-weight: 500;
-}
-
-.ekjxSz:hover {
-  text-decoration: none;
-}
 
 .eRowKb {
   width: 1.25rem;
   height: 1.25rem;
   margin-right: 0.625rem;
-}
-
-
-.ekjxSz>span:first-child {
-  white-space: nowrap;
 }
 
 
@@ -255,7 +242,9 @@ main {
   justify-content: center;
   flex-shrink: 0;
   padding: 1.0625rem;
+  cursor: pointer;
 }
+
 
 .dHKzVM {
   line-height: 0;
@@ -323,7 +312,6 @@ main {
 .navbar-btn-trans {
   background-color: transparent;
   border: none;
-  cursor: pointer;
 }
 
 .navbar-btn-circle {

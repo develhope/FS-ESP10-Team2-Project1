@@ -154,11 +154,11 @@
     display: flex;
   }
 
-  .preNavbar-playArea {
+  .preNavbar-div-playArea {
     display: none;
   }
 
-  .preNavbar-login {
+  .preNavbar-div-login {
     display: none;
   }
 

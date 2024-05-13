@@ -19,7 +19,7 @@
     <!--*** PreNavbar -->
     <div class="preNavbar">
 
-        <div class="preNavbar-playArea">
+        <div class="preNavbar-div-playArea">
             <a href="#" class="dnUvCH eYcOQt">
                 <svg width="37" height="16" viewBox="0 0 37 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     class="SkYtC fZmJyP">
@@ -31,15 +31,15 @@
             </a>
         </div>
 
-        <div class="goQmkd">
+        <div class="preNavbar-div-phrase">
             <div class="hnQEGM">
                 <div class="dAZEkP">
                     <p class="cnbbhr fVnnND">
-                        <span class="epIXnJ">
+                        <span>
                             ¡ENVÍO GRATUITO para los pedidos superiores a 55€!*
                         </span>
-                        <a class="friqQc jtbspI" href="#">
-                            <span class="epIXnJ">
+                        <a class="jtbspI" href="#">
+                            <span>
                                 Saber más
                             </span>
                         </a>
@@ -48,8 +48,8 @@
             </div>
         </div>
 
-        <div class="preNavbar-login">
-            <button class="kcJaTg navbar-btn-trans">
+        <div class="preNavbar-div-login">
+            <a class="kcJaTg navbar-btn-trans" href="#">
                 <svg width="20" height="22" viewBox="0 0 20 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     class="cnHyRF KHcEY">
                     <g transform="translate(1 1)" fill-rule="nonzero" fill="none">
@@ -71,7 +71,7 @@
                 <span>
                     Iniciar sesión
                 </span>
-            </button>
+            </a>
             <span class="bhhMqN">
             </span>
             <a class="friqQc ekjxSz" href="#">
@@ -82,7 +82,7 @@
             </a>
         </div>
 
-        <button aria-label="Close" class="preNavbar-buttom-close navbar-btn-trans">
+        <button aria-label="Close" class="preNavbar-buttom-close navbar-btn-trans" onclick="closePreNavbar()">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true"
                 class="dHKzVM">
                 <path
@@ -98,7 +98,7 @@
     <nav class="navbar">
 
         <!--** Menu hamburgesa de la barra de navegación -->
-        <button class="navbar-short-hamburger-icon" aria-label="Menú" onclick="plantilla()">
+        <button class="navbar-short-hamburger-icon" aria-label="Menú" onclick="mainMenu(1)">
             <div>
                 <div></div>
             </div>
@@ -115,9 +115,9 @@
         <div class="navbar-div-links">
             <ul class="navbar-links">
                 <!--* Enlaces de la barra de navegación -->
-                <li><a href="#" id="comprar" class="active" onclick="plantilla()">COMPRAR</a></li>
-                <li><a href="#" id="descubrir" class="active" onclick="plantilla()">DESCUBRIR</a></li>
-                <li><a href="#" id="ayuda" class="active" onclick="plantilla()">AYUDA</a></li>
+                <li><a href="#" onclick="mainMenu('buy')">COMPRAR</a></li>
+                <li><a href="#" onclick="mainMenu('discover')">DESCUBRIR</a></li>
+                <li><a href="#" onclick="mainMenu('help')">AYUDA</a></li>
             </ul>
         </div>
 
@@ -179,7 +179,7 @@
         </div>
 
         <!--** Menu desplegable Ventana Emergente -->
-        <div class="navbar-ventanaEmergente" id="navbar-ventanaEmergente">
+        <div class="navbar-ventanaEmergente">
             <div class="navbar-ventanaEmergente-navbar">
                 <img src="assets/navBar-banner-subBanner/images/navBar/logoLego.svg" alt="Logo LEGO">
 
@@ -196,7 +196,7 @@
                 </div>
             </div>
             <div class="navbar-ventanaEmergente-contenido_opciones">
-                <button class="navbar-ventanaEmergente-botonCerrar" onclick="cerrarVentana()">X</button>
+                <button class="navbar-ventanaEmergente-botonCerrar" onclick="mainMenu(0)">X</button>
 
                 <div class="navbar-ventanaEmergente-contenido_opc_comprar">
                     <ul class="navbar-ventanaEmergente-contenido_lista_opcion_comprar">
