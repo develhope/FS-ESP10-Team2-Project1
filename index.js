@@ -12,12 +12,20 @@ function closePreNavbar() {
  * Si opc es 0, se cerrará el menú. Si es 1, se mostrará el menú sin ninguna opción, útil para debugear.
  */
 function mainMenu(opc) {
-  const optionsAvailable = [0, 1, "buy", "discover", "help"]; // Declara las opciones disponibles
+  var opc = opc;
+  // Objeto que mapea cada opción a su correspondiente selector CSS
+  const elemetAvailables = {
+    buy: ".navbar-ventanaEmergente-contenido_opc_comprar",
+    discover: ".navbar-ventanaEmergente-contenido_opc_descubrir",
+    help: ".navbar-ventanaEmergente-contenido_opc_ayuda",
+  };
+
+  const numAvailables = [0, 1];
 
   // Verifica si la opción es inválida y devuelve true si lo es, de lo contrario, false
   if (invalidOpc()) return;
 
-  // Evalúa si la opción es 0 y llama a la función mainMenuClose si es verdadero, de lo contrario, llama a mainMenuShow
+  // Evalúa si la opción es 0 y llama a la función "mainMenuClose" si es verdadero, de lo contrario, llama a "mainMenuShow"
   opc === 0 ? mainMenuClose() : mainMenuShow();
 
   // Verifica si la opción es indefinida, nula o una cadena vacía, y si está dentro de las opciones disponibles
@@ -29,10 +37,14 @@ function mainMenu(opc) {
       return true;
     }
 
-    if (!optionsAvailable.includes(opc)) {
+    // Obtener las claves del objeto "elemetAvailables"
+    const keys = Object.keys(elemetAvailables);
+
+    // Verificar si la opción está presente como una clave en el objeto "elemetAvailables"
+    if (!keys.includes(opc) && !numAvailables.includes(opc)) {
       console.error(
         `Error: La opción '${opc}' no es válida. Las opciones disponibles son: 
-      (${optionsAvailable.slice(2).join(", ")})`
+        (${keys.join(", ")}) o (${numAvailables.join(", ")})`
       );
       return true;
     }
@@ -41,6 +53,28 @@ function mainMenu(opc) {
   }
 
   function mainMenuShow() {
+    function showSection() {
+      // Recorremos todas las clases en "elemetAvailables"
+      for (const key in elemetAvailables) {
+        if (Object.hasOwnProperty.call(elemetAvailables, key)) {
+          const selector = elemetAvailables[key];
+          const element = document.querySelector(selector);
+
+          // Mostramos todos los elementos si opc es el segundo valor del array "numAvailables"
+          if (opc === numAvailables[1]) {
+            element.style.display = "flex";
+          } else {
+            // Ocultamos todos los elementos excepto el que corresponde a la opción actual
+            if (selector !== elemetAvailables[opc]) {
+              element.style.display = "none";
+            } else {
+              element.style.display = "flex"; // Mostramos el elemento actual
+            }
+          }
+        }
+      }
+    }
+
     const popUp = document.querySelector(".navbar-ventanaEmergente");
     let background = document.getElementById("fondoNegro");
 
@@ -51,17 +85,7 @@ function mainMenu(opc) {
       applyTransitions(popUp, background); // Aplica las transiciones al mostrar el menú
     }
 
-    //! Crear una función para mostrar la sección correspondiente segun la (opc)
-    switch (opc) {
-      case optionsAvailable[1]:
-        break;
-      case optionsAvailable[2]:
-        break;
-      case optionsAvailable[3]:
-        break;
-      case optionsAvailable[4]:
-        break;
-    }
+    showSection();
   }
 
   function mainMenuClose() {

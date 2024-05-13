@@ -511,11 +511,16 @@ main {
 }
 
 .navbar-ventanaEmergente-contenido_opciones {
+  /* display: none; */
   display: flex;
   flex-direction: column;
   padding-left: 11vw;
   padding-top: 10vh;
   justify-content: space-between;
+}
+
+.navbar-ventanaEmergente-contenido_opciones>div {
+  display: none;
 }
 
 .navbar-ventanaEmergente-opciones li {
