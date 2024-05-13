@@ -89,6 +89,13 @@
 /** min-width -> (screen > px) */
 @media screen and (min-width: 769px) {
 
+  .preNavbar-buttom-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+
   .banner-div-backgroundImage img[id="2"] {
     display: none;
   }
@@ -138,6 +145,24 @@
 
 /* NavBar change short */
 @media screen and (max-width: 901px) {
+
+  .preNavbar {
+    justify-content: center;
+  }
+
+  .preNavbar-buttom-close {
+    display: flex;
+  }
+
+  .preNavbar-playArea {
+    display: none;
+  }
+
+  .preNavbar-login {
+    display: none;
+  }
+
+
   .navbar {
     background-color: white;
     justify-content: left;

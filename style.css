@@ -31,6 +31,236 @@ main {
 
 /*todo#####-----> START SECCION: NavBar-Banner y SubBaneer <-----#####*/
 
+/*? Estilos del PreNavBar */
+
+.preNavbar {
+  position: relative;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: auto;
+  margin: 0px auto;
+  padding: 0px 1.875rem;
+  background-color: rgb(248, 248, 248);
+}
+
+.jlTnwN {
+  position: relative;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0px auto;
+  padding: 0px 1.875rem;
+}
+
+.preNavbar-playArea {
+  flex: 0 1 33.3333%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+.dnUvCH {
+  display: inline-block;
+  width: auto;
+  padding: 0.9375rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  background-color: rgb(0, 90, 210);
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 90, 210);
+}
+
+.eYcOQt {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  border: none;
+  background: rgb(171, 217, 255);
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  text-transform: uppercase;
+  padding: 0px 0.625rem;
+  box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+}
+
+.dnUvCH:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.eYcOQt:hover {
+  text-decoration: none;
+  background: rgb(255, 255, 255);
+}
+
+.SkYtC {
+  line-height: 0;
+  height: 16px;
+  width: 15px;
+}
+
+.fZmJyP {
+  margin-right: 0.625rem;
+  transform: rotate(180deg);
+}
+
+.goQmkd {
+  height: 3.1875rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.hnQEGM {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.dAZEkP {
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-shrink: 0;
+  transform: translateX(0%);
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.cnbbhr {
+  color: inherit;
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+  text-transform: inherit;
+}
+
+.fVnnND {
+  pointer-events: none;
+  margin: 0px;
+  text-align: center;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+}
+
+.friqQc {
+  cursor: pointer;
+}
+
+.jtbspI {
+  pointer-events: all;
+  margin-left: 1.25rem;
+  white-space: nowrap;
+}
+
+.jtbspI span {
+  color: rgb(0, 90, 210);
+}
+
+.preNavbar-login {
+  flex: 0 1 33.3333%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.kcJaTg {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.kcJaTg:hover {
+  text-decoration: none;
+}
+
+.cnHyRF {
+  line-height: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.KHcEY {
+  margin-right: 0.625rem;
+}
+
+.bhhMqN {
+  margin: 0px 1.25rem;
+  width: 0.0625rem;
+  height: 1.25rem;
+  background: rgb(117, 117, 117);
+}
+
+.ekjxSz {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.ekjxSz:hover {
+  text-decoration: none;
+}
+
+.eRowKb {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+}
+
+
+.ekjxSz>span:first-child {
+  white-space: nowrap;
+}
+
+
+.preNavbar-buttom-close {
+  display: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 1.0625rem;
+}
+
+.dHKzVM {
+  line-height: 0;
+}
+
 /*? Estilos del NavBar */
 .navbar {
   /* Estilos generales del navbar */
@@ -458,7 +688,7 @@ main {
 /*? Estilos del SubBanner */
 .subBanner {
   padding: 0;
-  margin: 10px 0 0 0;
+  margin: 10px 0 80px 0;
   display: flex;
   flex-wrap: wrap;
 }
