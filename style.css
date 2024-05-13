@@ -23,7 +23,7 @@
 @font-face {
   font-family: 'Cera Pro Thin';
   src: url(assets/font/Cera-Pro/Cera\ Pro\ Thin.otf);
-} 
+}
 
 * {
   margin: 0px;
@@ -34,7 +34,7 @@
 
 /* body {} */
 
-/* <main>*/
+/** <main>*/
 main {
   /* margin-bottom: 1.875rem; */
   /* margin: 0; */
@@ -371,6 +371,7 @@ main {
 }
 
 .navbar-btn-login {
+  /*!#warning: Mala práctica (!important) */
   display: none !important;
   flex-direction: column;
   -webkit-box-pack: center;
@@ -471,7 +472,7 @@ main {
 
 
 
-/*? Estilos del NavBar Menu Ventana emerjente */
+/*? Estilos del NavBar Menu Ventana emergente */
 .navbar-ventanaEmergente {
   position: fixed;
   left: -50%;
@@ -550,7 +551,7 @@ main {
   font-family: 'Cera Pro Regular';
 }
 
-.navbar-li{
+.navbar-li {
   display: flex;
   justify-content: space-between;
   margin-right: 100px;

@@ -190,6 +190,14 @@
     display: none;
   }
 
+
+  /*!#error: Arreglar, JS necesita una actualización */
+  .navbar-ventanaEmergente {
+    /* left: 0 !important; */
+    /* left: -100% ;
+    width: 100%; */
+  }
+
 }
 
 /** min-width -> (screen > px) */
@@ -1563,7 +1571,8 @@
     border-style: none;
   }
 
-  .quienes_atencion_atraccioones_masInfo>#quienesSomos, .quienes_atencion_atraccioones_masInfo>#atencionAlCliente,
+  .quienes_atencion_atraccioones_masInfo>#quienesSomos,
+  .quienes_atencion_atraccioones_masInfo>#atencionAlCliente,
   .quienes_atencion_atraccioones_masInfo>#atracciones,
   .quienes_atencion_atraccioones_masInfo>#masInformacion {
     display: flex;
@@ -1578,7 +1587,7 @@
     font-family: 'Cera Pro Regular';
   }
 
-  .quienes_atencion_atraccioones_masInfo>#quienesSomos{
+  .quienes_atencion_atraccioones_masInfo>#quienesSomos {
     border-top: 1px white solid;
   }
 
