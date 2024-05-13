@@ -14,16 +14,11 @@ function closePreNavbar() {
 function mainMenu(opc) {
   const optionsAvailable = [0, 1, "buy", "discover", "help"]; // Declara las opciones disponibles
 
-  // Verifica si la opción es inválida
-  if (invalidOpc()) {
-    return;
-  }
+  // Verifica si la opción es inválida y devuelve true si lo es, de lo contrario, false
+  if (invalidOpc()) return;
 
-  if (opc === 0) {
-    mainMenuClose(); // Cierra el menú si la opción es 0
-  } else {
-    mainMenuShow(); // Muestra el menú si la opción es diferente de 0
-  }
+  // Evalúa si la opción es 0 y llama a la función mainMenuClose si es verdadero, de lo contrario, llama a mainMenuShow
+  opc === 0 ? mainMenuClose() : mainMenuShow();
 
   // Verifica si la opción es indefinida, nula o una cadena vacía, y si está dentro de las opciones disponibles
   function invalidOpc() {
