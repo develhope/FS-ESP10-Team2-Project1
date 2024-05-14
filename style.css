@@ -1285,7 +1285,7 @@ main {
   justify-items: center;
   align-content: center;
   align-items: center;
-  width: 80vw;
+  width: auto;
   padding: 10vw;
 }
 
@@ -1298,7 +1298,7 @@ main {
 #navMundos {
   font-family: 'Cera Pro Bold';
   background-color: #300C54;
-  width: 80vw;
+  width: auto;
   height: 90px;
   font-weight: bolder;
   justify-content: center;
