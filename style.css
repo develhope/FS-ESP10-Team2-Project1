@@ -1315,22 +1315,22 @@ padding-right:5vw ;
   }
   
 
-  .OTRproduct-container {
+  .OTRproduct-container, .DESTcarousel {
     flex-direction: row;
     align-items: center;
-    width: 60%;
+    width: 100%; /* Asegura que el contenedor use el ancho completo disponible */
     gap: 10px;
-  }
+}
 
-  .OTRproduct {
-    width: 80%;
+  .OTRproduct, .DESTproduct-card {
+    width: 80%; /* Ajusta a 80% o menos para evitar desbordamiento */
     height: auto;
-  }
+}
 
   .DESTcarousel {
     flex-direction: row;
     align-items: center;
-    width: 60%;
+    width: 200px;
     gap: 10px;
   }
 
@@ -1365,8 +1365,9 @@ padding-right:5vw ;
   .OTRproduct-container {
     flex-direction: row;
     justify-content: flex-start;
-    width: 100%;
+    width: auto;
     gap: 15px;
+    overflow: hidden;
   }
 
   .OTRproduct {
@@ -1437,7 +1438,7 @@ padding-right:5vw ;
   .OTRproduct-container {
     flex-direction: row;
     justify-content: flex-start;
-    width: 100%;
+    width: 80%;
     gap: 20px;
   }
 
@@ -1467,7 +1468,7 @@ padding-right:5vw ;
 .OTRproduct-container {
     display: flex;            /* Alinea horizontalmente los productos */
     overflow-x: auto;         /* Habilita el desplazamiento horizontal */
-    width: 875px;
+    
     scrollbar-width: thin;
     scrollbar-color: #525357a5 #5152572b;
     scroll-behavior: smooth;
@@ -1486,6 +1487,7 @@ padding-right:5vw ;
   height: 380px;
   scroll-snap-align: start;   /* Opcional: alinea los elementos con el inicio del contenedor al desplazar */
   background: #fff;           /* Fondo blanco para los productos */
+  -webkit-overflow-scrolling: touch;
   padding: 10px;              /* Padding interno */
   overflow: hidden;
   position: relative;
