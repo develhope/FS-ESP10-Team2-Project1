@@ -1705,11 +1705,11 @@
 
 
 /*todo || RESPONSIVE START SECCION: THREE LAST SECTIONS*/
-@media only screen and (min-width: 320px) and (max-width: 767.5px){
+/* @media only screen and (min-width: 320px) and (max-width: 767.5px){
   .section1-last-three-sections {
-    /* margin: 10vh; */
+    margin: 10vh;
     box-sizing: border-box;
-    /* display: inline-block; */
+    display: inline-block;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1720,7 +1720,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: thin;
-    width: 80vw;
+    width: 70vw;
   }
 
   .section2-last-three-sections {
@@ -1736,15 +1736,15 @@
     scrollbar-color: #1d233da5 #262f492b;
     overflow-x: auto;
     overflow-y: hidden;
-    width: 80vw;
+    width: 70vw;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1999.5px){
   .section1-last-three-sections {
-    /* margin: 10vh; */
+    margin: 10vh;
     box-sizing: border-box;
-    /* display: inline-block; */
+    display: inline-block;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1777,11 +1777,11 @@
 
 @media only screen and (min-width: 1200px){
   .inner-container-last-three-sections {
-    /* margin: auto;
-    padding: auto; */
-    /* margin-left: 7vw; */
+    margin: auto;
+    padding: auto; 
+    margin-left: 7vw; 
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Cera Pro Regular';
     font-size: 12px;
     letter-spacing: 0.2px;
   }
@@ -1789,14 +1789,14 @@
 
 @media only screen and (min-width: 1300px){
   .inner-container-last-three-sections {
-    /* margin: auto;
-    padding: auto; */
-    margin-left: 7vw;
+    margin: auto;
+    padding: auto; 
+    margin-left: 7vw; 
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Cera Pro Regular';
     font-size: 12px;
     letter-spacing: 0.2px;
   }
-}
+} */
 
 /*todo || RESPONSIVE END SECCION: THREE LAST SECTIONS*/
