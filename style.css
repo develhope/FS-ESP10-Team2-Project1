@@ -796,106 +796,114 @@ main {
 /*Inicio de sección de CSS de sets destacados*/
 
 .GENfuente {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 10%;
 }
 
 .DESTproduct-card {
-  width: 310px;
-  border: 0px ;
-  overflow: hidden;
-  position: relative;
-  height: 450px;
-  
+    width: 200%;
+    max-width: 310px;
+    border: 0px ;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    
 }
 .DESTproduct-card .DESTlike {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    
 }
 .DESTproduct-card img {
-  width: 100%;
-  height: 250px;
-  display: block;
-  object-fit: contain;
-  transition: transform 0.3s ease; /* Añade una transición suave para el efecto de zoom */
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Añade una transición suave para el efecto de zoom */
 }
 .DESTproduct-card img:hover {
-  transform: scale(1.1); /* Aplica el zoom a la imagen */
+    transform: scale(1.1); /* Aplica el zoom a la imagen */
 }
 .DESTproduct-card .DESTnew-badge {
-  background-color: #FFD700;
-  color: rgb(0, 0, 0);
-  padding: 5px 10px;
-  position: absolute;
-  top: -35px;
-  left: 10px;
-  font-size: 0.8em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
+    background-color: #FFD700;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    position: absolute;
+    top: -35px;
+    left: 10px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 .DESTproduct-card .DESTproduct-info {
-  padding: 15px;
-  height: 180px;
-  background: #000000;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    padding: 15px;
+    height: 150px;
+    background: #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .DESTproduct-card .DESTproduct-info h2 {
-  margin: 0;
-  font-size: 1.2em;
-  color: #ffffff;
-  text-align: left;
-  bottom: -15%;
+    margin: 0;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: left;
+    bottom: -15%;
 }
 .DESTproduct-card .DESTproduct-info .DESTprice {
-  color: #ffffff;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 5px;
-  text-align: left;
-  
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: left;
+    
 }
 .DESTproduct-card button {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 1em;
-  width: 100%;
-  border-radius: 3px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 3px;
+    
 }
 
 .DESTproduct-card button:hover {
-  background-color: #000000;  /* Cambia el fondo a negro */
-  color: #ffffff;             /* Cambia el texto a blanco */
-  border: 2px solid #ffffff;  /* Agrega un borde blanco */
+    background-color: #000000;  /* Cambia el fondo a negro */
+    color: #ffffff;             /* Cambia el texto a blanco */
+    border: 2px solid #ffffff;  /* Agrega un borde blanco */
 }
 
 
 
 
 .DESTcarousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  justify-content: flex-start; /* Alinea elementos al inicio */
-  align-items: center;
-  margin: 0 auto;
-  margin-left: 12%;
-  margin-right: 12%;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #525357a5 #5152572b;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start; /* Alinea elementos al inicio */
+    align-items: center;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 .DESTcarousel .DESTproduct-card {
-  flex: 0 0 30%; /* Ajusta esto según el tamaño deseado de las tarjetas */
-  margin: 10px; /* Espacio uniforme */
+    flex: 0 0 30%; /* Ajusta esto según el tamaño deseado de las tarjetas */
+    margin: 10px; /* Espacio uniforme */
 }
 
 
@@ -906,63 +914,63 @@ main {
 /*Inicio de sección de CSS de SELECCIONES DE ESTA SEMANA*/
 
 .SELfeature-section {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
 .SELfeature-section .SELfeature {
-  width: 30%;
-  border-radius: 4px;
-  overflow: hidden;
-  background: #fff;
-  margin: 10px;
-  text-align: center; /* Centra el texto dentro de cada característica */
+    width: 30%;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    margin: 10px;
+    text-align: center; /* Centra el texto dentro de cada característica */
 }
 .SELfeature img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .SELfeature h2 {
-  font-size: 1.4em;
-  color: #333;
-  padding: 16px;
-  margin: 0;
-  margin-bottom: 20px; /* Distancia fija debajo del título */
+    font-size: 1.4em;
+    color: #333;
+    padding: 16px;
+    margin: 0;
+    margin-bottom: 20px; /* Distancia fija debajo del título */
 }
 .SELfeature p {
-  padding: 0 16px;
-  color: #666;
-  font-size: 1em;
-  margin-bottom: 20px; /* Distancia fija debajo del párrafo */
+    padding: 0 16px;
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 20px; /* Distancia fija debajo del párrafo */
 }
 .SELfeature a {
-  display: block;
-  padding: 12px 16px;
-  color: #000000;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin-bottom: 20px; /* Distancia fija debajo del enlace */
+    display: block;
+    padding: 12px 16px;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 20px; /* Distancia fija debajo del enlace */
 }
 .SELfeature a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 .SELfeature a:after {
-  content: " >";
+    content: " >";
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .SELfeature-section {
-      flex-direction: column; /* Cambia la disposición de las tarjetas a vertical */
-      align-items: center;
-  }
-  .SELfeature-section .SELfeature {
-      width: 80%; /* Ajusta el ancho de cada tarjeta para que sea más ancha en la disposición vertical */
-  }
+    .SELfeature-section {
+        flex-direction: column; /* Cambia la disposición de las tarjetas a vertical */
+        align-items: center;
+    }
+    .SELfeature-section .SELfeature {
+        width: 80%; /* Ajusta el ancho de cada tarjeta para que sea más ancha en la disposición vertical */
+    }
 }
 
 /*Final de sección de CSS de SELECCIONES DE ESTA SEMANA*/
@@ -970,113 +978,120 @@ main {
 /*Inicio de sección de CSS de COMPRAS DE OTROS CLIENTES*/
 
 .OTRproduct-container {
-  display: flex;            /* Alinea horizontalmente los productos */
-  overflow-x: auto;         /* Habilita el desplazamiento horizontal */
-  scroll-behavior: smooth;
-  gap: 20px;                /* Espacio entre los productos */
-  -webkit-overflow-scrolling: touch;
-  justify-content: flex-start;
-  align-items: flex-start; /* Cambiado para alinear las tarjetas en la parte superior */
-}
+    display: flex;            /* Alinea horizontalmente los productos */
+    overflow-x: auto;         /* Habilita el desplazamiento horizontal */
+    scrollbar-width: thin;
+    scrollbar-color: #525357a5 #5152572b;
+    scroll-behavior: smooth;
+    gap: 20px;                /* Espacio entre los productos */
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    align-items: flex-start; /* Cambiado para alinear las tarjetas en la parte superior */
+    margin-left: 12%;
+    margin-right: 12%;
 
+}
+  
 .OTRproduct {
-  flex: 0 0 auto;             /* Los elementos no crecen ni encogen pero sí mantienen su tamaño */
-  width: 300px;               /* Anchura fija para cada producto */
-  height: 380px;
-  scroll-snap-align: start;   /* Opcional: alinea los elementos con el inicio del contenedor al desplazar */
-  background: #fff;           /* Fondo blanco para los productos */
-  padding: 10px;              /* Padding interno */
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; /* Asegura que el contenido esté distribuido de manera uniforme */
-  height: fill;/* Añadido para que todas las tarjetas tengan la misma altura */
+    flex: 0 0 auto;             /* Los elementos no crecen ni encogen pero sí mantienen su tamaño */
+    width: 300px;               /* Anchura fija para cada producto */
+    height: 380px;
+    scroll-snap-align: start;   /* Opcional: alinea los elementos con el inicio del contenedor al desplazar */
+    background: #fff;           /* Fondo blanco para los productos */
+    padding: 10px;              /* Padding interno */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Asegura que el contenido esté distribuido de manera uniforme */
+    height: fill;/* Añadido para que todas las tarjetas tengan la misma altura */
 }
 
 .OTRproduct .OTRlike {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 .OTRproduct img {
-  max-width: 100%;                /* Ajusta las imágenes para que ocupen todo el ancho del producto */
-  max-height: 200px;              /* Mantiene la proporción de las imágenes y fija la altura máxima */
-  object-fit: contain;
-  display: block;
-  transition: transform 0.3s ease;
-  margin-bottom: auto;            /* Añadido para que las imágenes no se estiren y ocupen el espacio vertical disponible */
+    max-width: 100%;                /* Ajusta las imágenes para que ocupen todo el ancho del producto */
+    max-height: 200px;              /* Mantiene la proporción de las imágenes y fija la altura máxima */
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+    margin-bottom: auto;            /* Añadido para que las imágenes no se estiren y ocupen el espacio vertical disponible */
 }
 
 .OTRproduct .OTRimage-container { 
-  width: 100%; 
-  height: 250px;               /* Altura fija para el contenedor de la imagen */
-  border: 1px solid #ccc;     /* Borde sutil */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%; 
+    height: 250px;               /* Altura fija para el contenedor de la imagen */
+    border: 1px solid #ccc;     /* Borde sutil */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+  
 .OTRproduct img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .OTRnew-label {
-  background-color: #FFD700;
-  position: absolute;   /* Cambiado para que la etiqueta esté en posición absoluta */
-  top: 220px;            /* Ajustado para colocar la etiqueta en la parte superior */
-  left: 40px;           /* Ajustado para colocar la etiqueta a la izquierda */
-  width: auto;          /* Cambiado para que el ancho se ajuste automáticamente al contenido */
-  padding: 5px 10px;
-  color: #000000;             
-  font-size: 0.8em;
-  border-radius: 5px;   /* Añadido para bordes redondeados */
-  z-index: 1;           /* Asegura que la etiqueta esté encima de otros elementos */
+    background-color: #FFD700;
+    position: absolute;   /* Cambiado para que la etiqueta esté en posición absoluta */
+    top: 220px;            /* Ajustado para colocar la etiqueta en la parte superior */
+    left: 40px;           /* Ajustado para colocar la etiqueta a la izquierda */
+    width: auto;          /* Cambiado para que el ancho se ajuste automáticamente al contenido */
+    padding: 5px 10px;
+    color: #000000;             
+    font-size: 0.8em;
+    border-radius: 5px;   /* Añadido para bordes redondeados */
+    z-index: 1;           /* Asegura que la etiqueta esté encima de otros elementos */
 }
 
 .OTRproduct .OTRproduct-title {
-  margin: 10px 0; /* Añadido para margen vertical */
-  text-align: center; /* Añadido para centrar el texto */
-  flex-grow: 1; /* Añadido para que el título ocupe el espacio disponible */
-  position: absolute;
-  top: 265px;
+    margin: 10px 0; /* Añadido para margen vertical */
+    text-align: center; /* Añadido para centrar el texto */
+    flex-grow: 1; /* Añadido para que el título ocupe el espacio disponible */
+    position: absolute;
+    top: 265px;
 }
 
 .OTRprice {
-  color: #000000;
-  position: absolute;
-  text-align: left;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 5px;
-  
-  left: 20px;
-  top: 300px;
+    color: #000000;
+    position: absolute;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 5px;
+    
+    left: 20px;
+    top: 300px;
 }
-
+  
 .OTRadd-to-cart-btn {
-  display: flex;             /* Hace que el enlace ocupe todo el ancho del contenedor */
-  justify-content: center;
-  align-items: center;
-  width: 100%;               /* Cambiado para que ocupe el 100% del ancho del contenedor */
-  height: 50px;              /* Ajustado para un tamaño de botón más pequeño y uniforme */
-  margin-top: 10px;          /* Margen superior */
-  padding: 10px;             /* Padding para el botón */
-  background-color: #ff6600; /* Color de fondo del botón */
-  color: rgb(0, 0, 0);       /* Color del texto del botón */
-  text-decoration: none;     /* Elimina el subrayado de los enlaces */
-  border-radius: 5px;        /* Bordes redondeados para el botón */
-  border: 2px solid #ff6600; /* Borde inicial del mismo color que el fondo */
-  flex-shrink: 0;            /* Añadido para evitar que el botón se reduzca en tamaño */
-  box-sizing: border-box;    /* Añadido para asegurar que el padding no afecte el tamaño del botón */
+    display: flex;             /* Hace que el enlace ocupe todo el ancho del contenedor */
+    justify-content: center;
+    align-items: center;
+    width: 100%;               /* Cambiado para que ocupe el 100% del ancho del contenedor */
+    height: 50px;              /* Ajustado para un tamaño de botón más pequeño y uniforme */
+    margin-top: 10px;          /* Margen superior */
+    padding: 10px;             /* Padding para el botón */
+    background-color: #ff6600; /* Color de fondo del botón */
+    color: rgb(0, 0, 0);       /* Color del texto del botón */
+    text-decoration: none;     /* Elimina el subrayado de los enlaces */
+    border-radius: 5px;        /* Bordes redondeados para el botón */
+    border: 2px solid #ff6600; /* Borde inicial del mismo color que el fondo */
+    flex-shrink: 0;            /* Añadido para evitar que el botón se reduzca en tamaño */
+    box-sizing: border-box;    /* Añadido para asegurar que el padding no afecte el tamaño del botón */
+    padding: 11px;
 }
 
 .OTRadd-to-cart-btn:hover {
-  background-color: #ffffff;  /* Nuevo color de fondo cuando se pasa el ratón por encima */
-  color: #000000;             /* Nuevo color del texto cuando se pasa el ratón por encima */
-  border: 2px solid #ff6600;  /* Borde del botón en color naranja */
+    background-color: #ffffff;  /* Nuevo color de fondo cuando se pasa el ratón por encima */
+    color: #000000;             /* Nuevo color del texto cuando se pasa el ratón por encima */
+    border: 2px solid #ff6600;  /* Borde del botón en color naranja */
 }
+
 
 
 
