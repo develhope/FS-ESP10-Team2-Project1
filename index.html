@@ -115,9 +115,9 @@
         <div class="navbar-div-links">
             <ul class="navbar-links">
                 <!--* Enlaces de la barra de navegación -->
-                <li><a href="#" onclick="mainMenu('buy')">COMPRAR</a></li>
-                <li><a href="#" onclick="mainMenu('discover')">DESCUBRIR</a></li>
-                <li><a href="#" onclick="mainMenu('help')">AYUDA</a></li>
+                <li><a onclick="mainMenu('buy')">COMPRAR</a></li>
+                <li><a onclick="mainMenu('discover')">DESCUBRIR</a></li>
+                <li><a onclick="mainMenu('help')">AYUDA</a></li>
             </ul>
         </div>
 
@@ -185,13 +185,16 @@
 
                 <div class="navbar-ventanaEmergente-opciones">
                     <p class="navbar-ventanaEmergente-opc_comprar">
-                        <button class=>COMPRAR</button>
+                        <button class="navbar-ventanaEmergente-opc_comprar-button" onclick="mainMenu('buy')"
+                            class=>COMPRAR</button>
                     </p>
                     <p class="navbar-ventanaEmergente-opc_descubrir">
-                        <button>DESCUBRIR</button>
+                        <button class="navbar-ventanaEmergente-opc_descubrir-button"
+                            onclick="mainMenu('discover')">DESCUBRIR</button>
                     </p>
                     <p class="navbar-ventanaEmergente-opc_ayuda">
-                        <button>AYUDA</button>
+                        <button class="navbar-ventanaEmergente-opc_ayuda-button"
+                            onclick="mainMenu('help')">AYUDA</button>
                     </p>
                 </div>
             </div>

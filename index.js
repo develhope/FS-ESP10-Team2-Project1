@@ -13,11 +13,20 @@ function closePreNavbar() {
  */
 function mainMenu(opc) {
   var opc = opc;
-  // Objeto que mapea cada opción a su correspondiente selector CSS
-  const elemetAvailables = {
-    buy: ".navbar-ventanaEmergente-contenido_opc_comprar",
-    discover: ".navbar-ventanaEmergente-contenido_opc_descubrir",
-    help: ".navbar-ventanaEmergente-contenido_opc_ayuda",
+
+  const elementsAvailables = {
+    buy: {
+      content: ".navbar-ventanaEmergente-contenido_opc_comprar",
+      button: ".navbar-ventanaEmergente-opc_comprar-button",
+    },
+    discover: {
+      content: ".navbar-ventanaEmergente-contenido_opc_descubrir",
+      button: ".navbar-ventanaEmergente-opc_descubrir-button",
+    },
+    help: {
+      content: ".navbar-ventanaEmergente-contenido_opc_ayuda",
+      button: ".navbar-ventanaEmergente-opc_ayuda-button",
+    },
   };
 
   const numAvailables = [0, 1];
@@ -37,10 +46,10 @@ function mainMenu(opc) {
       return true;
     }
 
-    // Obtener las claves del objeto "elemetAvailables"
-    const keys = Object.keys(elemetAvailables);
+    // Obtener las claves del objeto "elementsAvailables"
+    const keys = Object.keys(elementsAvailables);
 
-    // Verificar si la opción está presente como una clave en el objeto "elemetAvailables"
+    // Verificar si la opción está presente como una clave en el objeto "elementsAvailables"
     if (!keys.includes(opc) && !numAvailables.includes(opc)) {
       console.error(
         `Error: La opción '${opc}' no es válida. Las opciones disponibles son: 
@@ -52,23 +61,44 @@ function mainMenu(opc) {
     return false;
   }
 
+  /**
+   * Muestra el menú principal y actualiza los estilos de los elementos disponibles según la opción seleccionada.
+   */
   function mainMenuShow() {
-    function showSection() {
-      // Recorremos todas las clases en "elemetAvailables"
-      for (const key in elemetAvailables) {
-        if (Object.hasOwnProperty.call(elemetAvailables, key)) {
-          const selector = elemetAvailables[key];
-          const element = document.querySelector(selector);
+    // console.log("#opc: " + opc);
 
-          // Mostramos todos los elementos si opc es el segundo valor del array "numAvailables"
+    /**
+     * Muestra la sección correspondiente del menú según la opción seleccionada.
+     */
+    function showSection() {
+      for (let key in elementsAvailables) {
+        if (Object.hasOwnProperty.call(elementsAvailables, key)) {
+          // Obtener los selectores de los elementos
+          const elementContentSelector = elementsAvailables[key].content;
+          const elementButtonSelector = elementsAvailables[key].button;
+
+          // Encontrar los elementos correspondientes
+          const elementContent = document.querySelector(elementContentSelector);
+          const elementButton = document.querySelector(elementButtonSelector);
+
+          // Mostrar todos los elementos si opc es el segundo valor del array "numAvailables"
           if (opc === numAvailables[1]) {
-            element.style.display = "flex";
+            elementContent.style.display = "flex";
+
+            elementButton.style.textDecorationLine = "underline";
           } else {
-            // Ocultamos todos los elementos excepto el que corresponde a la opción actual
-            if (selector !== elemetAvailables[opc]) {
-              element.style.display = "none";
+            // Ocultar todos los elementos excepto el que corresponde a la opción actual
+
+            if (elementContentSelector !== elementsAvailables[opc].content) {
+              elementContent.style.display = "none";
             } else {
-              element.style.display = "flex"; // Mostramos el elemento actual
+              elementContent.style.display = "flex";
+            }
+
+            if (elementButtonSelector !== elementsAvailables[opc].button) {
+              elementButton.style.textDecorationLine = "none";
+            } else {
+              elementButton.style.textDecorationLine = "underline";
             }
           }
         }

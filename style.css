@@ -313,6 +313,7 @@ main {
 .navbar-links li {
   /* Estilos de los elementos de la lista */
   margin-right: 50px;
+  cursor: pointer;
 }
 
 .navbar-links li:last-child {
@@ -527,12 +528,22 @@ main {
 }
 
 .navbar-ventanaEmergente-opciones button {
+  cursor: pointer;
   background-color: transparent;
   border: none;
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
+  /* text-decoration-line: none; */
   text-decoration-thickness: 2.5px;
   font-weight: bold;
 }
+
+
+/*!#error: (Arreglar) no funciona el hover underline */
+/* .navbar-ventanaEmergente-opc_comprar-button:hover {
+  text-decoration-line: underline;
+} */
+
+
 
 .navbar-ventanaEmergente-contenido_opciones {
   /* display: none; */
