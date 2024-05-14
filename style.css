@@ -1467,7 +1467,7 @@ padding-right:5vw ;
 .OTRproduct-container {
     display: flex;            /* Alinea horizontalmente los productos */
     overflow-x: auto;         /* Habilita el desplazamiento horizontal */
-    width: 1000px;
+    width: 875px;
     scrollbar-width: thin;
     scrollbar-color: #525357a5 #5152572b;
     scroll-behavior: smooth;
