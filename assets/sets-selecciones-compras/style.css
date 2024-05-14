@@ -51,10 +51,6 @@ main {
   padding-left: 0vw;
   width: auto;
   transition: padding 0.1s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 
@@ -588,363 +584,12 @@ main {
 /** code... */
 
 
-/*massi*/
-
-.navbar-ventanaEmergente-contenido_lista_opcion_comprar-inner-Set_por_tema {
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema-all {
-  margin-top: 0.7vw;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  display: grid;
-  grid-template-columns: repeat(3, 10vw);
-  grid-template-rows: 0.5vw 1fr;
-  box-sizing: border-box;
-  overflow: scroll;
-  scrollbar-color: #1d233da5 #262f492b;
-  scroll-snap-type: mandatory;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: thin;
-  justify-content: space-between;
-
-}
-
-.Set_por_tema-title {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-size: 14px;
-  height: 2vh;
-  padding: 0.1vw;
-  align-items: center;
-
-}
 
 
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Set_por_tema-container-first-container {
-  display: flex;
-  flex-direction: row;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-start: 3;
-  justify-content: center;
-  box-sizing: border-box;
-
-}
-
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Set_por_tema-container-second-container {
-  align-items: center;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-start: 3;
-  box-sizing: border-box;
-
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Set_por_tema-container-third-container {
-  box-sizing: border-box;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-start: 3;
-}
-
-.span-Set_por_tema {
-  display: flex;
-  height: 2.5vh;
-  box-sizing: border-box;
-  margin-left: 1vw;
-  border: 2px solid transparent;
-  padding: 0.2vw;
-  background-color: yellow;
-  align-items: center;
-}
-
-.span2-Set_por_tema {
-  display: flex;
-  height: 2.5vh;
-  box-sizing: border-box;
-  margin-left: 1vw;
-  border: 2px solid transparent;
-  padding: 0.2vw;
-  background-color: yellow;
-  align-items: center;
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema-all li {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema-all a:hover {
-  text-decoration: underline;
-  color: blue;
-
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema-all a {
-
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-content li {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-  margin-top: 0.3vw;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-content a {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-content a:hover {
-  text-decoration: underline;
-  color: blue;
-
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios-inner-content li {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-  margin-top: 0.3vw;
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios-inner-content a {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios-inner-content a:hover {
-  text-decoration: underline;
-  color: blue;
-
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Pick_and_build-container li {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-  margin-top: 0.3vw;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Pick_and_build-container a {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Pick_and_build-container a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container li{
- align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-  margin-top: 0.3vw;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container a{
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container a:hover{
-  text-decoration: underline;
-  color: blue;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras_apps-container li{
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-  margin-top: 0.3vw;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras_apps-container a {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras_apps-container a:hover{
-  text-decoration: underline;
-  color: blue;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container{
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-  margin-top: 0.3vw;
-}
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container{
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container{
-  text-decoration: underline;
-  color: blue;
-}
-
-.navbar-ventanaEmergente-contenido_opc_descubrir li{
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-  margin-top: 0.3vw;
-}
-
-.navbar-ventanaEmergente-contenido_opc_descubrir a{
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar-ventanaEmergente-contenido_opc_descubrir a:hover{
-  text-decoration: underline;
-  color: blue;
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-inner-content{
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-  justify-content: space-between;
-  
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-all{
-  justify-content: flex-start;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-
-}
-
-.Intereses-title {
-  font-size: 14px;
-  height: 2vh;
-  padding: 0.1vw;
-  align-items: center;
-  margin-bottom: 0.5vw;
-
-}
 
 
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Intereses-container-first-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  box-sizing: border-box;
-  width: 50%;
-  margin: 0.2vw ;
-
-
-}
-
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Intereses-content-second-container {
-
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  box-sizing: border-box;
-  width: 50%;
-  margin: 0.2vw ;
-}
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-inner-content li{
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
- 
-}
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-inner-content a{
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-inner-content a:hover{
-  text-decoration: underline;
-  color: blue;
-}
-
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container li{
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-  margin-top: 0.3vw;
-}
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container a{
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container a:hover{
-  text-decoration: underline;
-  color: blue;
-}
-
-/*massi*/
 
 /*? Estilos del Div Banner y SubBanner */
 .banner-SubBanner-div {
@@ -1136,10 +781,7 @@ main {
 /*Inicio de sección de CSS de sets destacados*/
 
 .GENfuente {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    left: -20%;
-    margin: 1.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .DESTproduct-card {
@@ -1225,21 +867,19 @@ main {
 
 
 .DESTcarousel {
-    width: 890px;
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #525357a5 #5152572b;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    justify-content: flex-start; /* Alinea elementos al inicio */
-    align-items: center;
-    margin: 3%;
-    
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  justify-content: flex-start; /* Alinea elementos al inicio */
+  align-items: center;
+  margin: 0 auto;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .DESTcarousel .DESTproduct-card {
-  flex: 0 0 23%; /* Ajusta esto según el tamaño deseado de las tarjetas */
+  flex: 0 0 30%; /* Ajusta esto según el tamaño deseado de las tarjetas */
   margin: 10px; /* Espacio uniforme */
 }
 
@@ -1315,19 +955,13 @@ main {
 /*Inicio de sección de CSS de COMPRAS DE OTROS CLIENTES*/
 
 .OTRproduct-container {
-    display: flex;            /* Alinea horizontalmente los productos */
-    overflow-x: auto;         /* Habilita el desplazamiento horizontal */
-    width: 1000px;
-    scrollbar-width: thin;
-    scrollbar-color: #525357a5 #5152572b;
-    scroll-behavior: smooth;
-    gap: 20px;                /* Espacio entre los productos */
-    -webkit-overflow-scrolling: touch;
-    justify-content: flex-start;
-    align-items: flex-start; /* Cambiado para alinear las tarjetas en la parte superior */
-    margin-left: 12%;
-    margin-right: 12%;
-
+  display: flex;            /* Alinea horizontalmente los productos */
+  overflow-x: auto;         /* Habilita el desplazamiento horizontal */
+  scroll-behavior: smooth;
+  gap: 20px;                /* Espacio entre los productos */
+  -webkit-overflow-scrolling: touch;
+  justify-content: flex-start;
+  align-items: flex-start; /* Cambiado para alinear las tarjetas en la parte superior */
 }
 
 .OTRproduct {
@@ -1654,9 +1288,10 @@ main {
 }
 
 .aside-last-three-sections {
-  width: 100%;
-  height: 100%;
-  padding: 2.5rem 1.25rem;
+  text-shadow: #666;
+  justify-content: center;
+  width: auto;
+padding: 2vw 3vw;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   justify-content: center;
@@ -1688,6 +1323,8 @@ main {
 }
 
 .aside-text-last-three-sections p {
+  margin-left:0.3vw ;
+  text-shadow: #666;
   text-align: left;
   --header-height: 8.125rem;
   font-size: 0.875rem;
@@ -1705,20 +1342,20 @@ main {
   justify-items: center;
   align-content: center;
   align-items: center;
-  width: auto;
-  /* padding: 8vw; */
+  width: 80vw;
+  padding: 10vw;
 }
 
 #mundos {
   background-color: #f0f3f9;
-  width: 100%;
-
+  width: auto;
+  min-width: 50vw;
 }
 
 #navMundos {
   font-family: 'Cera Pro Bold';
   background-color: #300C54;
-  width: 100%;
+  width: 80vw;
   height: 90px;
   font-weight: bolder;
   justify-content: center;
@@ -1763,7 +1400,8 @@ main {
   text-decoration-line: underline;
 }
 
-.ninia-container{
+
+.ninia-container {
   position: relative;
 }
 
@@ -1843,12 +1481,6 @@ main {
   font-family: 'Cera Pro Regular';
 }
 
-#setsConCreatividad > h2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #setsConCreatividad>#cards {
   display: flex;
   overflow: scroll;
@@ -1857,8 +1489,6 @@ main {
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
-  justify-content: center;
-  align-items: center;
 }
 
 #cards {
@@ -1934,7 +1564,6 @@ main {
 #patines,
 #macetaIsabela,
 #castilloAriel,
-#casaRana,
 #mansionModerna,
 #martinPescador,
 #narcisos,
@@ -1945,7 +1574,6 @@ main {
 #safari {
   width: 200px;
   height: 410.8px;
-  margin-bottom: 30px;
 }
 
 .legoFooter {
