@@ -1404,6 +1404,10 @@ padding: 2vw 3vw;
   text-decoration-line: underline;
 }
 
+.ninia-container{
+  position: relative;
+}
+
 .sinfin-botones {
   position: absolute;
   top: 50%;
