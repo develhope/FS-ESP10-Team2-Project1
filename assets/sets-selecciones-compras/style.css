@@ -1342,8 +1342,8 @@ padding: 2vw 3vw;
   justify-items: center;
   align-content: center;
   align-items: center;
-  width: auto;
-  /* padding: 8vw; */
+  width: 80vw;
+  padding: 10vw;
 }
 
 #mundos {
@@ -1355,7 +1355,7 @@ padding: 2vw 3vw;
 #navMundos {
   font-family: 'Cera Pro Bold';
   background-color: #300C54;
-  width: auto;
+  width: 80vw;
   height: 90px;
   font-weight: bolder;
   justify-content: center;
