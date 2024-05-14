@@ -1237,7 +1237,6 @@ main {
   text-shadow: #666;
   justify-content: center;
   width: auto;
-  height: 100vw;
 padding: 2vw 3vw;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -1251,6 +1250,7 @@ padding: 2vw 3vw;
   gap: 1vw;
   text-align: justify;
   margin-top: 2vh;
+  margin-bottom: 3vh;
 }
 
 .aside-text-last-three-sections {
@@ -1277,7 +1277,6 @@ padding: 2vw 3vw;
   -webkit-text-size-adjust: 100%;
   letter-spacing: 0;
 }
-
 
 /*todo#####-----> END SECCION: Three Sections <-----#####*/
 
