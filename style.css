@@ -785,7 +785,9 @@ main {
 /*Inicio de sección de CSS de sets destacados*/
 
 .GENfuente {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: -20%;
 }
 
 .DESTproduct-card {
@@ -871,15 +873,18 @@ main {
 
 
 .DESTcarousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  justify-content: flex-start; /* Alinea elementos al inicio */
-  align-items: center;
-  margin: 0 auto;
-  margin-left: 12%;
-  margin-right: 12%;
+    width: 700px;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #525357a5 #5152572b;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start; /* Alinea elementos al inicio */
+    align-items: center;
+    margin-left: 90%;
+    margin-right: 90%;
+    
 }
 
 .DESTcarousel .DESTproduct-card {
@@ -959,13 +964,19 @@ main {
 /*Inicio de sección de CSS de COMPRAS DE OTROS CLIENTES*/
 
 .OTRproduct-container {
-  display: flex;            /* Alinea horizontalmente los productos */
-  overflow-x: auto;         /* Habilita el desplazamiento horizontal */
-  scroll-behavior: smooth;
-  gap: 20px;                /* Espacio entre los productos */
-  -webkit-overflow-scrolling: touch;
-  justify-content: flex-start;
-  align-items: flex-start; /* Cambiado para alinear las tarjetas en la parte superior */
+    display: flex;            /* Alinea horizontalmente los productos */
+    overflow-x: auto;         /* Habilita el desplazamiento horizontal */
+    width: 1000px;
+    scrollbar-width: thin;
+    scrollbar-color: #525357a5 #5152572b;
+    scroll-behavior: smooth;
+    gap: 20px;                /* Espacio entre los productos */
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    align-items: flex-start; /* Cambiado para alinear las tarjetas en la parte superior */
+    margin-left: 12%;
+    margin-right: 12%;
+
 }
 
 .OTRproduct {
