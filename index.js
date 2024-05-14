@@ -114,15 +114,32 @@ function mainMenu(opc) {
   }
 
   function applyTransitions(popUp, background) {
+    function adjustPopUpWidth() {
+      const screenWidth = window.innerWidth;
+      popUp.style.width = screenWidth < 901 ? "100%" : "50%";
+    }
+    window.addEventListener("resize", adjustPopUpWidth);
+    // Llamamos a la función una vez para ajustar el ancho del popUp al tamaño inicial de la ventana
+    adjustPopUpWidth();
+
     popUp.offsetHeight;
-    popUp.style.left = "0"; // Muestra el menú con transición
-    background.style.opacity = "1"; // Muestra el fondo negro con transición
+
+    popUp.style.left = "0";
+    background.style.opacity = "1";
   }
 
   function hideWithTransition(popUp, background) {
-    popUp.style.left = "-50%"; // Oculta el menú con transición
-    background.style.opacity = "0"; // Oculta el fondo negro con transición
-    setTimeout(() => background.remove(), 300); // Elimina el fondo negro después de la transición
+    // const screenWidth = window.innerWidth;
+
+    // Se define la posición del popUp según el ancho de la pantalla
+    // popUp.style.left = screenWidth < 901 ? "-100%" : "-50%";
+
+    //!#warning: (Me gustaria mejorar esta parte, pero funciona bien aunque siento que no es muy practico)
+    // Para evitar un bug, asignamos directamente -100% independientemente del tamaño de la ventana actual
+    popUp.style.left = "-100%";
+
+    background.style.opacity = "0";
+    setTimeout(() => background.remove(), 300);
   }
 }
 

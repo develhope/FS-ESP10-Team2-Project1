@@ -191,13 +191,6 @@
   }
 
 
-  /*!#error: Arreglar, JS necesita una actualización */
-  .navbar-ventanaEmergente {
-    /* left: 0 !important; */
-    /* left: -100% ;
-    width: 100%; */
-  }
-
 }
 
 /** min-width -> (screen > px) */
