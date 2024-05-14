@@ -549,7 +549,7 @@
     color: white;
     padding-top: 3vh;
     font-family: "Cera Pro Regular";
-    width: 100vw;
+    width: auto;
   }
 
   .legoLogo {
@@ -1009,7 +1009,7 @@
     color: white;
     padding-top: 3vh;
     font-family: "Cera Pro Regular";
-    width: 100vw;
+    width: auto;
   }
 
   .legoLogo {
@@ -1454,7 +1454,7 @@
     color: white;
     padding-top: 3vh;
     font-family: "Cera Pro Regular";
-    width: 100vw;
+    width: auto;
   }
 
   .legoLogo {
@@ -1575,7 +1575,6 @@
     padding-bottom: 7px;
     margin: 0px;
     border-bottom: 1px white solid;
-    width: 100vw;
     font-size: 13px;
     font-family: 'Cera Pro Regular';
   }
@@ -1636,6 +1635,15 @@
   }
 }
 
+.quienes_atencion_atraccioones_masInfo>#quienesSomos,
+.quienes_atencion_atraccioones_masInfo>#atencionAlCliente,
+.quienes_atencion_atraccioones_masInfo>#atracciones,
+.quienes_atencion_atraccioones_masInfo>#masInformacion {
+
+  width: auto;
+
+}
+
 /* LAPTOP: */
 @media only screen and (min-width: 1200px) {
   .image-container360 {
@@ -1670,7 +1678,7 @@
     color: white;
     padding-top: 5vh;
     font-family: "Cera Pro Regular";
-    width: 100vw;
+    width: auto;
   }
 }
 
