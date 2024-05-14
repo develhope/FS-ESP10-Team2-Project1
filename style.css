@@ -1256,8 +1256,7 @@ main {
   display: flex;
   flex-direction: row;
   text-align: justify;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding:3vw;
   --header-height: 8.125rem;
   max-width: 100rem;
   line-height: 1.5;
