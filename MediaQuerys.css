@@ -549,7 +549,7 @@
     color: white;
     padding-top: 3vh;
     font-family: "Cera Pro Regular";
-    width: 55vw;
+    width: 100vw;
   }
 
   .legoLogo {
@@ -1771,7 +1771,7 @@
   .inner-container-last-three-sections {
     /* margin: auto;
     padding: auto; */
-    margin-left: 3vw;
+    padding-left: 10vw;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
