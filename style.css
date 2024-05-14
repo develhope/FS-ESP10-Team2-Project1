@@ -1234,10 +1234,10 @@ main {
 }
 
 .aside-last-three-sections {
+  text-shadow: #666;
+  justify-content: center;
   width: auto;
-  height: 100%;
-  margin:auto;
-  padding:2vw;
+padding: 2vw 3vw;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   justify-content: center;
@@ -1247,33 +1247,36 @@ main {
   flex-direction: row;
   position: relative;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1vw;
   text-align: justify;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
 }
 
 .aside-text-last-three-sections {
-  margin-top: 2%;
+  text-shadow: #666;
+  margin-top: 1vw;
   display: flex;
   flex-direction: row;
   text-align: justify;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   --header-height: 8.125rem;
-  max-width: 100rem;
+  max-width: 80vw;
   line-height: 1.5;
   border: 2px solid transparent;
   background-color: #fff
 }
 
 .aside-text-last-three-sections p {
+  margin-left:0.3vw ;
+  text-shadow: #666;
   text-align: left;
   --header-height: 8.125rem;
   font-size: 0.875rem;
   -webkit-text-size-adjust: 100%;
   letter-spacing: 0;
 }
-
-
 
 /*todo#####-----> END SECCION: Three Sections <-----#####*/
 
