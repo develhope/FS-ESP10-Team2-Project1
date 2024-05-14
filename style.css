@@ -235,8 +235,6 @@ main {
   font-weight: inherit;
 }
 
-
-
 .cnHyRF {
   line-height: 0;
   height: 20px;
@@ -261,7 +259,6 @@ main {
   margin-right: 0.625rem;
 }
 
-
 .preNavbar-buttom-close {
   display: none;
   -webkit-box-align: center;
@@ -272,7 +269,6 @@ main {
   padding: 1.0625rem;
   cursor: pointer;
 }
-
 
 .dHKzVM {
   line-height: 0;
@@ -1435,8 +1431,8 @@ main {
 
 /*todo#####-----> START SECCION: Three Sections <-----#####*/
 .inner-container-last-three-sections {
-  margin: auto;
-  padding: auto;
+  /* margin: auto;
+  padding: auto; */
   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
   font-size: 12px;
@@ -1449,6 +1445,8 @@ main {
   flex-direction: row;
   position: relative;
   scrollbar-width: thin;
+  justify-content: center;
+  align-items: center;
 }
 
 .containers3-last-three-sections {
@@ -1467,17 +1465,18 @@ main {
   margin: 10vh;
   box-sizing: border-box;
   display: inline-block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   margin-top: 3vw;
   margin-bottom: 3vw;
   overflow: scroll;
   scrollbar-color: #1d233da5 #262f492b;
-  scroll-snap-type: mandatory;
+  /* scroll-snap-type: mandatory; */
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: thin;
-
 }
 
 .section2-last-three-sections {
@@ -1689,7 +1688,7 @@ main {
 
 .aside-text-last-three-sections p {
   text-align: left;
-  --header-height: 8.125rem;
+  /* --header-height: 8.125rem; */
   font-size: 0.875rem;
   -webkit-text-size-adjust: 100%;
   letter-spacing: 0;
@@ -1706,7 +1705,7 @@ main {
   align-content: center;
   align-items: center;
   width: auto;
-  /* padding: 8vw; */
+  padding: 8vw;
 }
 
 #mundos {
