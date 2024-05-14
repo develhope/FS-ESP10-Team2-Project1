@@ -1771,7 +1771,19 @@
   .inner-container-last-three-sections {
     /* margin: auto;
     padding: auto; */
-    padding-left: 10vw;
+    /* margin-left: 7vw; */
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .inner-container-last-three-sections {
+    /* margin: auto;
+    padding: auto; */
+    margin-left: 7vw;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
