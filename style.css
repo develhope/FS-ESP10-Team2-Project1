@@ -949,15 +949,176 @@ main {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .SELfeature-section {
-      flex-direction: column; /* Cambia la disposición de las tarjetas a vertical */
-      align-items: center;
+
+
+
+/* MOVIL: */
+@media only screen and (min-width: 320px) and (max-width: 767.5px) {
+  .GENfuente {
+    left: 0;
+    margin: 2%;
   }
+
+  .SELfeature-section {
+    display: block;
+    width: 70%;
+    flex-direction: row; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    gap: 10px; 
+  }
+
   .SELfeature-section .SELfeature {
-      width: 80%; /* Ajusta el ancho de cada tarjeta para que sea más ancha en la disposición vertical */
+    width: 80%; 
+    flex-shrink: 0; 
+    display: inline-block; 
+  }
+  
+
+  .OTRproduct-container {
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    gap: 10px;
+  }
+
+  .OTRproduct {
+    width: 80%;
+    height: auto;
+  }
+
+  .DESTcarousel {
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    gap: 10px;
+  }
+
+  .DESTproduct-card {
+    width: 60%;
+    height: auto;
   }
 }
+
+/* TABLET: */
+@media only screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .GENfuente {
+    left: -10%;
+    margin: 2%;
+  }
+
+  .SELfeature-section {
+    display: block;
+    width: 70%;
+    flex-direction: row; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    gap: 10px; 
+  }
+
+  .SELfeature-section .SELfeature {
+    width: 80%; 
+    flex-shrink: 0; 
+    display: inline-block; 
+  }
+
+  .OTRproduct-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .OTRproduct {
+    width: 45%;
+    height: auto;
+  }
+
+  .DESTcarousel {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .DESTproduct-card {
+    width: 45%;
+    height: auto;
+  }
+}
+
+/* LAPTOP: */
+@media only screen and (min-width: 1200px) and (max-width: 1599.5px) {
+  .GENfuente {
+    left: -15%;
+    margin: 1.5%;
+  }
+
+  .SELfeature-section .SELfeature {
+    width: 30%;
+  }
+
+  .OTRproduct-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .OTRproduct {
+    width: 30%;
+    height: auto;
+  }
+
+  .DESTcarousel {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .DESTproduct-card {
+    width: 30%;
+    height: auto;
+  }
+}
+
+/* DESKTOP: */
+@media only screen and (min-width: 1600px) {
+  .GENfuente {
+    left: -20%;
+    margin: 1.5%;
+  }
+
+  .SELfeature-section .SELfeature {
+    width: 30%;
+  }
+
+  .OTRproduct-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .OTRproduct {
+    width: 20%;
+    height: auto;
+  }
+
+  .DESTcarousel {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 80%;
+    gap: 20px;
+  }
+
+  .DESTproduct-card {
+    width: 20%;
+    height: auto;
+  }
+}
+
 
 /*Final de sección de CSS de SELECCIONES DE ESTA SEMANA*/
 
