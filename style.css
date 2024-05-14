@@ -590,27 +590,17 @@ main {
 
 /*massi*/
 
-.navbar-ventanaEmergente-contenido_lista_opcion_comprar-inner-Set_por_tema {
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
+.navbar-ventanaEmergente-contenido_lista_opcion_comprar-inner-Set_por_tema{
+  margin-left: 2.5vw;
 }
-
 .navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema-all {
-  margin-top: 0.7vw;
-  grid-row-start: 2;
-  grid-row-end: 3;
+gap:1vw;
   display: grid;
   grid-template-columns: repeat(3, 10vw);
-  grid-template-rows: 0.5vw 1fr;
-  box-sizing: border-box;
-  overflow: scroll;
-  scrollbar-color: #1d233da5 #262f492b;
-  scroll-snap-type: mandatory;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: thin;
-  justify-content: space-between;
+  grid-template-rows: 1fr;
+padding: 0;
+padding-right:5vw ;
+
 
 }
 
@@ -619,7 +609,7 @@ main {
   grid-row-end: 2;
   font-size: 14px;
   height: 2vh;
-  padding: 0.1vw;
+
   align-items: center;
 
 }
@@ -647,6 +637,7 @@ main {
   grid-row-start: 3;
   box-sizing: border-box;
 
+
 }
 
 .navbar-ventanaEmergente-contenido_lista__comprar_opcion-Set_por_tema-container-third-container {
@@ -655,6 +646,8 @@ main {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-start: 3;
+  margin-right: 2vw;
+
 }
 
 .span-Set_por_tema {
@@ -815,7 +808,7 @@ main {
   color: blue;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container li{
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -824,13 +817,13 @@ main {
   margin-bottom: 0.2vw;
   margin-top: 0.3vw;
 }
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container a{
   display: flex;
   flex-direction: row;
   text-decoration: none;
   color: black;
 }
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container a:hover{
   text-decoration: underline;
   color: blue;
 }
