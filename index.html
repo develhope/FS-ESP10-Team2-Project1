@@ -98,7 +98,7 @@
     <nav class="navbar">
 
         <!--** Menu hamburgesa de la barra de navegación -->
-        <button class="navbar-short-hamburger-icon" aria-label="Menú" onclick="mainMenu(1)">
+        <button class="navbar-short-hamburger-icon" aria-label="Menú" onclick="Menu.mainMenu(1)">
             <div>
                 <div></div>
             </div>
@@ -115,9 +115,9 @@
         <div class="navbar-div-links">
             <ul class="navbar-links">
                 <!--* Enlaces de la barra de navegación -->
-                <li><a onclick="mainMenu('buy')">COMPRAR</a></li>
-                <li><a onclick="mainMenu('discover')">DESCUBRIR</a></li>
-                <li><a onclick="mainMenu('help')">AYUDA</a></li>
+                <li><a onclick="Menu.mainMenu('buy')">COMPRAR</a></li>
+                <li><a onclick="Menu.mainMenu('discover')">DESCUBRIR</a></li>
+                <li><a onclick="Menu.mainMenu('help')">AYUDA</a></li>
             </ul>
         </div>
 
@@ -185,47 +185,47 @@
 
                 <div class="navbar-ventanaEmergente-opciones">
                     <p class="navbar-ventanaEmergente-opc_comprar">
-                        <button class="navbar-ventanaEmergente-opc_comprar-button" onclick="mainMenu('buy')"
+                        <button class="navbar-ventanaEmergente-opc_comprar-button" onclick="Menu.mainMenu('buy')"
                             class=>COMPRAR</button>
                     </p>
                     <p class="navbar-ventanaEmergente-opc_descubrir">
                         <button class="navbar-ventanaEmergente-opc_descubrir-button"
-                            onclick="mainMenu('discover')">DESCUBRIR</button>
+                            onclick="Menu.mainMenu('discover')">DESCUBRIR</button>
                     </p>
                     <p class="navbar-ventanaEmergente-opc_ayuda">
                         <button class="navbar-ventanaEmergente-opc_ayuda-button"
-                            onclick="mainMenu('help')">AYUDA</button>
+                            onclick="Menu.mainMenu('help')">AYUDA</button>
                     </p>
                 </div>
             </div>
             <div class="navbar-ventanaEmergente-contenido_opciones">
-                <button class="navbar-ventanaEmergente-botonCerrar" onclick="mainMenu(0)">X</button>
+                <button class="navbar-ventanaEmergente-botonCerrar" onclick="Menu.mainMenu(0)">X</button>
 
 
 
                 <div class="navbar-ventanaEmergente-contenido_opc_comprar">
                     <ul class="navbar-ventanaEmergente-contenido_lista_opcion_comprar">
-                        <li class="navbar-li">
+                        <li class="navbar-li" onclick="Menu.subMenu('buy', 1)">
                             <button>Sets por tema</button>
                             <button> > </button>
                         </li>
-                        <li class="navbar-li">
+                        <li class="navbar-li" onclick="Menu.subMenu('buy', 2)">
                             <button>Edades</button>
                             <button> > </button>
                         </li>
-                        <li class="navbar-li">
+                        <li class="navbar-li" onclick="Menu.subMenu('buy', 3)">
                             <button>Rangos de precios</button>
                             <button> > </button>
                         </li>
-                        <li class="navbar-li">
+                        <li class="navbar-li" onclick="Menu.subMenu('buy', 4)">
                             <button>Artículos de LEGO</button>
                             <button> > </button>
                         </li>
-                        <li class="navbar-li">
+                        <li class="navbar-li" onclick="Menu.subMenu('buy', 5)">
                             <button>Intereses</button>
                             <button> > </button>
                         </li>
-                        <li class="navbar-li">
+                        <li class="navbar-li" onclick="Menu.subMenu('buy', 6)">
                             <button>Pick and Build</button>
                             <button> > </button>
                         </li>
@@ -309,172 +309,166 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="navbar-ventanaEmergente-contenido_opc_comprar-Edades">
-                            <div class="Edades-title">
-                                <p><Var>VER TODAS LAS EDADES</Var></p>
-                            </div>
-                            <div class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-container">
-                                <ul class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-content">
-                                    <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">1,5+</a></li>
-                                    <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years"> 4+</a></li>
-                                    <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">6+</a></li>
-                                    <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">9+</a></li>
-                                    <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">13+</a></li>
-                                    <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">18+</a></li>
-                                </ul>
-                            </div>
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Edades">
+                        <div class="Edades-title">
+                            <p><Var>VER TODAS LAS EDADES</Var></p>
                         </div>
+                        <div class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-container">
+                            <ul class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-content">
+                                <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">1,5+</a></li>
+                                <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years"> 4+</a></li>
+                                <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">6+</a></li>
+                                <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">9+</a></li>
+                                <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">13+</a></li>
+                                <li><a href="https://www.lego.com/es-es/categories/age-1-plus-years">18+</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                        <div class="navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios">
-                            <div class="Rangos_de_precios-title">
-                                <p>VER TODOS LOS RANGOS DE PRECIOS</p>
-                            </div>
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios">
+                        <div class="Rangos_de_precios-title">
+                            <p>VER TODOS LOS RANGOS DE PRECIOS</p>
+                        </div>
+                        <div class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Rango_de_Precios-container">
+                            <ul
+                                class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Rango_de_Precios-content">
+                                <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">Menos de 20
+                                        €</a>
+                                </li>
+                                <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">20 € - 50 €</a>
+                                </li>
+                                <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">50 € - 100 €</a>
+                                </li>
+                                <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">100 € - 200
+                                        €</a>
+                                </li>
+                                <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">Más de 200 €</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Articulos-LEGO">
+                        <div class="Articulos-LEGO-title">
+                            <p> VER TODOS LOS ARTÍCULOS LEGO</p>
+                        </div>
+                        <div class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container">
+                            <ul class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-content">
+                                <li><a>Accesorios</a></li>
+                                <li><a>Mochilas</a></li>
+                                <li><a>Libros</a></li>
+                                <li><a>Ropa</a></li>
+                                <li><a>Llaveros</a></li>
+                                <li><a>Fiambreras</a></li>
+                                <li><a>Juguetes de peluche</a></li>
+                                <li><a>Puzles y juegos de mesa</a></li>
+                                <li><a>Artículos de papelería</a></li>
+                                <li><a>Almacenamiento</a></li>
+                                <li><a> Botellas de agua LEGO®</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Intereses">
+                        <div class="Intereses-title">
+                            <p>VER TODOS LOS INTERESES</p>
+                        </div>
+                        <div class="navbar-ventanaEmergente-contenido_opc_comprar-Intereses-all">
                             <div
-                                class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Rango_de_Precios-container">
+                                class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Intereses-container-first-container">
                                 <ul
-                                    class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Rango_de_Precios-content">
-                                    <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">Menos de 20
-                                            €</a>
+                                    class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Intereses-content-first-container">
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Para fans
+                                            adultos</a>
                                     </li>
-                                    <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">20 € - 50 €</a>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Animales</a>
                                     </li>
-                                    <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">50 € - 100 €</a>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Manualidades</a>
                                     </li>
-                                    <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">100 € - 200
-                                            €</a>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Edificios</a>
                                     </li>
-                                    <li><a href="https://www.lego.com/es-es/categories/price-20-50-eur">Más de 200 €</a>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Coches</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Programación
+                                            para
+                                            niños</a></li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Dragones</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Fantasía</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Películas</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Videojuegos</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Aprender a
+                                            construir</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Música</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Ninjas</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Preescolar</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Princesas</a>
+                                    </li>
+
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Héroes del
+                                            mundo
+                                            real</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Robots para
+                                            niños</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Festividades</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Espacio</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Deportes</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">STEM</a></li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Trenes</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Viajes</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Series de
+                                            televisión</a>
+                                    </li>
+                                    <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Vehículos</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="navbar-ventanaEmergente-contenido_opc_comprar-Articulos-LEGO">
-                            <div class="Articulos-LEGO-title">
-                                <p> VER TODOS LOS ARTÍCULOS LEGO</p>
-                            </div>
-                            <div
-                                class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container">
-                                <ul
-                                    class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-content">
-                                    <li><a>Accesorios</a></li>
-                                    <li><a>Mochilas</a></li>
-                                    <li><a>Libros</a></li>
-                                    <li><a>Ropa</a></li>
-                                    <li><a>Llaveros</a></li>
-                                    <li><a>Fiambreras</a></li>
-                                    <li><a>Juguetes de peluche</a></li>
-                                    <li><a>Puzles y juegos de mesa</a></li>
-                                    <li><a>Artículos de papelería</a></li>
-                                    <li><a>Almacenamiento</a></li>
-                                    <li><a> Botellas de agua LEGO®</a></li>
-                                </ul>
-                            </div>
+                    <div class="navbar-ventanaEmergente-contenido_opc_comprar-Pick_and_build">
+                        <div class="Pick_and_build-title">
+                            <p>PICK AND BUILD</p>
                         </div>
-
-                        <div class="navbar-ventanaEmergente-contenido_opc_comprar-Intereses">
-                            <div class="Intereses-title">
-                                <p>VER TODOS LOS INTERESES</p>
-                            </div>
-                            <div class="navbar-ventanaEmergente-contenido_opc_comprar-Intereses-all">
-                                <div
-                                    class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Intereses-container-first-container">
-                                    <ul
-                                        class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Intereses-content-first-container">
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Para fans
-                                                adultos</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Animales</a>
-                                        </li>
-                                        <li><a
-                                                href="https://www.lego.com/es-es/categories/adults-welcome">Manualidades</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Edificios</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Coches</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Programación
-                                                para
-                                                niños</a></li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Dragones</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Fantasía</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Películas</a>
-                                        </li>
-                                        <li><a
-                                                href="https://www.lego.com/es-es/categories/adults-welcome">Videojuegos</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Aprender a
-                                                construir</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Música</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Ninjas</a>
-                                        </li>
-                                        <li><a
-                                                href="https://www.lego.com/es-es/categories/adults-welcome">Preescolar</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Princesas</a>
-                                        </li>
-
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Héroes del
-                                                mundo
-                                                real</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Robots para
-                                                niños</a>
-                                        </li>
-                                        <li><a
-                                                href="https://www.lego.com/es-es/categories/adults-welcome">Festividades</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Espacio</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Deportes</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">STEM</a></li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Trenes</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Viajes</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Series de
-                                                televisión</a>
-                                        </li>
-                                        <li><a href="https://www.lego.com/es-es/categories/adults-welcome">Vehículos</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="navbar-ventanaEmergente-contenido_opc_comprar-Pick_and_build">
-                                <div class="Pick_and_build-title">
-                                    <p>PICK AND BUILD</p>
-                                </div>
-                                <div
-                                    class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Pick_and_build-container">
-                                    <ul
-                                        class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Pick_and_build-content">
-                                        <li><a>Pick a Brick</a></li>
-                                        <li><a>Accesorios y kits de ladrillos</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Pick_and_build-container">
+                            <ul class="navbar-ventanaEmergente-contenido_lista__comprar_opcion-Pick_and_build-content">
+                                <li><a>Pick a Brick</a></li>
+                                <li><a>Accesorios y kits de ladrillos</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
+
+
+
                 <div class="navbar-ventanaEmergente-contenido_opc_descubrir">
                     <ul class="navbar-ventanaEmergente-contenido_lista_opcion_descubrir">
-                        <li class="navbar-li">
+                        <li class="navbar-li" onclick="Menu.subMenu('discover', 1)">
                             <button>Nuestros valores</button>
                             <button> > </button>
                         </li>
-                        <li class="navbar-li">
+                        <li class="navbar-li" onclick="Menu.subMenu('discover', 2)">
                             <button>Nuestras apps</button>
                             <button> > </button>
                         </li>
-                        <li class="navbar-li">
+                        <li class="navbar-li" onclick="Menu.subMenu('discover', 3)">
                             <button>Nuestras revistas</button>
                             <button> > </button>
                         </li>
@@ -525,35 +519,41 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="navbar-ventanaEmergente-contenido_opc_ayuda">
-                <ul class="navbar-ventanaEmergente-contenido_lista_opc_ayuda">
-                    <li>
-                        <a>Comprobar el estado de un pedido</a>
-                    </li>
-                    <li>
-                        <a>Envíos y devoluciones</a>
-                    </li>
-                    <li>
-                        <a>Encontrar una tienda </a>
-                    </li>
-                    <li>
-                        <a>Instrucciones de construcción </a>
-                    </li>
-                    <li>
-                        <a>Preguntas frecuentes </a>
-                    </li>
-                    <li>
-                        <a>Ponte en contacto con nosotros </a>
-                    </li>
-                    <li>
-                        <a>Piezas de repuesto </a>
-                    </li>
-                </ul>
-            </div>
 
+                <div class="navbar-ventanaEmergente-contenido_opc_ayuda">
+                    <ul class="navbar-ventanaEmergente-contenido_lista_opc_ayuda">
+                        <li>
+                            <a>Comprobar el estado de un pedido</a>
+                        </li>
+                        <li>
+                            <a>Envíos y devoluciones</a>
+                        </li>
+                        <li>
+                            <a>Encontrar una tienda </a>
+                        </li>
+                        <li>
+                            <a>Instrucciones de construcción </a>
+                        </li>
+                        <li>
+                            <a>Preguntas frecuentes </a>
+                        </li>
+                        <li>
+                            <a>Ponte en contacto con nosotros </a>
+                        </li>
+                        <li>
+                            <a>Piezas de repuesto </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
         </div>
+
+
+
 
 
 

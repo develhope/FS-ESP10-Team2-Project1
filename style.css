@@ -570,7 +570,7 @@ main {
   padding-inline-start: 40px;
   /* unicode-bidi: isolate; */
   font-family: 'Cera Pro Regular';
-  
+
 }
 
 .navbar-li {
@@ -584,7 +584,7 @@ main {
   gap: 80px;
 }
 
-.navbar-li > button{
+.navbar-li>button {
   display: flex;
   justify-content: space-between;
 }
@@ -614,9 +614,29 @@ main {
 /*!#2537 Tu codigo aqui abajo, recuerda usar los nombres de las clases ya existentes */
 /* <massi> */
 
+
+/* .navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema{
+  display: none;
+} */
+
+/* .navbar-ventanaEmergente-contenido_opciones>.navbar-ventanaEmergente-contenido_opc_comprar>.navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema {
+  display: none;
+} */
+
+/* 
+.navbar-ventanaEmergente-contenido_opciones>.navbar-ventanaEmergente-contenido_opc_comprar>div {
+  display: none;
+} */
+
+.navbar-ventanaEmergente-contenido_opciones>div>div {
+  display: none;
+}
+
+
+
 .navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema {
   margin-left: 2.5vw;
-  border-left: 2px  #1c1c1c61 solid;
+  border-left: 2px #1c1c1c61 solid;
 }
 
 .navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema-all {
@@ -723,8 +743,8 @@ main {
   flex-direction: row;
   text-decoration: none;
   color: black;
-  
-  
+
+
 }
 
 .navbar-ventanaEmergente-contenido_opc_comprar-Edades li {
@@ -874,7 +894,7 @@ main {
   color: rgb(67, 73, 237);
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-content{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-content {
   border-left: solid 2px rgba(128, 128, 128, 0.622);
 }
 
@@ -886,7 +906,7 @@ main {
   padding-bottom: 0.2vw;
   margin-bottom: 0.2vw;
   margin-top: 0.3vw;
-  
+
 }
 
 .navbar-ventanaEmergente-contenido_opc_descubrir a {
