@@ -18,10 +18,23 @@ function mainMenu(opc) {
     buy: {
       content: ".navbar-ventanaEmergente-contenido_opc_comprar",
       button: ".navbar-ventanaEmergente-opc_comprar-button",
+      subElements: {
+        1: ".navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema",
+        2: ".navbar-ventanaEmergente-contenido_opc_comprar-Edades",
+        3: ".navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios",
+        4: ".navbar-ventanaEmergente-contenido_opc_comprar-Articulos-LEGO",
+        5: ".navbar-ventanaEmergente-contenido_opc_comprar-Intereses",
+        6: ".navbar-ventanaEmergente-contenido_opc_comprar-Pick_and_build",
+      },
     },
     discover: {
       content: ".navbar-ventanaEmergente-contenido_opc_descubrir",
       button: ".navbar-ventanaEmergente-opc_descubrir-button",
+      subElements: {
+        1: ".navbar-ventanaEmergente-contenido_opc_descubrir-Nuestros_valores",
+        2: ".navbar-ventanaEmergente-contenido_opc_descubrir-Nuestras_apps",
+        3: ".navbar-ventanaEmergente-contenido_opc_descubrir-Nuestras_revistas",
+      },
     },
     help: {
       content: ".navbar-ventanaEmergente-contenido_opc_ayuda",
