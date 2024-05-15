@@ -641,7 +641,11 @@ main {
   text-decoration-thickness: 1.5px;
 }
 
-
+.navbar-ventanaEmergente-contenido_opciones-div-ul-li-button-arrow {
+  line-height: 0;
+  height: 12px;
+  width: 7px;
+}
 
 
 .navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema {
