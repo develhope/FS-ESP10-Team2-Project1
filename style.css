@@ -2030,11 +2030,15 @@ padding-right:5vw ;
   padding-bottom: 30px;
 }
 
+
 #cards img {
-  display: flex;
   width: 200px;
   height: 150px;
+  transition: transform 0.5s ease; 
+}
 
+#cards img:hover {
+  transform: scale(1.1);
 }
 
 #corazon>svg {
