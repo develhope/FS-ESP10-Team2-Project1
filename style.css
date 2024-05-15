@@ -1288,12 +1288,10 @@ padding-right:5vw ;
   content: " >";
 }
 
-/* Responsive adjustments */
-
 
 
 /* MOVIL: */
-@media only screen and (min-width: 320px) and (max-width: 767.5px) {
+@media only screen and (min-width: 220px) and (max-width: 767.5px) {
   .GENfuente {
     left: 0;
     margin: 2%;
@@ -1318,7 +1316,7 @@ padding-right:5vw ;
   .OTRproduct-container, .DESTcarousel {
     flex-direction: row;
     align-items: center;
-    width: 90%; /* Asegura que el contenedor use el ancho completo disponible */
+    width: 100%; /* Asegura que el contenedor use el ancho completo disponible */
     gap: 10px;
 }
 
@@ -1868,7 +1866,7 @@ padding-right:5vw ;
   align-content: center;
   align-items: center;
   width: auto;
-  padding: 4vw;
+  padding: 8vw;
 }
 
 #mundos {
