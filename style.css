@@ -636,7 +636,10 @@ main {
   text-decoration-line: underline;
 } */
 
-
+.navbar-ventanaEmergente-contenido_opciones>div>ul>li>button {
+  cursor: pointer;
+  text-decoration-thickness: 1.5px;
+}
 
 
 
