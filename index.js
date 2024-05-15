@@ -12,21 +12,48 @@ class Menu {
       content: ".navbar-ventanaEmergente-contenido_opc_comprar",
       button: ".navbar-ventanaEmergente-opc_comprar-button",
       subElements: {
-        1: ".navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema",
-        2: ".navbar-ventanaEmergente-contenido_opc_comprar-Edades",
-        3: ".navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios",
-        4: ".navbar-ventanaEmergente-contenido_opc_comprar-Articulos-LEGO",
-        5: ".navbar-ventanaEmergente-contenido_opc_comprar-Intereses",
-        6: ".navbar-ventanaEmergente-contenido_opc_comprar-Pick_and_build",
+        1: [
+          ".navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema",
+          "navbar-ventanaEmergente-contenido_lista_opcion_comprar-1",
+        ],
+        2: [
+          ".navbar-ventanaEmergente-contenido_opc_comprar-Edades",
+          "navbar-ventanaEmergente-contenido_lista_opcion_comprar-2",
+        ],
+        3: [
+          ".navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios",
+          "navbar-ventanaEmergente-contenido_lista_opcion_comprar-3",
+        ],
+        4: [
+          ".navbar-ventanaEmergente-contenido_opc_comprar-Articulos-LEGO",
+          "navbar-ventanaEmergente-contenido_lista_opcion_comprar-4",
+        ],
+        5: [
+          ".navbar-ventanaEmergente-contenido_opc_comprar-Intereses",
+          "navbar-ventanaEmergente-contenido_lista_opcion_comprar-5",
+        ],
+        6: [
+          ".navbar-ventanaEmergente-contenido_opc_comprar-Pick_and_build",
+          "navbar-ventanaEmergente-contenido_lista_opcion_comprar-6",
+        ],
       },
     },
     discover: {
       content: ".navbar-ventanaEmergente-contenido_opc_descubrir",
       button: ".navbar-ventanaEmergente-opc_descubrir-button",
       subElements: {
-        1: ".navbar-ventanaEmergente-contenido_opc_descubrir-Nuestros_valores",
-        2: ".navbar-ventanaEmergente-contenido_opc_descubrir-Nuestras_apps",
-        3: ".navbar-ventanaEmergente-contenido_opc_descubrir-Nuestras_revistas",
+        1: [
+          ".navbar-ventanaEmergente-contenido_opc_descubrir-Nuestros_valores",
+          "navbar-ventanaEmergente-contenido_lista_opcion_descubrir-1",
+        ],
+        2: [
+          ".navbar-ventanaEmergente-contenido_opc_descubrir-Nuestras_apps",
+          "navbar-ventanaEmergente-contenido_lista_opcion_descubrir-2",
+        ],
+        3: [
+          ".navbar-ventanaEmergente-contenido_opc_descubrir-Nuestras_revistas",
+          "navbar-ventanaEmergente-contenido_lista_opcion_descubrir-3",
+        ],
       },
     },
     help: {
@@ -51,7 +78,6 @@ class Menu {
     }
 
     const subElements = Menu.elementsAvailables[element]?.subElements;
-
     // Verificar si el elemento proporcionado tiene subElementos
     if (subElements) {
       // Convertir el subElemento a cadena
@@ -67,13 +93,18 @@ class Menu {
 
       // Recorrer los subElementos y mostrar el subElemento especificado
       for (let key in subElements) {
-        const subElementSelector = subElements[key];
+        const subElementData = subElements[key];
+        const subElementSelector = subElementData[0]; // Selector de clase del subElemento
+        const subElementId = subElementData[1]; // ID del subElemento
         const currentSubElement = document.querySelector(subElementSelector);
+        const currentSubElementLine = document.getElementById(subElementId);
 
         if (key === subElement) {
           currentSubElement.style.display = "flex"; // Mostrar el subElemento
+          currentSubElementLine.style.textDecorationLine = "underline";
         } else {
           currentSubElement.style.display = "none"; // Ocultar otros subElementos
+          currentSubElementLine.style.textDecorationLine = "none";
         }
       }
     } else {
