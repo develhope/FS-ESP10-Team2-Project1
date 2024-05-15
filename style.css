@@ -281,7 +281,7 @@ main {
   background-color: #ffd502;
   height: 4.6875rem;
   margin: 0 auto;
-  padding: 0 1.875rem;
+  /* padding: 0 1.875rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -413,6 +413,11 @@ main {
   font-size: 12px;
   /*!#error: No se porque no funciona */
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start !important;
+  justify-content: center;
 }
 
 /*? Estilos del NavBar Short */

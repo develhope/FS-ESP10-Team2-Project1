@@ -177,9 +177,10 @@
   }
 
   .navbar-div-buttons {
-    /*!#error: No entiendo porque el (margin: 0) no funciona como esperaba */
     /* margin: 0; */
-    padding: 0;
+    padding: 0px;
+    /* margin: 0px; */
+    
   }
 
   .navbar-btn-login {
