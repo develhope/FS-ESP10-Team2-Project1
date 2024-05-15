@@ -235,6 +235,8 @@ main {
   font-weight: inherit;
 }
 
+
+
 .cnHyRF {
   line-height: 0;
   height: 20px;
@@ -259,6 +261,7 @@ main {
   margin-right: 0.625rem;
 }
 
+
 .preNavbar-buttom-close {
   display: none;
   -webkit-box-align: center;
@@ -269,6 +272,7 @@ main {
   padding: 1.0625rem;
   cursor: pointer;
 }
+
 
 .dHKzVM {
   line-height: 0;
@@ -313,6 +317,7 @@ main {
 .navbar-links li {
   /* Estilos de los elementos de la lista */
   margin-right: 50px;
+  cursor: pointer;
 }
 
 .navbar-links li:last-child {
@@ -527,12 +532,22 @@ main {
 }
 
 .navbar-ventanaEmergente-opciones button {
+  cursor: pointer;
   background-color: transparent;
   border: none;
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
+  /* text-decoration-line: none; */
   text-decoration-thickness: 2.5px;
   font-weight: bold;
 }
+
+
+/*!#error: (Arreglar) no funciona el hover underline */
+/* .navbar-ventanaEmergente-opc_comprar-button:hover {
+  text-decoration-line: underline;
+} */
+
+
 
 .navbar-ventanaEmergente-contenido_opciones {
   /* display: none; */
@@ -581,21 +596,21 @@ main {
 
 
 /*!#2537 Tu codigo aqui abajo, recuerda usar los nombres de las clases ya existentes */
-/** code... */
+/* <massi> */
 
-
-/*massi*/
-
-.navbar-ventanaEmergente-contenido_lista_opcion_comprar-inner-Set_por_tema{
+.navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema {
   margin-left: 2.5vw;
 }
+
 .navbar-ventanaEmergente-contenido_opc_comprar-Set_por_tema-all {
-gap:1vw;
+  gap: 1vw;
   display: grid;
   grid-template-columns: repeat(3, 10vw);
   grid-template-rows: 1fr;
-padding: 0;
-padding-right:5vw ;
+  padding: 0;
+  padding-right: 5vw;
+  justify-items: end;
+  margin-top: -2vw;
 
 
 }
@@ -605,7 +620,7 @@ padding-right:5vw ;
   grid-row-end: 2;
   font-size: 14px;
   height: 2vh;
-
+  margin-left: 1.5vw;
   align-items: center;
 
 }
@@ -692,7 +707,7 @@ padding-right:5vw ;
   color: black;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-content li {
+.navbar-ventanaEmergente-contenido_opc_comprar-Edades li {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -702,20 +717,20 @@ padding-right:5vw ;
   margin-top: 0.3vw;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-content a {
+.navbar-ventanaEmergente-contenido_opc_comprar-Edades a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   color: black;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Edades-content a:hover {
+.navbar-ventanaEmergente-contenido_opc_comprar-Edades a:hover {
   text-decoration: underline;
   color: blue;
 
 }
 
-.navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios-inner-content li {
+.navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios li {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -725,17 +740,25 @@ padding-right:5vw ;
   margin-top: 0.3vw;
 }
 
-.navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios-inner-content a {
+.navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   color: black;
 }
 
-.navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios-inner-content a:hover {
+.navbar-ventanaEmergente-contenido_opc_comprar-Rangos_de_precios a:hover {
   text-decoration: underline;
   color: blue;
 
+}
+
+.Rangos_de_precios-title {
+  margin-left: 2vw;
+}
+
+.Edades-title {
+  margin-left: 2.2vw;
 }
 
 .navbar-ventanaEmergente-contenido_lista__comprar_opcion-Pick_and_build-container li {
@@ -760,8 +783,12 @@ padding-right:5vw ;
   color: blue;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container li{
- align-items: center;
+.Pick_and_build-title {
+  margin-left: 2.2vw;
+}
+
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container li {
+  align-items: center;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -770,19 +797,19 @@ padding-right:5vw ;
   margin-top: 0.3vw;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container a{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   color: black;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container a:hover{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container a:hover {
   text-decoration: underline;
   color: blue;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras_apps-container li{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras_apps-container li {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -799,32 +826,12 @@ padding-right:5vw ;
   color: black;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras_apps-container a:hover{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras_apps-container a:hover {
   text-decoration: underline;
   color: blue;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container li{
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-bottom: 0.2vw;
-  margin-bottom: 0.2vw;
-  margin-top: 0.3vw;
-}
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container a{
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container a:hover{
-  text-decoration: underline;
-  color: blue;
-}
-
-.navbar-ventanaEmergente-contenido_opc_descubrir li{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container li {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -834,27 +841,49 @@ padding-right:5vw ;
   margin-top: 0.3vw;
 }
 
-.navbar-ventanaEmergente-contenido_opc_descubrir a{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   color: black;
 }
 
-.navbar-ventanaEmergente-contenido_opc_descubrir a:hover{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestras-revistas-container a:hover {
   text-decoration: underline;
   color: blue;
 }
 
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-inner-content{
+.navbar-ventanaEmergente-contenido_opc_descubrir li {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-bottom: 0.2vw;
+  margin-bottom: 0.2vw;
+  margin-top: 0.3vw;
+}
+
+.navbar-ventanaEmergente-contenido_opc_descubrir a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-ventanaEmergente-contenido_opc_descubrir a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.navbar-ventanaEmergente-contenido_opc_comprar-Intereses {
   display: flex;
   flex-direction: column;
   width: 40vw;
   justify-content: space-between;
-  
+
 }
 
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-all{
+.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-all {
   justify-content: flex-start;
   display: flex;
   flex-direction: row;
@@ -868,6 +897,7 @@ padding-right:5vw ;
   padding: 0.1vw;
   align-items: center;
   margin-bottom: 0.5vw;
+  margin-left: 2.2vw;
 
 }
 
@@ -879,7 +909,7 @@ padding-right:5vw ;
   position: relative;
   box-sizing: border-box;
   width: 50%;
-  margin: 0.2vw ;
+  margin: 0.2vw;
 
 
 }
@@ -892,28 +922,30 @@ padding-right:5vw ;
   position: relative;
   box-sizing: border-box;
   width: 50%;
-  margin: 0.2vw ;
+  margin: 0.2vw;
 }
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-inner-content li{
+
+.navbar-ventanaEmergente-contenido_opc_comprar-Intereses li {
   align-items: center;
   display: flex;
   flex-direction: row;
   list-style: none;
- 
+
 }
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-inner-content a{
+
+.navbar-ventanaEmergente-contenido_opc_comprar-Intereses a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   color: black;
 }
 
-.navbar-ventanaEmergente-contenido_opc_comprar-Intereses-inner-content a:hover{
+.navbar-ventanaEmergente-contenido_opc_comprar-Intereses a:hover {
   text-decoration: underline;
   color: blue;
 }
 
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container li{
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container li {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -922,19 +954,24 @@ padding-right:5vw ;
   margin-bottom: 0.2vw;
   margin-top: 0.3vw;
 }
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container a{
+
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   color: black;
 }
-.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container a:hover{
+
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Articulos_Lego-container a:hover {
   text-decoration: underline;
   color: blue;
 }
 
-/*massi*/
+.Articulos-LEGO-title {
+  margin-left: 2.2vw;
+}
 
+/* </massi> */
 /*? Estilos del Div Banner y SubBanner */
 .banner-SubBanner-div {
   width: 100%;
@@ -1125,35 +1162,41 @@ padding-right:5vw ;
 /*Inicio de sección de CSS de sets destacados*/
 
 .GENfuente {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    left: -20%;
-    margin: 1.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  left: -20%;
+  margin: 1.5%;
 }
 
 .DESTproduct-card {
   width: 310px;
-  border: 0px ;
+  border: 0px;
   overflow: hidden;
   position: relative;
   height: 450px;
-  
+
 }
+
 .DESTproduct-card .DESTlike {
   position: absolute;
   top: 30px;
   left: 30px;
 }
+
 .DESTproduct-card img {
   width: 100%;
   height: 250px;
   display: block;
   object-fit: contain;
-  transition: transform 0.3s ease; /* Añade una transición suave para el efecto de zoom */
+  transition: transform 0.3s ease;
+  /* Añade una transición suave para el efecto de zoom */
 }
+
 .DESTproduct-card img:hover {
-  transform: scale(1.1); /* Aplica el zoom a la imagen */
+  transform: scale(1.1);
+  /* Aplica el zoom a la imagen */
 }
+
 .DESTproduct-card .DESTnew-badge {
   background-color: #FFD700;
   color: rgb(0, 0, 0);
@@ -1165,8 +1208,9 @@ padding-right:5vw ;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
 }
+
 .DESTproduct-card .DESTproduct-info {
   padding: 15px;
   height: 180px;
@@ -1176,6 +1220,7 @@ padding-right:5vw ;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .DESTproduct-card .DESTproduct-info h2 {
   margin: 0;
   font-size: 1.2em;
@@ -1183,14 +1228,16 @@ padding-right:5vw ;
   text-align: left;
   bottom: -15%;
 }
+
 .DESTproduct-card .DESTproduct-info .DESTprice {
   color: #ffffff;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 5px;
   text-align: left;
-  
+
 }
+
 .DESTproduct-card button {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
@@ -1205,31 +1252,37 @@ padding-right:5vw ;
 }
 
 .DESTproduct-card button:hover {
-  background-color: #000000;  /* Cambia el fondo a negro */
-  color: #ffffff;             /* Cambia el texto a blanco */
-  border: 2px solid #ffffff;  /* Agrega un borde blanco */
+  background-color: #000000;
+  /* Cambia el fondo a negro */
+  color: #ffffff;
+  /* Cambia el texto a blanco */
+  border: 2px solid #ffffff;
+  /* Agrega un borde blanco */
 }
 
 
 
 
 .DESTcarousel {
-    width: 890px;
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #525357a5 #5152572b;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    justify-content: flex-start; /* Alinea elementos al inicio */
-    align-items: center;
-    margin: 3%;
-    
+  width: 890px;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #525357a5 #5152572b;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  justify-content: flex-start;
+  /* Alinea elementos al inicio */
+  align-items: center;
+  margin: 3%;
+
 }
 
 .DESTcarousel .DESTproduct-card {
-  flex: 0 0 23%; /* Ajusta esto según el tamaño deseado de las tarjetas */
-  margin: 10px; /* Espacio uniforme */
+  flex: 0 0 23%;
+  /* Ajusta esto según el tamaño deseado de las tarjetas */
+  margin: 10px;
+  /* Espacio uniforme */
 }
 
 
@@ -1247,43 +1300,54 @@ padding-right:5vw ;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
 }
+
 .SELfeature-section .SELfeature {
   width: 30%;
   border-radius: 4px;
   overflow: hidden;
   background: #fff;
   margin: 10px;
-  text-align: center; /* Centra el texto dentro de cada característica */
+  text-align: center;
+  /* Centra el texto dentro de cada característica */
 }
+
 .SELfeature img {
   width: 100%;
   height: auto;
   display: block;
 }
+
 .SELfeature h2 {
   font-size: 1.4em;
   color: #333;
   padding: 16px;
   margin: 0;
-  margin-bottom: 20px; /* Distancia fija debajo del título */
+  margin-bottom: 20px;
+  /* Distancia fija debajo del título */
 }
+
 .SELfeature p {
   padding: 0 16px;
   color: #666;
   font-size: 1em;
-  margin-bottom: 20px; /* Distancia fija debajo del párrafo */
+  margin-bottom: 20px;
+  /* Distancia fija debajo del párrafo */
 }
+
 .SELfeature a {
   display: block;
   padding: 12px 16px;
   color: #000000;
   text-decoration: none;
   transition: all 0.3s ease;
-  margin-bottom: 20px; /* Distancia fija debajo del enlace */
+  margin-bottom: 20px;
+  /* Distancia fija debajo del enlace */
 }
+
 .SELfeature a:hover {
   text-decoration: underline;
 }
+
 .SELfeature a:after {
   content: " >";
 }
@@ -1302,30 +1366,34 @@ padding-right:5vw ;
   .SELfeature-section {
     display: block;
     width: 70%;
-    flex-direction: row; 
-    overflow-x: auto; 
-    white-space: nowrap; 
-    gap: 10px; 
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
   }
 
   .SELfeature-section .SELfeature {
-    width: 80%; 
-    flex-shrink: 0; 
-    display: inline-block; 
+    width: 80%;
+    flex-shrink: 0;
+    display: inline-block;
   }
-  
 
-  .OTRproduct-container, .DESTcarousel {
+
+  .OTRproduct-container,
+  .DESTcarousel {
     flex-direction: row;
     align-items: center;
-    width: 90%; /* Asegura que el contenedor use el ancho completo disponible */
+    width: 90%;
+    /* Asegura que el contenedor use el ancho completo disponible */
     gap: 10px;
-}
+  }
 
-  .OTRproduct, .DESTproduct-card {
-    width: 80%; /* Ajusta a 80% o menos para evitar desbordamiento */
+  .OTRproduct,
+  .DESTproduct-card {
+    width: 80%;
+    /* Ajusta a 80% o menos para evitar desbordamiento */
     height: auto;
-}
+  }
 
   .DESTcarousel {
     flex-direction: row;
@@ -1350,16 +1418,16 @@ padding-right:5vw ;
   .SELfeature-section {
     display: block;
     width: 70%;
-    flex-direction: row; 
-    overflow-x: auto; 
-    white-space: nowrap; 
-    gap: 10px; 
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
   }
 
   .SELfeature-section .SELfeature {
-    width: 80%; 
-    flex-shrink: 0; 
-    display: inline-block; 
+    width: 80%;
+    flex-shrink: 0;
+    display: inline-block;
   }
 
   .OTRproduct-container {
@@ -1477,26 +1545,35 @@ padding-right:5vw ;
   align-items: flex-start;
   margin-left: 12%;
   margin-right: 12%;
-  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
-  width: 90%; /* Asegura que el contenedor use el ancho completo disponible */
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el tamaño del contenedor */
+  width: 90%;
+  /* Asegura que el contenedor use el ancho completo disponible */
 
 }
 
 .OTRproduct {
-  flex: 0 0 auto;             /* Los elementos no crecen ni encogen pero sí mantienen su tamaño */
-  width: 300px;               /* Anchura fija para cada producto */
+  flex: 0 0 auto;
+  /* Los elementos no crecen ni encogen pero sí mantienen su tamaño */
+  width: 300px;
+  /* Anchura fija para cada producto */
   height: 380px;
-  scroll-snap-align: start;   /* Opcional: alinea los elementos con el inicio del contenedor al desplazar */
-  background: #fff;           /* Fondo blanco para los productos */
+  scroll-snap-align: start;
+  /* Opcional: alinea los elementos con el inicio del contenedor al desplazar */
+  background: #fff;
+  /* Fondo blanco para los productos */
   -webkit-overflow-scrolling: touch;
-  padding: 10px;              /* Padding interno */
+  padding: 10px;
+  /* Padding interno */
   overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Asegura que el contenido esté distribuido de manera uniforme */
-  height: fill;/* Añadido para que todas las tarjetas tengan la misma altura */
+  justify-content: space-between;
+  /* Asegura que el contenido esté distribuido de manera uniforme */
+  height: fill;
+  /* Añadido para que todas las tarjetas tengan la misma altura */
 }
 
 .OTRproduct .OTRlike {
@@ -1504,19 +1581,25 @@ padding-right:5vw ;
   top: 30px;
   left: 30px;
 }
+
 .OTRproduct img {
-  max-width: 100%;                /* Ajusta las imágenes para que ocupen todo el ancho del producto */
-  max-height: 200px;              /* Mantiene la proporción de las imágenes y fija la altura máxima */
+  max-width: 100%;
+  /* Ajusta las imágenes para que ocupen todo el ancho del producto */
+  max-height: 200px;
+  /* Mantiene la proporción de las imágenes y fija la altura máxima */
   object-fit: contain;
   display: block;
   transition: transform 0.3s ease;
-  margin-bottom: auto;            /* Añadido para que las imágenes no se estiren y ocupen el espacio vertical disponible */
+  margin-bottom: auto;
+  /* Añadido para que las imágenes no se estiren y ocupen el espacio vertical disponible */
 }
 
-.OTRproduct .OTRimage-container { 
-  width: 100%; 
-  height: 250px;               /* Altura fija para el contenedor de la imagen */
-  border: 1px solid #ccc;     /* Borde sutil */
+.OTRproduct .OTRimage-container {
+  width: 100%;
+  height: 250px;
+  /* Altura fija para el contenedor de la imagen */
+  border: 1px solid #ccc;
+  /* Borde sutil */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1528,21 +1611,30 @@ padding-right:5vw ;
 
 .OTRnew-label {
   background-color: #FFD700;
-  position: absolute;   /* Cambiado para que la etiqueta esté en posición absoluta */
-  top: 220px;            /* Ajustado para colocar la etiqueta en la parte superior */
-  left: 40px;           /* Ajustado para colocar la etiqueta a la izquierda */
-  width: auto;          /* Cambiado para que el ancho se ajuste automáticamente al contenido */
+  position: absolute;
+  /* Cambiado para que la etiqueta esté en posición absoluta */
+  top: 220px;
+  /* Ajustado para colocar la etiqueta en la parte superior */
+  left: 40px;
+  /* Ajustado para colocar la etiqueta a la izquierda */
+  width: auto;
+  /* Cambiado para que el ancho se ajuste automáticamente al contenido */
   padding: 5px 10px;
-  color: #000000;             
+  color: #000000;
   font-size: 0.8em;
-  border-radius: 5px;   /* Añadido para bordes redondeados */
-  z-index: 1;           /* Asegura que la etiqueta esté encima de otros elementos */
+  border-radius: 5px;
+  /* Añadido para bordes redondeados */
+  z-index: 1;
+  /* Asegura que la etiqueta esté encima de otros elementos */
 }
 
 .OTRproduct .OTRproduct-title {
-  margin: 10px 0; /* Añadido para margen vertical */
-  text-align: center; /* Añadido para centrar el texto */
-  flex-grow: 1; /* Añadido para que el título ocupe el espacio disponible */
+  margin: 10px 0;
+  /* Añadido para margen vertical */
+  text-align: center;
+  /* Añadido para centrar el texto */
+  flex-grow: 1;
+  /* Añadido para que el título ocupe el espacio disponible */
   position: absolute;
   top: 265px;
 }
@@ -1554,32 +1646,47 @@ padding-right:5vw ;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 5px;
-  
+
   left: 20px;
   top: 300px;
 }
 
 .OTRadd-to-cart-btn {
-  display: flex;             /* Hace que el enlace ocupe todo el ancho del contenedor */
+  display: flex;
+  /* Hace que el enlace ocupe todo el ancho del contenedor */
   justify-content: center;
   align-items: center;
-  width: 100%;               /* Cambiado para que ocupe el 100% del ancho del contenedor */
-  height: 50px;              /* Ajustado para un tamaño de botón más pequeño y uniforme */
-  margin-top: 10px;          /* Margen superior */
-  padding: 10px;             /* Padding para el botón */
-  background-color: #ff6600; /* Color de fondo del botón */
-  color: rgb(0, 0, 0);       /* Color del texto del botón */
-  text-decoration: none;     /* Elimina el subrayado de los enlaces */
-  border-radius: 5px;        /* Bordes redondeados para el botón */
-  border: 2px solid #ff6600; /* Borde inicial del mismo color que el fondo */
-  flex-shrink: 0;            /* Añadido para evitar que el botón se reduzca en tamaño */
-  box-sizing: border-box;    /* Añadido para asegurar que el padding no afecte el tamaño del botón */
+  width: 100%;
+  /* Cambiado para que ocupe el 100% del ancho del contenedor */
+  height: 50px;
+  /* Ajustado para un tamaño de botón más pequeño y uniforme */
+  margin-top: 10px;
+  /* Margen superior */
+  padding: 10px;
+  /* Padding para el botón */
+  background-color: #ff6600;
+  /* Color de fondo del botón */
+  color: rgb(0, 0, 0);
+  /* Color del texto del botón */
+  text-decoration: none;
+  /* Elimina el subrayado de los enlaces */
+  border-radius: 5px;
+  /* Bordes redondeados para el botón */
+  border: 2px solid #ff6600;
+  /* Borde inicial del mismo color que el fondo */
+  flex-shrink: 0;
+  /* Añadido para evitar que el botón se reduzca en tamaño */
+  box-sizing: border-box;
+  /* Añadido para asegurar que el padding no afecte el tamaño del botón */
 }
 
 .OTRadd-to-cart-btn:hover {
-  background-color: #ffffff;  /* Nuevo color de fondo cuando se pasa el ratón por encima */
-  color: #000000;             /* Nuevo color del texto cuando se pasa el ratón por encima */
-  border: 2px solid #ff6600;  /* Borde del botón en color naranja */
+  background-color: #ffffff;
+  /* Nuevo color de fondo cuando se pasa el ratón por encima */
+  color: #000000;
+  /* Nuevo color del texto cuando se pasa el ratón por encima */
+  border: 2px solid #ff6600;
+  /* Borde del botón en color naranja */
 }
 
 
@@ -1925,7 +2032,7 @@ padding-right:5vw ;
   text-decoration-line: underline;
 }
 
-.ninia-container{
+.ninia-container {
   position: relative;
 }
 
@@ -2005,7 +2112,7 @@ padding-right:5vw ;
   font-family: 'Cera Pro Regular';
 }
 
-#setsConCreatividad > h2{
+#setsConCreatividad>h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2035,7 +2142,7 @@ padding-right:5vw ;
 #cards img {
   width: 200px;
   height: 150px;
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 #cards img:hover {
