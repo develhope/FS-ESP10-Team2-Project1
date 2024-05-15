@@ -570,6 +570,7 @@ main {
   padding-inline-start: 40px;
   /* unicode-bidi: isolate; */
   font-family: 'Cera Pro Regular';
+  
 }
 
 .navbar-li {
@@ -580,7 +581,7 @@ main {
   align-items: start;
   margin-right: 10px;
   margin-bottom: 20px;
-  gap: 30px;
+  gap: 80px;
 }
 
 .navbar-li > button{
@@ -814,6 +815,7 @@ main {
   padding-bottom: 0.2vw;
   margin-bottom: 0.2vw;
   margin-top: 0.3vw;
+  margin-left: 20px;
 }
 
 .navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-container a {
@@ -872,6 +874,10 @@ main {
   color: rgb(67, 73, 237);
 }
 
+.navbar-ventanaEmergente-contenido_lista__comprar_opcion-Nuestros_valores-content{
+  border-left: solid 2px rgba(128, 128, 128, 0.622);
+}
+
 .navbar-ventanaEmergente-contenido_opc_descubrir li {
   align-items: center;
   display: flex;
@@ -880,6 +886,7 @@ main {
   padding-bottom: 0.2vw;
   margin-bottom: 0.2vw;
   margin-top: 0.3vw;
+  
 }
 
 .navbar-ventanaEmergente-contenido_opc_descubrir a {
