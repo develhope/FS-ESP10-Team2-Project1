@@ -2019,8 +2019,8 @@ padding-right:5vw ;
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #cards {
