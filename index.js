@@ -35,26 +35,57 @@ class Menu {
     },
   };
 
+  /**
+   * Muestra un subElemento específico de un elemento dado y oculta los demás subElementos.
+   * @param {string} element - El nombre del elemento para el cual se mostrará el subElemento.
+   * @param {number|string} subElement - El identificador o número del subElemento que se mostrará.
+   * @returns {void} - No devuelve ningún valor.
+   */
   static subMenu(element, subElement) {
+    // Verificar si se proporcionaron parámetros válidos
+    if (!element || !subElement) {
+      console.error(
+        "Error: Debes proporcionar elementos y subElementos válidos."
+      );
+      return;
+    }
+
     const subElements = Menu.elementsAvailables[element]?.subElements;
 
+    // Verificar si el elemento proporcionado tiene subElementos
     if (subElements) {
+      // Convertir el subElemento a cadena
+      subElement = subElement.toString();
+
+      // Verificar si el subElemento proporcionado es un subElemento válido
+      if (!subElements[subElement]) {
+        console.error(
+          `Error: '${subElement}' no es un subElemento válido para '${element}'.`
+        );
+        return;
+      }
+
+      // Recorrer los subElementos y mostrar el subElemento especificado
       for (let key in subElements) {
         const subElementSelector = subElements[key];
         const currentSubElement = document.querySelector(subElementSelector);
 
-        // Verificar si el subElement actual coincide con el subElement especificado
-        if (key === subElement.toString()) {
-          currentSubElement.style.display = "flex"; // Mostrar el subElement
+        if (key === subElement) {
+          currentSubElement.style.display = "flex"; // Mostrar el subElemento
         } else {
-          currentSubElement.style.display = "none"; // Ocultar otros subElements
+          currentSubElement.style.display = "none"; // Ocultar otros subElementos
         }
       }
     } else {
-      console.error(`No hay subelementos para la opción '${element}'`);
+      console.error(`Error: No hay subelementos para la opción '${element}'.`);
     }
   }
 
+  /**
+   * Muestra el menú principal y actualiza los estilos de los elementos disponibles según la opción seleccionada.
+   * @param {number|string} opc - La opción del menú que se va a mostrar. Puede ser un número entero o una cadena.
+   * @returns {void} - No devuelve ningún valor.
+   */
   static mainMenu(opc) {
     var opc = opc;
 
@@ -65,7 +96,7 @@ class Menu {
     // Evalúa si la opción es 0 y llama a la función "mainMenuClose" si es verdadero, de lo contrario, llama a "mainMenuShow"
     opc === 0 ? mainMenuClose() : mainMenuShow();
 
-    // Verifica si la opción es indefinida, nula o una cadena vacía, y si está dentro de las opciones disponibles
+    //* Verifica si la opción es indefinida, nula o una cadena vacía, y si está dentro de las opciones disponibles
     function invalidOpc() {
       if (opc === undefined || opc === null || opc === "") {
         console.error(
@@ -89,15 +120,11 @@ class Menu {
       return false;
     }
 
-    /**
-     * Muestra el menú principal y actualiza los estilos de los elementos disponibles según la opción seleccionada.
-     */
+    //* Muestra el menú principal y actualiza los estilos de los elementos disponibles según la opción seleccionada.
     function mainMenuShow() {
       // console.log("#opc: " + opc);
 
-      /**
-       * Muestra la sección correspondiente del menú según la opción seleccionada.
-       */
+      //* Muestra la sección correspondiente del menú según la opción seleccionada.
       function showSection() {
         for (let key in Menu.elementsAvailables) {
           if (Object.hasOwnProperty.call(Menu.elementsAvailables, key)) {
@@ -161,7 +188,7 @@ class Menu {
       }
     }
 
-    // Configura el fondo negro con estilos y event listener
+    //* Configura el fondo negro con estilos y event listener
     function makeBackgroundBlack() {
       const background = document.createElement("div");
       background.id = "fondoNegro";
